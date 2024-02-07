@@ -1,0 +1,139 @@
+// ===============
+// colors palette
+// ===============
+:root {
+  --backgroundprimary: rgba(37, 37, 48, 1);
+  --backgroundsecondary: rgba(30, 31, 40, 1);
+  --backgroundtertirary: rgba(25, 25, 33, 1);
+  --textprimary: rgba(255, 255, 255, 1);
+  --textsecondary: rgba(154, 156, 172, 1);
+  --texttertirary: rgba(90, 93, 114, 1);
+  --textblack: rgba(16, 16, 16, 1);
+  --grayscale-900: rgba(37, 37, 48, 1);
+  --grayscale-800: rgba(43, 45, 59, 1);
+  --grayscale-700: rgba(52, 54, 71, 1);
+  --grayscale-600: rgba(73, 77, 100, 1);
+  --grayscale-500: rgba(101, 106, 139, 1);
+  --grayscale-400: rgba(128, 132, 163, 1);
+  --grayscale-300: rgba(158, 161, 184, 1);
+  --grayscale-200: rgba(187, 189, 206, 1);
+  --grayscale-100: rgba(231, 232, 238, 1);
+  --accent-500: rgba(2, 127, 88, 1);
+  --accent-400: rgba(3, 152, 106, 1);
+  --accent-300: rgba(3, 227, 158, 1);
+  --accent-200: rgba(104, 253, 207, 1);
+  --accent-100: rgba(154, 254, 223, 1);
+  --red-500: rgba(131, 22, 36, 1);
+  --red-400: rgba(197, 33, 54, 1);
+  --red-300: rgba(226, 80, 99, 1);
+  --red-200: rgba(237, 146, 157, 1);
+  --red-100: rgba(248, 211, 216, 1);
+  --yellow-500: rgba(150, 91, 3, 1);
+  --yellow-400: rgba(226, 137, 4, 1);
+  --yellow-300: rgba(252, 183, 80, 1);
+  --yellow-200: rgba(253, 203, 130, 1);
+  --yellow-100: rgba(254, 234, 205, 1);
+  --violet-500: rgba(50, 41, 112, 1);
+  --violet-400: rgba(75, 62, 168, 1);
+  --violet-300: rgba(125, 114, 203, 1);
+  --violet-200: rgba(169, 162, 221, 1);
+  --violet-100: rgba(221, 218, 241, 1);
+  --blue-300: rgba(1, 117, 253, 1);
+
+  --animate-duration: 1s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
+
+    /* Fonts */
+    --heading-4-xl: 600 2.5rem/120% "Gilroy", sans-serif;
+    --heading-3-xl: 600 2rem/120% "Gilroy", sans-serif;
+    --heading-2-xl: 600 1.75rem/120% "Gilroy", sans-serif;
+    --heading-xl: 600 1.5rem/120% "Gilroy", sans-serif;
+    --heading-lg: 600 1.125rem/120% "Gilroy", sans-serif;
+    --heading-md: 600 1rem/120% "Gilroy", sans-serif;
+    --heading-sm: 600 .875rem/120% "Gilroy", sans-serif;
+    --heading-xs: 600 .75rem/120% "Gilroy", sans-serif;
+    --body-lg-medium: 500 1rem/140% "Gilroy", sans-serif;
+    --body-lg-regular: 400 1rem/140% "Gilroy", sans-serif;
+    --body-lg-light-underlined: 300 1rem/140% "Gilroy", sans-serif;
+    --body-md-light: 300 .875rem/140% "Gilroy", sans-serif;
+    --body-md-regular: 400 .875rem/140% "Gilroy", sans-serif;
+    --body-md-medium: 500 .875rem/140% "Gilroy", sans-serif;
+    --body-md-light-underlined: 300 14px/140% "Gilroy", sans-serif;
+    --body-sm-light: 300 .75rem/120% "Gilroy", sans-serif;
+    --body-sm-regular: 400 .75rem/150% "Gilroy", sans-serif;
+    --body-sm-medium: 500 .75rem/120% "Gilroy", sans-serif;
+    --body-sm-light-underlined: 300 12px/140% "Gilroy", sans-serif;
+    --body-xs-regular: 400 .625rem/120% "Gilroy", sans-serif;
+    --body-xs-medium: 500 .625rem/120% "Gilroy", sans-serif;
+    --body-xs-light: 300 .625rem/120% "Gilroy", sans-serif;
+    --button-lg: 500 1rem/normal "Gilroy", sans-serif;
+    --button-md: 500 .875rem/normal "Gilroy", sans-serif;
+    --button-sm: 500 .75rem/normal "Gilroy", sans-serif;
+
+    --line-border-fill:  rgba(128, 63, 166, 1);
+    --line-border-empty: rgba(205, 205, 180, 1);
+    --text-empty:        rgba(175, 175, 150, 1);
+    --text-fill:         rgba(74, 54, 50, 1);
+    --background-color:  rgba(245, 245, 220, 1);
+}
+
+.text-black {
+  color: var(--textblack);
+}
+
+.text-color-yellow {
+  color: #FFB33A;
+}
+
+.text-color-green {
+  color: #01FDAA;
+}
+
+.text-color-purple {
+  color: #7876D0;
+}
+
+.text-yellow-300 {
+  color: var(--yellow-300) !important;
+}
+
+.text-accent-300 {
+  color: var(--accent-300) !important;
+}
+
+.text-violet-300 {
+  color: var(--violet-300) !important;
+}
+
+.text-red-300 {
+  color: var(--red-300) !important;
+}
+
+.text-green {
+  color: #01FDAA !important;
+}
+
+.text-secondary {
+  color: var(--textsecondary);
+}
+
+.background-secondary {
+  background-color: var(--backgroundsecondary);
+}
+
+.background-tertirary {
+  background-color: var(--backgroundtertirary);
+}
+
+.background-primary {
+  background-color: var(--backgroundprimary);
+}
+
+.\!background-secondary {
+  background-color: var(--backgroundsecondary) !important;
+}
+
+.\!background-tertirary {
+  background-color: var(--backgroundtertirary) !important;
+}

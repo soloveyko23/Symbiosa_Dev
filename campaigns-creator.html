@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header-brand.htm',{})
+    <main class="page">
+      <div class="page__container">
+        <div class="page__header filters-block">
+          <div class="page__header-top lg:flex-nowrap flex-wrap">
+            <h2 class="basis-3/6 heading-3xl">
+              Сampaigns 
+            </h2>
+            <button class="filters__button button button-gray button-filter" data-ripple>
+              <div class="button__text">
+                <div class="svg-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16"
+                    viewBox="0 0 16 16" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M3.3335 2H12.6668L5.8775 8.78933C5.76786 8.50843 5.58953 8.25951 5.35883 8.06533C5.20683 7.93333 4.99416 7.814 4.57016 7.57467L2.62816 6.48133C1.9955 6.126 1.6795 5.948 1.50683 5.66133C1.3335 5.374 1.3335 5.02733 1.3335 4.33533V3.87533C1.3335 2.99133 1.3335 2.54867 1.62683 2.274C1.91883 2 2.39016 2 3.3335 2Z"
+                      fill="white" />
+                    <path opacity="0.5"
+                      d="M14.667 4.336V3.876C14.667 2.992 14.667 2.54933 14.3736 2.27467C14.0816 2 13.6103 2 12.667 2L5.87695 8.78933C5.91029 8.87533 5.93695 8.96467 5.95762 9.058C6.00029 9.248 6.00029 9.47067 6.00029 9.91533V11.6953C6.00029 12.3013 6.00029 12.6047 6.16829 12.8407C6.33629 13.0773 6.63495 13.194 7.23095 13.4273C8.48362 13.9167 9.10962 14.1613 9.55495 13.8827C10.0003 13.6047 10.0003 12.968 10.0003 11.6947V9.91467C10.0003 9.47067 10.0003 9.248 10.0423 9.058C10.1262 8.66935 10.3373 8.31979 10.6423 8.06467C10.7936 7.93333 11.0056 7.814 11.4303 7.57467L13.3723 6.48133C14.0043 6.126 14.321 5.948 14.4936 5.66133C14.667 5.37467 14.667 5.028 14.667 4.336Z"
+                      fill="white" />
+                  </svg>
+                </div>
+                Filter
+                <div class="badge badge--numeric">
+                  4
+                </div>
+              </div>
+
+            </button>
+            <div class="page__controls">
+              <div class="filters">
+                <div class="filters__row grid sm:grid-cols-2 gap-4" data-da=".filters__more, 1024, first">
+                  <div class="filter__col">
+                    <div class="filter__search-block search-block">
+                      <div class="search-block__input">
+                        <input autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Search"
+                          class="input input-md">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter__col">
+                    <div class="select-md w-full">
+                      <select name="form[]" data-one-select data-pseudo-label="Sort by:" data-class-modif="combobox">
+                        <option value="1" selected>Newest</option>
+                        <option value="2">Пункт №2 Пункт №2 Пункт №2 Пункт №2</option>
+                        <option value="3">Пункт №3</option>
+                        <option value="4">Пункт №4</option>
+                      </select>
+                    </div>
+
+                  </div>
+             
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page__header-bottom">
+            <div class="filters__more mt-4" hidden>
+              <div class="filters__row grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4">
+                <div class="filter__col">
+                  <div class="select-md select-md-width">
+                    <select name="form[]" data-one-select data-pseudo-label="Platform:" data-class-modif="combobox">
+                      <option selected value="1" data-class="platform platform--size-sm" data-asset="@img/icons/formkit_youtube.svg">Youtube 1 </option>
+                      <option value="2" data-class="platform platform--size-sm" data-asset="@img/icons/formkit_youtube.svg">Youtube 2</option>
+                      <option value="3" data-class="platform platform--size-sm" data-asset="@img/icons/formkit_youtube.svg">Youtube 3</option>
+                    </select>
+                  </div>
+
+                </div>
+                <div class="filter__col">
+                  <div class="select-md select-md-width">
+                    <div class="custom-select custom-select--checkbox select_combobox">
+                      <div class="select__body">
+                        <button type="button" class="select__title">
+                          <span data-pseudo-label="Brand:" class="select__value _select-pseudo-label">
+                            <span class="select__content"><span class="badge badge--numeric"></span></span>
+                          </span>
+                        </button>
+                        <div class="select__options">
+                          <div class="select__scroll">
+                            <button class="select__option" data-value="1" type="button">
+                              <div class="checkbox-button">
+                                <input id="cc_1" data-error="Помилка" checked class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                <label for="cc_1" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+                              </div>
+                            </button>
+                            <button class="select__option" data-value="2" type="button">
+                              <div class="checkbox-button">
+                                <input id="cc_3" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                <label for="cc_3" class="checkbox__label"><span class="checkbox__text">ТекстТекстТекстекстТекстТекстТекст ТекстТекстТекстекстТекстТекстТекст ТекстТекстТекстекстТекстТекстТекст</span></label>
+                              </div>
+                            </button>
+                            <button class="select__option" data-value="2" type="button">
+                              <div class="checkbox-button">
+                                <input id="cc_2" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                <label for="cc_2" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+                              </div>
+                            </button>
+                          </div>
+                          <div class="select__options-footer">
+                            <a href="#" class="button button-small select__options-footer-apply button-primary fw">Apply</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="filter__col">
+                  <div class="select-md select-md-width">
+                    <div class="custom-select custom-select--checkbox select_combobox">
+                      <div class="select__body">
+                        <button type="button" class="select__title">
+                          <span data-pseudo-label="Tags:" class="select__value _select-pseudo-label">
+                            <span class="select__content"><span class="badge badge--numeric"></span></span>
+                          </span>
+                        </button>
+                        <div class="select__options">
+                          <div class="select__scroll">
+                            <button class="select__option" data-value="1" type="button">
+                              <div class="checkbox-button">
+                                <input id="cc_1" data-error="Помилка" checked class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                <label for="cc_1" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+                              </div>
+                            </button>
+                            <button class="select__option" data-value="2" type="button">
+                              <div class="checkbox-button">
+                                <input id="cc_3" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                <label for="cc_3" class="checkbox__label"><span class="checkbox__text">Текст ТекстТекст Текст Текст Текст Текст</span></label>
+                              </div>
+                            </button>
+                            <button class="select__option" data-value="2" type="button">
+                              <div class="checkbox-button">
+                                <input id="cc_2" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                <label for="cc_2" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+                              </div>
+                            </button>
+                          </div>
+                          <div class="select__options-footer">
+                            <a href="#" class="button button-small select__options-footer-apply button-primary fw">Apply</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="filter__col">
+
+                  <div class="flex items-center gap-3">
+                    <div class="checkbox">
+                      <input id="c_1" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                      <label for="c_1" class="checkbox__label"><span class="checkbox__text">Unavailable</span></label>
+                    </div>
+                    <a href="#" class="link link--large filter__reset link--red">Reset all</a>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="campaigns-creators mb-8">
+          <div class="campaigns-creators__list grid md:grid-cols-4 sm:grid-cols-2 gap-4">
+            <a href="#" class="campaigns-card" data-popup="#popupCampaign">
+              <div class="campaigns-card__body">
+                <div class="campaigns-card__image">
+                  <img src="@img/cards/Thumbnail.jpg" alt="Image">
+                </div>
+                <div class="campaigns-card__content card-content">
+                  <div class="card-content__header">
+                    <div class="card-content__brand">
+                      <div class="icon-brand icon-brand--size-s">
+                        <img src="@img/brands/netflix.png" alt="01">
+                      </div>
+                      <p>
+                        Netflix
+                      </p>
+                    </div>
+                    <div class="card-content__platform">
+                      <div class="platform platform--size-s">
+                        <img src="@img/icons/formkit_youtube.svg" alt="youtube">
+                      </div>
+
+                    </div>
+                  </div>
+                  <h5 class="card-content__title heading-sm">
+                    Promote our new movie
+                  </h5>
+                  <div class="card-tags" data-tags="2">
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <button class="card-tag card-tag-btn--more no-click" data-ripple>
+                      <span class="button__text hidden-count"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="campaigns-card">
+              <div class="campaigns-card__body">
+                <div class="campaigns-card__image">
+                  <img src="@img/cards/Thumbnail.jpg" alt="Image">
+                </div>
+                <div class="campaigns-card__content card-content">
+                  <div class="card-content__header">
+                    <div class="card-content__brand">
+                      <div class="icon-brand icon-brand--size-s">
+                        <img src="@img/brands/netflix.png" alt="01">
+                      </div>
+                      <p>
+                        Netflix
+                      </p>
+                    </div>
+                    <div class="card-content__platform">
+                      <div class="platform platform--size-s">
+                        <img src="@img/icons/formkit_youtube.svg" alt="youtube">
+                      </div>
+
+                    </div>
+                  </div>
+                  <h5 class="card-content__title heading-sm">
+                    Promote our new movie
+                  </h5>
+                  <div class="card-tags" data-tags="3">
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <button class="card-tag card-tag-btn--more" data-ripple>
+                      <span class="button__text hidden-count"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="campaigns-card">
+              <div class="campaigns-card__body">
+                <div class="campaigns-card__image">
+                  <img src="@img/cards/Thumbnail.jpg" alt="Image">
+                </div>
+                <div class="campaigns-card__content card-content">
+                  <div class="card-content__header">
+                    <div class="card-content__brand">
+                      <div class="icon-brand icon-brand--size-s">
+                        <img src="@img/brands/netflix.png" alt="01">
+                      </div>
+                      <p>
+                        Netflix
+                      </p>
+                    </div>
+                    <div class="card-content__platform">
+                      <div class="platform platform--size-s">
+                        <img src="@img/icons/formkit_youtube.svg" alt="youtube">
+                      </div>
+
+                    </div>
+                  </div>
+                  <h5 class="card-content__title heading-sm">
+                    Promote our new movie Promote our new movie
+                    Promote our new movie Promote our new movie Promote our new movie </h5>
+                  <div class="card-tags" data-tags="3">
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <button class="card-tag card-tag-btn--more" data-ripple>
+                      <span class="button__text hidden-count"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="campaigns-card">
+              <div class="campaigns-card__body">
+                <div class="campaigns-card__image">
+                  <img src="@img/cards/Thumbnail.jpg" alt="Image">
+                </div>
+                <div class="campaigns-card__content card-content">
+                  <div class="card-content__header">
+                    <div class="card-content__brand">
+                      <div class="icon-brand icon-brand--size-s">
+                        <img src="@img/brands/netflix.png" alt="01">
+                      </div>
+                      <p>
+                        Netflix
+                      </p>
+                    </div>
+                    <div class="card-content__platform">
+                      <div class="platform platform--size-s">
+                        <img src="@img/icons/formkit_youtube.svg" alt="youtube">
+                      </div>
+
+                    </div>
+                  </div>
+                  <h5 class="card-content__title heading-sm">
+                    Promote our new movie
+                  </h5>
+                  <div class="card-tags" data-tags="3">
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <button class="card-tag card-tag-btn--more" data-ripple>
+                      <span class="button__text hidden-count"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="campaigns-card">
+              <div class="campaigns-card__body">
+                <div class="campaigns-card__image">
+                  <img src="@img/cards/Thumbnail.jpg" alt="Image">
+                </div>
+                <div class="campaigns-card__content card-content">
+                  <div class="card-content__header">
+                    <div class="card-content__brand">
+                      <div class="icon-brand icon-brand--size-s">
+                        <img src="@img/brands/netflix.png" alt="01">
+                      </div>
+                      <p>
+                        Netflix
+                      </p>
+                    </div>
+                    <div class="card-content__platform">
+                      <div class="platform platform--size-s">
+                        <img src="@img/icons/formkit_youtube.svg" alt="youtube">
+                      </div>
+
+                    </div>
+                  </div>
+                  <h5 class="card-content__title heading-sm">
+                    Promote our new movie
+                  </h5>
+                  <div class="card-tags" data-tags="3">
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <button class="card-tag card-tag-btn--more" data-ripple>
+                      <span class="button__text hidden-count"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="campaigns-card">
+              <div class="campaigns-card__body">
+                <div class="campaigns-card__image">
+                  <img src="@img/cards/Thumbnail.jpg" alt="Image">
+                </div>
+                <div class="campaigns-card__content card-content">
+                  <div class="card-content__header">
+                    <div class="card-content__brand">
+                      <div class="icon-brand icon-brand--size-s">
+                        <img src="@img/brands/netflix.png" alt="01">
+                      </div>
+                      <p>
+                        Netflix
+                      </p>
+                    </div>
+                    <div class="card-content__platform">
+                      <div class="platform platform--size-s">
+                        <img src="@img/icons/formkit_youtube.svg" alt="youtube">
+                      </div>
+
+                    </div>
+                  </div>
+                  <h5 class="card-content__title heading-sm">
+                    Promote our new movie
+                  </h5>
+                  <div class="card-tags" data-tags="3">
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <span class="card-tag">
+                      Movie
+                    </span>
+                    <button class="card-tag card-tag-btn--more" data-ripple>
+                      <span class="button__text hidden-count"></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="campaigns-creators__pagination pagination">
+            <div class="pagging">
+              <a href="" class="pagging__arrow disabled" disabled>
+                <div class="svg-icon">
+                  <svg class="icon icon--size-m" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none">
+                    <path id="Vector" d="M14 7L9 12L14 17" stroke="white" stroke-width="1.33333" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </a>
+              <ul class="pagging__list">
+                <li>
+                  <a href="" class="pagging__item _active">1</a>
+                </li>
+                <li>
+                  <a href="" class="pagging__item">2</a>
+                </li>
+                <li>
+                  <a href="" class="pagging__item">3</a>
+                </li>
+                <li>
+                  <a href="" class="pagging__item">4</a>
+                </li>
+                <li>
+                  <a href="" class="pagging__item">5</a>
+                </li>
+              </ul>
+              <a href="" class="pagging__arrow">
+                <div class="svg-icon">
+                  <svg class="icon icon--size-m" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none">
+
+                    <path id="Vector" d="M10 7L15 12L10 17" stroke="white" stroke-width="1.33333" stroke-linecap="round"
+                      stroke-linejoin="round" />
+
+                  </svg>
+                </div>
+
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

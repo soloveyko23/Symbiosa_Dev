@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header-brand.htm',{})
+    <main class="page">
+      <div class="page__container">
+        <div class="page__header filters-block">
+          <div class="page__header-top lg:flex-nowrap flex-wrap sm:!gap-8 !justify-start">
+            <h2 class="heading-3xl">
+              Projects 
+            </h2>
+            <div class="projects-tabs w-full tabs tabs-one tabs-md">
+              <nav class="tabs__navigation">
+                <a href="projects-active.html" class="tabs__title">Active <span class="badge badge--numeric">
+                  4
+                </span></a>
+                <a href="#" class="tabs__title">
+                  Pending
+                  <span class="badge badge--numeric">
+                    4
+                  </span>
+                </a>
+                <a href="projects-negatieved.html" class="tabs__title">
+                  Negotiated
+                  <span class="badge badge--numeric">
+                    4
+                  </span>
+                </a>
+                <a href="project-on-review.html" class="tabs__title">
+                  On&nbsp;review
+                  <span class="badge badge--numeric">
+                    4
+                  </span>
+                </a>
+                <a href="project-completed.html" class="tabs__title _tab-active">
+                  Completed
+                  <span class="badge badge--numeric">
+                   14
+                  </span>
+                </a>
+                <a href="project-cancelled.html" class="tabs__title">
+                  Cancelled
+                  <span class="badge badge--numeric">
+                    1
+                  </span>
+                </a>
+                <a href="project-disputed.html" class="tabs__title">
+                  Disputed
+                  <span class="badge badge--numeric">
+                    1
+                  </span>
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="projects-creators">
+          <div class="projects-creators__list">
+            <div class="projects-creators__card project-card" data-popup="#popupProject">
+              <div class="project-card__body">
+                <div class="project-card__image">
+                  <img src="@img/fileuploader/image.png" alt="image">
+                </div>
+                <div class="project-card__content content-card">
+                  <div class="content-card__left">
+                    <h5 class="heading-md mb-3">Promote our new movie Promote our new movie Promote our new movie Promote our new movie Promote our new movie</h5>
+                    <div class="content-card__brand-and-platform flex items-center flex-wrap gap-2">
+                      <div class="brand-block block-container-bg popup-no-click">
+                        <div class="flex items-center gap-2">
+                          <div class="platform platform--size-l">
+                            <img src="img/brands/netflix.png" alt="image">
+                          </div>
+                          <div>
+                            <p class="text-body-sm-medium !leading-none">
+                              Netflix
+                            </p>
+                            <span class="text-secondary text-body-xs-medium">
+                              Brand
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="platform-block block-container-bg">
+                        <div class="flex items-center gap-2">
+                          <div class="platform platform--size-l">
+                            <img src="img/icons/formkit_youtube.svg" alt="image">
+                          </div>
+                          <div>
+                            <p class="text-body-sm-medium !leading-none">
+                              Youtube
+                            </p>
+                            <span class="text-secondary text-body-xs-medium">
+                              Platform
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="block-container-bg">
+                        <div class="flex items-center gap-2">
+                          <div class="svg-icon">
+                            <svg class="icon icon--size-l" xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                              <path opacity="0.3" d="M15.9987 28.5007C10.3416 28.5007 7.51304 28.5007 5.75494 26.7426C3.99805 24.9869 3.99805 22.1571 3.99805 16.5C3.99805 10.8429 3.99805 8.01438 5.75494 6.25628C7.51424 4.49939 10.3416 4.49939 15.9987 4.49939C21.6558 4.49939 24.4844 4.49939 26.2413 6.25628C27.9993 8.01558 27.9993 10.8429 27.9993 16.5C27.9993 22.1571 27.9993 24.9857 26.2413 26.7426C24.4856 28.5007 21.6558 28.5007 15.9987 28.5007Z" fill="#03E39E"/>
+                              <path d="M22.8288 11.4643C23.0662 11.698 23.1996 12.0148 23.1996 12.3451C23.1996 12.6754 23.0662 12.9922 22.8288 13.226L14.3757 21.5358C14.1379 21.7692 13.8157 21.9003 13.4797 21.9003C13.1436 21.9003 12.8214 21.7692 12.5836 21.5358L9.20239 18.2118C9.07782 18.0977 8.9779 17.9601 8.90859 17.8072C8.83929 17.6543 8.80203 17.4893 8.79903 17.3219C8.79602 17.1545 8.82734 16.9883 8.89111 16.8331C8.95488 16.6779 9.0498 16.5369 9.17021 16.4185C9.29061 16.3002 9.43403 16.2069 9.59192 16.1442C9.7498 16.0815 9.91891 16.0507 10.0892 16.0536C10.2594 16.0566 10.4273 16.0932 10.5828 16.1613C10.7384 16.2295 10.8784 16.3277 10.9944 16.4502L13.4797 18.8933L21.0367 11.4643C21.2745 11.2308 21.5967 11.0997 21.9328 11.0997C22.2688 11.0997 22.591 11.2308 22.8288 11.4643Z" fill="#03E39E"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <p class="text-body-sm-medium !leading-none text-accent-300">
+                              Completed
+                            </p>
+                            <span class="text-secondary text-body-xs-medium">
+                              Oct 24, 2023
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-card__right flex flex-col gap-3 popup-no-click">
+                    <div class="content-card__right-top flex sm:!justify-between !justify-end sm:flex-nowrap flex-wrap sm:flex-row flex-col md:items-center items-end gap-2">
+                      <div class="reach">
+                        <span class="heading-xs inline-block text-secondary mb-2">
+                          Reach
+                        </span>
+                        <div class="reach__cols">
+                          <div class="reach__col">
+                            <p class="md:heading-lg heading-md">
+                              54.7M
+                            </p>
+                            <span class="text-body-xs-medium text-violet-300">
+                              Views
+                            </span>
+                          </div>
+                          <div class="reach__col">
+                            <p class="md:heading-lg heading-md">
+                              4.9%
+                            </p>
+                            <span class="text-body-xs-medium text-violet-300">
+                              Engagement
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="price text-green md:heading-2xl heading-xl">
+                        $100,280
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="projects-creators__card project-card" data-popup="#popupProject">
+              <div class="project-card__body">
+                <div class="project-card__image">
+                  <img src="@img/fileuploader/image.png" alt="image">
+                </div>
+                <div class="project-card__content content-card">
+                  <div class="content-card__left">
+                    <h5 class="heading-md mb-3">Promote our new movie Promote our new movie Promote our new movie Promote our new movie Promote our new movie</h5>
+                    <div class="content-card__brand-and-platform flex items-center flex-wrap gap-2">
+                      <div class="brand-block block-container-bg popup-no-click">
+                        <div class="flex items-center gap-2">
+                          <div class="platform platform--size-l">
+                            <img src="img/brands/netflix.png" alt="image">
+                          </div>
+                          <div>
+                            <p class="text-body-sm-medium !leading-none">
+                              Netflix
+                            </p>
+                            <span class="text-secondary text-body-xs-medium">
+                              Brand
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="platform-block block-container-bg">
+                        <div class="flex items-center gap-2">
+                          <div class="platform platform--size-l">
+                            <img src="img/icons/formkit_youtube.svg" alt="image">
+                          </div>
+                          <div>
+                            <p class="text-body-sm-medium !leading-none">
+                              Youtube
+                            </p>
+                            <span class="text-secondary text-body-xs-medium">
+                              Platform
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="block-container-bg">
+                        <div class="flex items-center gap-2">
+                          <div class="svg-icon">
+                            <svg class="icon icon--size-l" xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                              <path opacity="0.3" d="M15.9987 28.5007C10.3416 28.5007 7.51304 28.5007 5.75494 26.7426C3.99805 24.9869 3.99805 22.1571 3.99805 16.5C3.99805 10.8429 3.99805 8.01438 5.75494 6.25628C7.51424 4.49939 10.3416 4.49939 15.9987 4.49939C21.6558 4.49939 24.4844 4.49939 26.2413 6.25628C27.9993 8.01558 27.9993 10.8429 27.9993 16.5C27.9993 22.1571 27.9993 24.9857 26.2413 26.7426C24.4856 28.5007 21.6558 28.5007 15.9987 28.5007Z" fill="#03E39E"/>
+                              <path d="M22.8288 11.4643C23.0662 11.698 23.1996 12.0148 23.1996 12.3451C23.1996 12.6754 23.0662 12.9922 22.8288 13.226L14.3757 21.5358C14.1379 21.7692 13.8157 21.9003 13.4797 21.9003C13.1436 21.9003 12.8214 21.7692 12.5836 21.5358L9.20239 18.2118C9.07782 18.0977 8.9779 17.9601 8.90859 17.8072C8.83929 17.6543 8.80203 17.4893 8.79903 17.3219C8.79602 17.1545 8.82734 16.9883 8.89111 16.8331C8.95488 16.6779 9.0498 16.5369 9.17021 16.4185C9.29061 16.3002 9.43403 16.2069 9.59192 16.1442C9.7498 16.0815 9.91891 16.0507 10.0892 16.0536C10.2594 16.0566 10.4273 16.0932 10.5828 16.1613C10.7384 16.2295 10.8784 16.3277 10.9944 16.4502L13.4797 18.8933L21.0367 11.4643C21.2745 11.2308 21.5967 11.0997 21.9328 11.0997C22.2688 11.0997 22.591 11.2308 22.8288 11.4643Z" fill="#03E39E"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <p class="text-body-sm-medium !leading-none text-accent-300">
+                              Completed
+                            </p>
+                            <span class="text-secondary text-body-xs-medium">
+                              Oct 24, 2023
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-card__right flex flex-col gap-3 popup-no-click">
+                    <div class="content-card__right-top flex sm:!justify-between !justify-end sm:flex-nowrap flex-wrap sm:flex-row flex-col md:items-center items-end gap-2">
+                      <div class="reach">
+                        <span class="heading-xs inline-block text-secondary mb-2">
+                          Reach
+                        </span>
+                        <div class="reach__cols">
+                          <div class="reach__col">
+                            <p class="md:heading-lg heading-md">
+                              54.7M
+                            </p>
+                            <span class="text-body-xs-medium text-violet-300">
+                              Views
+                            </span>
+                          </div>
+                          <div class="reach__col">
+                            <p class="md:heading-lg heading-md">
+                              4.9%
+                            </p>
+                            <span class="text-body-xs-medium text-violet-300">
+                              Engagement
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="price text-green md:heading-2xl heading-xl">
+                        $100,280
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="projects-creators__card project-card" data-popup="#popupProject">
+              <div class="project-card__body">
+                <div class="project-card__image">
+                  <img src="@img/fileuploader/image.png" alt="image">
+                </div>
+                <div class="project-card__content content-card">
+                  <div class="content-card__left">
+                    <h5 class="heading-md mb-3">Promote our new movie Promote our new movie Promote our new movie Promote our new movie Promote our new movie</h5>
+                    <div class="content-card__brand-and-platform flex items-center flex-wrap gap-2">
+                      <div class="brand-block block-container-bg popup-no-click">
+                        <div class="flex items-center gap-2">
+                          <div class="platform platform--size-l">
+                            <img src="img/brands/netflix.png" alt="image">
+                          </div>
+                          <div>
+                            <p class="text-body-sm-medium !leading-none">
+                              Netflix
+                            </p>
+                            <span class="text-secondary text-body-xs-medium">
+                              Brand
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="platform-block block-container-bg">
+                        <div class="flex items-center gap-2">
+                          <div class="platform platform--size-l">
+                            <img src="img/icons/formkit_youtube.svg" alt="image">
+                          </div>
+                          <div>
+                            <p class="text-body-sm-medium !leading-none">
+                              Youtube
+                            </p>
+                            <span class="text-secondary text-body-xs-medium">
+                              Platform
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="block-container-bg">
+                        <div class="flex items-center gap-2">
+                          <div class="svg-icon">
+                            <svg class="icon icon--size-l" xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                              <path opacity="0.3" d="M15.9987 28.5007C10.3416 28.5007 7.51304 28.5007 5.75494 26.7426C3.99805 24.9869 3.99805 22.1571 3.99805 16.5C3.99805 10.8429 3.99805 8.01438 5.75494 6.25628C7.51424 4.49939 10.3416 4.49939 15.9987 4.49939C21.6558 4.49939 24.4844 4.49939 26.2413 6.25628C27.9993 8.01558 27.9993 10.8429 27.9993 16.5C27.9993 22.1571 27.9993 24.9857 26.2413 26.7426C24.4856 28.5007 21.6558 28.5007 15.9987 28.5007Z" fill="#03E39E"/>
+                              <path d="M22.8288 11.4643C23.0662 11.698 23.1996 12.0148 23.1996 12.3451C23.1996 12.6754 23.0662 12.9922 22.8288 13.226L14.3757 21.5358C14.1379 21.7692 13.8157 21.9003 13.4797 21.9003C13.1436 21.9003 12.8214 21.7692 12.5836 21.5358L9.20239 18.2118C9.07782 18.0977 8.9779 17.9601 8.90859 17.8072C8.83929 17.6543 8.80203 17.4893 8.79903 17.3219C8.79602 17.1545 8.82734 16.9883 8.89111 16.8331C8.95488 16.6779 9.0498 16.5369 9.17021 16.4185C9.29061 16.3002 9.43403 16.2069 9.59192 16.1442C9.7498 16.0815 9.91891 16.0507 10.0892 16.0536C10.2594 16.0566 10.4273 16.0932 10.5828 16.1613C10.7384 16.2295 10.8784 16.3277 10.9944 16.4502L13.4797 18.8933L21.0367 11.4643C21.2745 11.2308 21.5967 11.0997 21.9328 11.0997C22.2688 11.0997 22.591 11.2308 22.8288 11.4643Z" fill="#03E39E"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <p class="text-body-sm-medium !leading-none text-accent-300">
+                              Completed
+                            </p>
+                            <span class="text-secondary text-body-xs-medium">
+                              Oct 24, 2023
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-card__right flex flex-col gap-3 popup-no-click">
+                    <div class="content-card__right-top flex sm:!justify-between !justify-end sm:flex-nowrap flex-wrap sm:flex-row flex-col md:items-center items-end gap-2">
+                      <div class="reach">
+                        <span class="heading-xs inline-block text-secondary mb-2">
+                          Reach
+                        </span>
+                        <div class="reach__cols">
+                          <div class="reach__col">
+                            <p class="md:heading-lg heading-md">
+                              54.7M
+                            </p>
+                            <span class="text-body-xs-medium text-violet-300">
+                              Views
+                            </span>
+                          </div>
+                          <div class="reach__col">
+                            <p class="md:heading-lg heading-md">
+                              4.9%
+                            </p>
+                            <span class="text-body-xs-medium text-violet-300">
+                              Engagement
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="price text-green md:heading-2xl heading-xl">
+                        $100,280
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="projects-creators__card project-card" data-popup="#popupProject">
+              <div class="project-card__body">
+                <div class="project-card__image">
+                  <img src="@img/fileuploader/image.png" alt="image">
+                </div>
+                <div class="project-card__content content-card">
+                  <div class="content-card__left">
+                    <h5 class="heading-md mb-3"> Promote our new movie</h5>
+                    <div class="content-card__brand-and-platform flex items-center flex-wrap gap-2">
+                      <div class="brand-block block-container-bg popup-no-click">
+                        <div class="flex items-center gap-2">
+                          <div class="platform platform--size-l">
+                            <img src="img/brands/netflix.png" alt="image">
+                          </div>
+                          <div>
+                            <p class="text-body-sm-medium !leading-none">
+                              Netflix
+                            </p>
+                            <span class="text-secondary text-body-xs-medium">
+                              Brand
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="platform-block block-container-bg">
+                        <div class="flex items-center gap-2">
+                          <div class="platform platform--size-l">
+                            <img src="img/icons/formkit_youtube.svg" alt="image">
+                          </div>
+                          <div>
+                            <p class="text-body-sm-medium !leading-none">
+                              Youtube
+                            </p>
+                            <span class="text-secondary text-body-xs-medium">
+                              Platform
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="block-container-bg">
+                        <div class="flex items-center gap-2">
+                          <div class="svg-icon">
+                            <svg class="icon icon--size-l" xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                              <path opacity="0.3" d="M15.9987 28.5007C10.3416 28.5007 7.51304 28.5007 5.75494 26.7426C3.99805 24.9869 3.99805 22.1571 3.99805 16.5C3.99805 10.8429 3.99805 8.01438 5.75494 6.25628C7.51424 4.49939 10.3416 4.49939 15.9987 4.49939C21.6558 4.49939 24.4844 4.49939 26.2413 6.25628C27.9993 8.01558 27.9993 10.8429 27.9993 16.5C27.9993 22.1571 27.9993 24.9857 26.2413 26.7426C24.4856 28.5007 21.6558 28.5007 15.9987 28.5007Z" fill="#03E39E"/>
+                              <path d="M22.8288 11.4643C23.0662 11.698 23.1996 12.0148 23.1996 12.3451C23.1996 12.6754 23.0662 12.9922 22.8288 13.226L14.3757 21.5358C14.1379 21.7692 13.8157 21.9003 13.4797 21.9003C13.1436 21.9003 12.8214 21.7692 12.5836 21.5358L9.20239 18.2118C9.07782 18.0977 8.9779 17.9601 8.90859 17.8072C8.83929 17.6543 8.80203 17.4893 8.79903 17.3219C8.79602 17.1545 8.82734 16.9883 8.89111 16.8331C8.95488 16.6779 9.0498 16.5369 9.17021 16.4185C9.29061 16.3002 9.43403 16.2069 9.59192 16.1442C9.7498 16.0815 9.91891 16.0507 10.0892 16.0536C10.2594 16.0566 10.4273 16.0932 10.5828 16.1613C10.7384 16.2295 10.8784 16.3277 10.9944 16.4502L13.4797 18.8933L21.0367 11.4643C21.2745 11.2308 21.5967 11.0997 21.9328 11.0997C22.2688 11.0997 22.591 11.2308 22.8288 11.4643Z" fill="#03E39E"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <p class="text-body-sm-medium !leading-none text-accent-300">
+                              Completed
+                            </p>
+                            <span class="text-secondary text-body-xs-medium">
+                              Oct 24, 2023
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-card__right flex flex-col gap-3 popup-no-click">
+                    <div class="content-card__right-top flex sm:!justify-between !justify-end sm:flex-nowrap flex-wrap sm:flex-row flex-col md:items-center items-end gap-2">
+                      <div class="reach">
+                        <span class="heading-xs inline-block text-secondary mb-2">
+                          Reach
+                        </span>
+                        <div class="reach__cols">
+                          <div class="reach__col">
+                            <p class="md:heading-lg heading-md">
+                              54.7M
+                            </p>
+                            <span class="text-body-xs-medium text-violet-300">
+                              Views
+                            </span>
+                          </div>
+                          <div class="reach__col">
+                            <p class="md:heading-lg heading-md">
+                              4.9%
+                            </p>
+                            <span class="text-body-xs-medium text-violet-300">
+                              Engagement
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="price text-green md:heading-2xl heading-xl">
+                        $100,280
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.projects-creators -->
+      </div>
+
+
+    </main>
+    @@include('html/_popup.htm',{})
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

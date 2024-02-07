@@ -1,0 +1,195 @@
+//<INPUT>
+// Сніппет (HTML): inp
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.input {
+	border-radius: .75rem;
+  width: 100%;
+  border: .0625rem solid var(--grayscale-700);
+  background-color: var(--backgroundsecondary);
+  transition: all 0.3s;
+  padding: .625rem 1rem;
+ 
+  color: var(--textprimary);
+  @media (min-width:$mobile){
+    font: var(--body-lg-medium); 
+  }
+  @media (max-width:$mobile){
+    font: var(--body-md-medium); 
+  }
+  letter-spacing: 0.25px;
+  transition: all 0.3s;
+  outline: none;
+  min-height: 3rem;
+  &.input-md {
+    line-height: 1;
+    min-height: 2.5rem;
+    padding: .5625rem 1rem;
+  }
+  &::placeholder {
+    color: var(--textsecondary);
+  }
+  &:hover {
+    border-color: var(--grayscale-600);
+    background-color: var(--backgroundprimary);
+  }
+  &:focus{
+    border-color: var(--grayscale-500);
+    background-color: var(--backgroundprimary);
+    &::placeholder {
+      color: var(--textprimary);
+    }
+  }
+  &.disabled, &[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+    color: var(--textsecondary);
+  }
+  &.input-referral {
+    pointer-events: none;
+    transition: none !important;
+  }
+	&._form-focus {
+	}
+	&._form-error {
+    border-color: var(--red-400);
+    padding: 0.625rem 2.5rem 0.625rem 1rem;
+    background: url('@img/icons/error-input.svg') right 1rem top .875rem / 1rem 1rem no-repeat;
+	}
+}
+
+.input-currency {
+  position: relative;
+  &.disabled, &[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+    color: var(--textsecondary);
+  }
+  &._form-error {
+    .currency {
+      border-color: var(--red-400);
+    }
+    &:hover{
+      .currency {
+        border-color: var(--red-400);
+      } 
+    }
+    input:focus ~ .currency {
+      border-color: var(--red-400) !important;
+    } 
+	}
+  .currency {
+    position: absolute;
+    top: 23px;
+    height: 100%;
+    transform: translateY(-50%);
+    color: var(--textsecondary);
+    font: var(--body-lg-medium);
+    letter-spacing: 0.25px;
+    padding-right: .75rem;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid var(--grayscale-700);
+    border-radius: 3px 3px 0px 0px;
+    left: 1rem;
+    transition: all 0.3s;
+    max-height: 3rem;
+  }
+  input {
+    text-align: right;
+    padding-left: 4.6875rem;
+    color: var(--textsecondary);
+    &::placeholder {
+      color: var(--textsecondary);
+    }
+    &:hover ~ .currency{
+      border-color: var(--grayscale-600);
+    }
+    &:focus ~ .currency{
+      border-color: var(--grayscale-500);
+      color: var(--textprimary);
+      &::placeholder {
+        color: var(--textprimary);
+      }
+    }
+    &:focus{
+      color: var(--textprimary);
+      &::placeholder {
+        color: var(--textprimary);
+      }
+    }
+  }
+}
+
+
+.input-date {
+  position: relative;
+  user-select: none;
+  &.disabled, &[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+    color: var(--textsecondary);
+  }
+  .icon-date {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+  input {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    &._form-error {
+      border-color: var(--red-400);
+      padding: 0.625rem 4rem 0.625rem 2.5rem;
+      background: url('@img/icons/error-input.svg') right 2.5rem top 1rem / 1rem 1rem no-repeat;
+    }
+  }
+  .button-reset {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    svg {
+      rect {
+        transition: all 0.3s;
+      }
+    }
+    &:hover{
+      svg rect {
+        fill: var(--red-400);
+      }
+    }
+    &:active{
+      svg rect {
+        fill: var(--red-500);
+      }
+    }
+  }
+}
+
+textarea.input {
+	&:not([data-autoheight]) {
+    resize: vertical;
+    min-height: 6rem;
+    @extend %hidescroll;
+  
+  }
+  &[data-autoheight] {
+    min-height: 2.25rem;
+    padding: .4375rem 1rem;
+    resize: none;
+    font: var(--body-md-regular);
+    &::placeholder {
+      font: var(--body-md-regular);
+    }
+  }
+  &._form-error {
+    padding: 0.625rem 2.5rem 0.625rem 1rem;
+    background: url('@img/icons/error-input.svg') right 1rem top .625rem / 1rem 1rem no-repeat;
+  }
+}

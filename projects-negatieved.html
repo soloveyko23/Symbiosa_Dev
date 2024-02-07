@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header-brand.htm',{})
+    <main class="page">
+      <div class="page__container">
+        <div class="page__header filters-block">
+          <div class="page__header-top lg:flex-nowrap flex-wrap sm:!gap-8 !justify-start">
+            <h2 class="heading-3xl">
+              Projects 
+            </h2>
+            <div class="projects-tabs w-full tabs tabs-one tabs-md">
+              <nav class="tabs__navigation">
+                <a href="projects-active.html" class="tabs__title">Active <span class="badge badge--numeric">
+                  4
+                </span></a>
+                <a href="#" class="tabs__title">
+                  Pending
+                  <span class="badge badge--numeric">
+                    4
+                  </span>
+                </a>
+                <a href="projects-negatieved.html" class="tabs__title _tab-active">
+                  Negotiated
+                  <span class="badge badge--numeric">
+                    4
+                  </span>
+                </a>
+                <a href="project-on-review.html" class="tabs__title">
+                  On&nbsp;review
+                  <span class="badge badge--numeric">
+                    4
+                  </span>
+                </a>
+                <a href="project-completed.html" class="tabs__title">
+                  Completed
+                  <span class="badge badge--numeric">
+                   14
+                  </span>
+                </a>
+                <a href="project-cancelled.html" class="tabs__title">
+                  Cancelled
+                  <span class="badge badge--numeric">
+                    1
+                  </span>
+                </a>
+                <a href="project-disputed.html" class="tabs__title">
+                  Disputed
+                  <span class="badge badge--numeric">
+                    1
+                  </span>
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="projects-creators">
+          <div data-tabs class="tabs tabs-one tabs-md background-secondary md:p-6 p-4 md:rounded-3xl rounded-2xl">
+            <nav data-tabs-titles class="tabs__navigation mb-5">
+              <button type="button" class="tabs__title _tab-active">Received <span class="badge badge--numeric">
+                4
+              </span></button>
+              <button type="button" class="tabs__title">Sent <span class="badge badge--numeric">
+                2
+              </span></button>
+            </nav>
+            <div data-tabs-body class="tabs__content">
+              <div class="tabs__body">
+                <div class="projects-creators__list">
+                  <div class="projects-creators__card project-card" data-popup="#popupProject">
+                    <div class="project-card__body">
+                      <div class="project-card__image">
+                        <img src="@img/fileuploader/image.png" alt="image">
+                      </div>
+                      <div class="project-card__content content-card">
+                        <div class="content-card__left">
+                          <h5 class="heading-md mb-3">Promote our new movie</h5>
+                          <div class="content-card__brand-and-platform flex items-center flex-wrap gap-2">
+                            <div class="brand-block block-container-bg popup-no-click">
+                              <div class="flex items-center gap-2">
+                                <div class="platform platform--size-l">
+                                  <img src="img/brands/netflix.png" alt="image">
+                                </div>
+                                <div>
+                                  <p class="text-body-sm-medium !leading-none">
+                                    Netflix
+                                  </p>
+                                  <span class="text-secondary text-body-xs-medium">
+                                    Brand
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="platform-block block-container-bg">
+                              <div class="flex items-center gap-2">
+                                <div class="platform platform--size-l">
+                                  <img src="img/icons/formkit_youtube.svg" alt="image">
+                                </div>
+                                <div>
+                                  <p class="text-body-sm-medium !leading-none">
+                                    Youtube
+                                  </p>
+                                  <span class="text-secondary text-body-xs-medium">
+                                    Platform
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="block-container-bg">
+                              <div class="flex items-center gap-2">
+                                <div class="svg-icon">
+                                  <svg class="icon icon--size-l" xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.2164 18.9095C23.2169 20.5356 22.8052 22.1354 22.0199 23.5594C21.2346 24.9834 20.1013 26.1852 18.7258 27.0526C17.3502 27.92 15.7773 28.4246 14.1539 28.5195C12.5305 28.6143 10.9095 28.2963 9.44231 27.595C9.01451 27.3797 8.52393 27.3243 8.05888 27.4386L6.58282 27.8344C6.31777 27.9051 6.03878 27.9048 5.77385 27.8337C5.50892 27.7625 5.26738 27.6229 5.07346 27.4288C4.87955 27.2348 4.74008 26.9932 4.66907 26.7282C4.59806 26.4632 4.59799 26.1842 4.66888 25.9192L5.06346 24.4432C5.17789 23.9781 5.12243 23.4875 4.90707 23.0597C4.2851 21.7564 3.96442 20.3298 3.96879 18.8857C3.97317 17.4416 4.30249 16.017 4.93235 14.7174C5.5622 13.4179 6.47644 12.2768 7.60731 11.3786C8.73818 10.4805 10.0567 9.84837 11.4651 9.52912C12.8735 9.20987 14.3357 9.21168 15.7433 9.5344C17.1509 9.85713 18.4678 10.4925 19.5964 11.3934C20.7251 12.2944 21.6365 13.4377 22.2632 14.7388C22.8898 16.0399 23.2156 17.4653 23.2164 18.9095ZM9.38216 20.1124C9.70121 20.1124 10.0072 19.9857 10.2328 19.7601C10.4584 19.5345 10.5851 19.2285 10.5851 18.9095C10.5851 18.5904 10.4584 18.2844 10.2328 18.0588C10.0072 17.8332 9.70121 17.7065 9.38216 17.7065C9.06311 17.7065 8.75712 17.8332 8.53152 18.0588C8.30592 18.2844 8.17918 18.5904 8.17918 18.9095C8.17918 19.2285 8.30592 19.5345 8.53152 19.7601C8.75712 19.9857 9.06311 20.1124 9.38216 20.1124ZM13.5926 20.1124C13.9116 20.1124 14.2176 19.9857 14.4432 19.7601C14.6688 19.5345 14.7956 19.2285 14.7956 18.9095C14.7956 18.5904 14.6688 18.2844 14.4432 18.0588C14.2176 17.8332 13.9116 17.7065 13.5926 17.7065C13.2735 17.7065 12.9676 17.8332 12.7419 18.0588C12.5163 18.2844 12.3896 18.5904 12.3896 18.9095C12.3896 19.2285 12.5163 19.5345 12.7419 19.7601C12.9676 19.9857 13.2735 20.1124 13.5926 20.1124ZM17.803 20.1124C18.1221 20.1124 18.428 19.9857 18.6536 19.7601C18.8792 19.5345 19.006 19.2285 19.006 18.9095C19.006 18.5904 18.8792 18.2844 18.6536 18.0588C18.428 17.8332 18.1221 17.7065 17.803 17.7065C17.484 17.7065 17.178 17.8332 16.9524 18.0588C16.7268 18.2844 16.6 18.5904 16.6 18.9095C16.6 19.2285 16.7268 19.5345 16.9524 19.7601C17.178 19.9857 17.484 20.1124 17.803 20.1124Z" fill="#7D72CB"/>
+                                    <path opacity="0.6" d="M23.1981 19.5206C23.328 19.4672 23.4563 19.4102 23.5831 19.3498C23.9331 19.1814 24.3313 19.1224 24.7067 19.2235L25.9048 19.5447C26.1204 19.6026 26.3474 19.6028 26.563 19.5451C26.7786 19.4875 26.9752 19.374 27.133 19.2162C27.2908 19.0584 27.4043 18.8618 27.4619 18.6462C27.5196 18.4306 27.5194 18.2036 27.4615 17.988L27.1403 16.7899C27.047 16.4119 27.0918 16.013 27.2666 15.6651C27.7063 14.7239 27.9541 13.7046 27.9954 12.6666C28.0368 11.6286 27.8709 10.5928 27.5075 9.61964C27.1441 8.64648 26.5904 7.75549 25.8788 6.99871C25.1671 6.24193 24.3119 5.63453 23.3629 5.21199C22.4139 4.78944 21.3902 4.56023 20.3517 4.53772C19.3131 4.51522 18.2805 4.69988 17.3141 5.08093C16.3477 5.46197 15.4669 6.03176 14.7232 6.757C13.9794 7.48225 13.3877 8.34842 12.9824 9.30493C14.3466 9.21793 15.7137 9.42254 16.9926 9.90513C18.2715 10.3877 19.433 11.1372 20.3996 12.1038C21.3662 13.0703 22.1159 14.2317 22.5986 15.5105C23.0814 16.7894 23.2862 18.1564 23.1993 19.5206H23.1981Z" fill="#7D72CB"/>
+                                  </svg>
+                                </div>
+                                <div>
+                                  <p class="text-body-sm-medium !leading-none text-violet-300">
+                                    Negotiated
+                                  </p>
+                                  <span class="text-secondary text-body-xs-medium">
+                                    Dec 24, 2023
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content-card__right flex flex-col gap-3 popup-no-click">
+                          <div class="content-card__right-top flex justify-end items-center gap-2">
+                            <div class="offer-element flex items-center gap-1 px-2 py-1 rounded-lg background-secondary">
+                              <span class="text-body-md-medium text-secondary">
+                                Your offer:
+                              </span>
+                              <p class="text-body-md-medium">
+                                $1,300
+                              </p>
+                            </div>
+                            <div class="price text-yellow-300 md:heading-2xl heading-xl">
+                              $1,280
+                            </div>
+                          </div>
+                          <div class="content-card__right-bottom">
+                            <div class="content-card__actions flex items-center gap-2">
+                              <a href="#" class="button button-small button-weight button-primary" data-ripple>
+                                <span class="button__text">
+                                  Apply
+                                </span>
+                              </a>
+                              <a href="#" class="button button-small button-weight button-secondary" data-ripple>
+                                <span class="button__text">
+                                  Negotiate
+                                </span>
+                              </a>
+                              <a href="#" class="button button-small button-weight button-disabled" data-ripple>
+                                <span class="button__text">
+                                  Decline
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="projects-creators__card project-card" data-popup="#popupProject">
+                    <div class="project-card__body">
+                      <div class="project-card__image">
+                        <img src="@img/fileuploader/image.png" alt="image">
+                      </div>
+                      <div class="project-card__content content-card">
+                        <div class="content-card__left">
+                          <h5 class="heading-md mb-3">Promote our new movie Promote our new movie Promote our new movie Promote our new movie Promote our new movie</h5>
+                          <div class="content-card__brand-and-platform flex items-center flex-wrap gap-2">
+                            <div class="brand-block block-container-bg popup-no-click">
+                              <div class="flex items-center gap-2">
+                                <div class="platform platform--size-l">
+                                  <img src="img/brands/netflix.png" alt="image">
+                                </div>
+                                <div>
+                                  <p class="text-body-sm-medium !leading-none">
+                                    Netflix
+                                  </p>
+                                  <span class="text-secondary text-body-xs-medium">
+                                    Brand
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="platform-block block-container-bg">
+                              <div class="flex items-center gap-2">
+                                <div class="platform platform--size-l">
+                                  <img src="img/icons/formkit_youtube.svg" alt="image">
+                                </div>
+                                <div>
+                                  <p class="text-body-sm-medium !leading-none">
+                                    Youtube
+                                  </p>
+                                  <span class="text-secondary text-body-xs-medium">
+                                    Platform
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="block-container-bg">
+                              <div class="flex items-center gap-2">
+                                <div class="svg-icon">
+                                  <svg class="icon icon--size-l" xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.2164 18.9095C23.2169 20.5356 22.8052 22.1354 22.0199 23.5594C21.2346 24.9834 20.1013 26.1852 18.7258 27.0526C17.3502 27.92 15.7773 28.4246 14.1539 28.5195C12.5305 28.6143 10.9095 28.2963 9.44231 27.595C9.01451 27.3797 8.52393 27.3243 8.05888 27.4386L6.58282 27.8344C6.31777 27.9051 6.03878 27.9048 5.77385 27.8337C5.50892 27.7625 5.26738 27.6229 5.07346 27.4288C4.87955 27.2348 4.74008 26.9932 4.66907 26.7282C4.59806 26.4632 4.59799 26.1842 4.66888 25.9192L5.06346 24.4432C5.17789 23.9781 5.12243 23.4875 4.90707 23.0597C4.2851 21.7564 3.96442 20.3298 3.96879 18.8857C3.97317 17.4416 4.30249 16.017 4.93235 14.7174C5.5622 13.4179 6.47644 12.2768 7.60731 11.3786C8.73818 10.4805 10.0567 9.84837 11.4651 9.52912C12.8735 9.20987 14.3357 9.21168 15.7433 9.5344C17.1509 9.85713 18.4678 10.4925 19.5964 11.3934C20.7251 12.2944 21.6365 13.4377 22.2632 14.7388C22.8898 16.0399 23.2156 17.4653 23.2164 18.9095ZM9.38216 20.1124C9.70121 20.1124 10.0072 19.9857 10.2328 19.7601C10.4584 19.5345 10.5851 19.2285 10.5851 18.9095C10.5851 18.5904 10.4584 18.2844 10.2328 18.0588C10.0072 17.8332 9.70121 17.7065 9.38216 17.7065C9.06311 17.7065 8.75712 17.8332 8.53152 18.0588C8.30592 18.2844 8.17918 18.5904 8.17918 18.9095C8.17918 19.2285 8.30592 19.5345 8.53152 19.7601C8.75712 19.9857 9.06311 20.1124 9.38216 20.1124ZM13.5926 20.1124C13.9116 20.1124 14.2176 19.9857 14.4432 19.7601C14.6688 19.5345 14.7956 19.2285 14.7956 18.9095C14.7956 18.5904 14.6688 18.2844 14.4432 18.0588C14.2176 17.8332 13.9116 17.7065 13.5926 17.7065C13.2735 17.7065 12.9676 17.8332 12.7419 18.0588C12.5163 18.2844 12.3896 18.5904 12.3896 18.9095C12.3896 19.2285 12.5163 19.5345 12.7419 19.7601C12.9676 19.9857 13.2735 20.1124 13.5926 20.1124ZM17.803 20.1124C18.1221 20.1124 18.428 19.9857 18.6536 19.7601C18.8792 19.5345 19.006 19.2285 19.006 18.9095C19.006 18.5904 18.8792 18.2844 18.6536 18.0588C18.428 17.8332 18.1221 17.7065 17.803 17.7065C17.484 17.7065 17.178 17.8332 16.9524 18.0588C16.7268 18.2844 16.6 18.5904 16.6 18.9095C16.6 19.2285 16.7268 19.5345 16.9524 19.7601C17.178 19.9857 17.484 20.1124 17.803 20.1124Z" fill="#7D72CB"/>
+                                    <path opacity="0.6" d="M23.1981 19.5206C23.328 19.4672 23.4563 19.4102 23.5831 19.3498C23.9331 19.1814 24.3313 19.1224 24.7067 19.2235L25.9048 19.5447C26.1204 19.6026 26.3474 19.6028 26.563 19.5451C26.7786 19.4875 26.9752 19.374 27.133 19.2162C27.2908 19.0584 27.4043 18.8618 27.4619 18.6462C27.5196 18.4306 27.5194 18.2036 27.4615 17.988L27.1403 16.7899C27.047 16.4119 27.0918 16.013 27.2666 15.6651C27.7063 14.7239 27.9541 13.7046 27.9954 12.6666C28.0368 11.6286 27.8709 10.5928 27.5075 9.61964C27.1441 8.64648 26.5904 7.75549 25.8788 6.99871C25.1671 6.24193 24.3119 5.63453 23.3629 5.21199C22.4139 4.78944 21.3902 4.56023 20.3517 4.53772C19.3131 4.51522 18.2805 4.69988 17.3141 5.08093C16.3477 5.46197 15.4669 6.03176 14.7232 6.757C13.9794 7.48225 13.3877 8.34842 12.9824 9.30493C14.3466 9.21793 15.7137 9.42254 16.9926 9.90513C18.2715 10.3877 19.433 11.1372 20.3996 12.1038C21.3662 13.0703 22.1159 14.2317 22.5986 15.5105C23.0814 16.7894 23.2862 18.1564 23.1993 19.5206H23.1981Z" fill="#7D72CB"/>
+                                  </svg>
+                                </div>
+                                <div>
+                                  <p class="text-body-sm-medium !leading-none text-violet-300">
+                                    Negotiated
+                                  </p>
+                                  <span class="text-secondary text-body-xs-medium">
+                                    Dec 24, 2023
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content-card__right flex flex-col gap-3 popup-no-click">
+                          <div class="content-card__right-top flex justify-end items-center gap-2">
+                            <div class="offer-element flex items-center gap-1 px-2 py-1 rounded-lg background-secondary">
+                              <span class="text-body-md-medium text-secondary">
+                                Your offer:
+                              </span>
+                              <p class="text-body-md-medium">
+                                $1,300
+                              </p>
+                            </div>
+                            <div class="price text-yellow-300 md:heading-2xl heading-xl">
+                              $100,280
+                            </div>
+                          </div>
+                          <div class="content-card__right-bottom">
+                            <div class="content-card__actions flex items-center gap-2">
+                              <a href="#" class="button button-small button-weight button-primary" data-ripple>
+                                <span class="button__text">
+                                  Apply
+                                </span>
+                              </a>
+                              <a href="#" class="button button-small button-weight button-secondary" data-ripple>
+                                <span class="button__text">
+                                  Negotiate
+                                </span>
+                              </a>
+                              <a href="#" class="button button-small button-weight button-disabled" data-ripple>
+                                <span class="button__text">
+                                  Decline
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+              <div class="tabs__body">
+                <div class="projects-creators__list">
+                  <div class="projects-creators__card project-card" data-popup="#popupProject">
+                    <div class="project-card__body">
+                      <div class="project-card__image">
+                        <img src="@img/fileuploader/image.png" alt="image">
+                      </div>
+                      <div class="project-card__content content-card">
+                        <div class="content-card__left">
+                          <h5 class="heading-md mb-3">Promote our new movie</h5>
+                          <div class="content-card__brand-and-platform flex items-center flex-wrap gap-2">
+                            <div class="brand-block block-container-bg popup-no-click">
+                              <div class="flex items-center gap-2">
+                                <div class="platform platform--size-l">
+                                  <img src="img/brands/netflix.png" alt="image">
+                                </div>
+                                <div>
+                                  <p class="text-body-sm-medium !leading-none">
+                                    Netflix
+                                  </p>
+                                  <span class="text-secondary text-body-xs-medium">
+                                    Brand
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="platform-block block-container-bg">
+                              <div class="flex items-center gap-2">
+                                <div class="platform platform--size-l">
+                                  <img src="img/icons/formkit_youtube.svg" alt="image">
+                                </div>
+                                <div>
+                                  <p class="text-body-sm-medium !leading-none">
+                                    Youtube
+                                  </p>
+                                  <span class="text-secondary text-body-xs-medium">
+                                    Platform
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="block-container-bg">
+                              <div class="flex items-center gap-2">
+                                <div class="svg-icon">
+                                  <svg class="icon icon--size-l" xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.2164 18.9095C23.2169 20.5356 22.8052 22.1354 22.0199 23.5594C21.2346 24.9834 20.1013 26.1852 18.7258 27.0526C17.3502 27.92 15.7773 28.4246 14.1539 28.5195C12.5305 28.6143 10.9095 28.2963 9.44231 27.595C9.01451 27.3797 8.52393 27.3243 8.05888 27.4386L6.58282 27.8344C6.31777 27.9051 6.03878 27.9048 5.77385 27.8337C5.50892 27.7625 5.26738 27.6229 5.07346 27.4288C4.87955 27.2348 4.74008 26.9932 4.66907 26.7282C4.59806 26.4632 4.59799 26.1842 4.66888 25.9192L5.06346 24.4432C5.17789 23.9781 5.12243 23.4875 4.90707 23.0597C4.2851 21.7564 3.96442 20.3298 3.96879 18.8857C3.97317 17.4416 4.30249 16.017 4.93235 14.7174C5.5622 13.4179 6.47644 12.2768 7.60731 11.3786C8.73818 10.4805 10.0567 9.84837 11.4651 9.52912C12.8735 9.20987 14.3357 9.21168 15.7433 9.5344C17.1509 9.85713 18.4678 10.4925 19.5964 11.3934C20.7251 12.2944 21.6365 13.4377 22.2632 14.7388C22.8898 16.0399 23.2156 17.4653 23.2164 18.9095ZM9.38216 20.1124C9.70121 20.1124 10.0072 19.9857 10.2328 19.7601C10.4584 19.5345 10.5851 19.2285 10.5851 18.9095C10.5851 18.5904 10.4584 18.2844 10.2328 18.0588C10.0072 17.8332 9.70121 17.7065 9.38216 17.7065C9.06311 17.7065 8.75712 17.8332 8.53152 18.0588C8.30592 18.2844 8.17918 18.5904 8.17918 18.9095C8.17918 19.2285 8.30592 19.5345 8.53152 19.7601C8.75712 19.9857 9.06311 20.1124 9.38216 20.1124ZM13.5926 20.1124C13.9116 20.1124 14.2176 19.9857 14.4432 19.7601C14.6688 19.5345 14.7956 19.2285 14.7956 18.9095C14.7956 18.5904 14.6688 18.2844 14.4432 18.0588C14.2176 17.8332 13.9116 17.7065 13.5926 17.7065C13.2735 17.7065 12.9676 17.8332 12.7419 18.0588C12.5163 18.2844 12.3896 18.5904 12.3896 18.9095C12.3896 19.2285 12.5163 19.5345 12.7419 19.7601C12.9676 19.9857 13.2735 20.1124 13.5926 20.1124ZM17.803 20.1124C18.1221 20.1124 18.428 19.9857 18.6536 19.7601C18.8792 19.5345 19.006 19.2285 19.006 18.9095C19.006 18.5904 18.8792 18.2844 18.6536 18.0588C18.428 17.8332 18.1221 17.7065 17.803 17.7065C17.484 17.7065 17.178 17.8332 16.9524 18.0588C16.7268 18.2844 16.6 18.5904 16.6 18.9095C16.6 19.2285 16.7268 19.5345 16.9524 19.7601C17.178 19.9857 17.484 20.1124 17.803 20.1124Z" fill="#7D72CB"/>
+                                    <path opacity="0.6" d="M23.1981 19.5206C23.328 19.4672 23.4563 19.4102 23.5831 19.3498C23.9331 19.1814 24.3313 19.1224 24.7067 19.2235L25.9048 19.5447C26.1204 19.6026 26.3474 19.6028 26.563 19.5451C26.7786 19.4875 26.9752 19.374 27.133 19.2162C27.2908 19.0584 27.4043 18.8618 27.4619 18.6462C27.5196 18.4306 27.5194 18.2036 27.4615 17.988L27.1403 16.7899C27.047 16.4119 27.0918 16.013 27.2666 15.6651C27.7063 14.7239 27.9541 13.7046 27.9954 12.6666C28.0368 11.6286 27.8709 10.5928 27.5075 9.61964C27.1441 8.64648 26.5904 7.75549 25.8788 6.99871C25.1671 6.24193 24.3119 5.63453 23.3629 5.21199C22.4139 4.78944 21.3902 4.56023 20.3517 4.53772C19.3131 4.51522 18.2805 4.69988 17.3141 5.08093C16.3477 5.46197 15.4669 6.03176 14.7232 6.757C13.9794 7.48225 13.3877 8.34842 12.9824 9.30493C14.3466 9.21793 15.7137 9.42254 16.9926 9.90513C18.2715 10.3877 19.433 11.1372 20.3996 12.1038C21.3662 13.0703 22.1159 14.2317 22.5986 15.5105C23.0814 16.7894 23.2862 18.1564 23.1993 19.5206H23.1981Z" fill="#7D72CB"/>
+                                  </svg>
+                                </div>
+                                <div>
+                                  <p class="text-body-sm-medium !leading-none text-violet-300">
+                                    Negotiated
+                                  </p>
+                                  <span class="text-secondary text-body-xs-medium">
+                                    Dec 24, 2023
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content-card__right flex flex-col gap-3 popup-no-click">
+                          <div class="content-card__right-top flex justify-end items-end gap-2 flex-col">
+                            <div class="offer-element flex items-center gap-1 px-2 py-1 rounded-lg background-secondary">
+                              <span class="text-body-md-medium text-secondary">
+                                Brand’s offer:
+                              </span>
+                              <p class="text-body-md-medium">
+                                $1,300
+                              </p>
+                            </div>
+                            <div class="price text-yellow-300 md:heading-2xl heading-xl">
+                              $1,280
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="projects-creators__card project-card" data-popup="#popupProject">
+                    <div class="project-card__body">
+                      <div class="project-card__image">
+                        <img src="@img/fileuploader/image.png" alt="image">
+                      </div>
+                      <div class="project-card__content content-card">
+                        <div class="content-card__left">
+                          <h5 class="heading-md mb-3">Promote our new movie</h5>
+                          <div class="content-card__brand-and-platform flex items-center flex-wrap gap-2">
+                            <div class="brand-block block-container-bg popup-no-click">
+                              <div class="flex items-center gap-2">
+                                <div class="platform platform--size-l">
+                                  <img src="img/brands/netflix.png" alt="image">
+                                </div>
+                                <div>
+                                  <p class="text-body-sm-medium !leading-none">
+                                    Netflix
+                                  </p>
+                                  <span class="text-secondary text-body-xs-medium">
+                                    Brand
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="platform-block block-container-bg">
+                              <div class="flex items-center gap-2">
+                                <div class="platform platform--size-l">
+                                  <img src="img/icons/formkit_youtube.svg" alt="image">
+                                </div>
+                                <div>
+                                  <p class="text-body-sm-medium !leading-none">
+                                    Youtube
+                                  </p>
+                                  <span class="text-secondary text-body-xs-medium">
+                                    Platform
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="block-container-bg">
+                              <div class="flex items-center gap-2">
+                                <div class="svg-icon">
+                                  <svg class="icon icon--size-l" xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M23.2164 18.9095C23.2169 20.5356 22.8052 22.1354 22.0199 23.5594C21.2346 24.9834 20.1013 26.1852 18.7258 27.0526C17.3502 27.92 15.7773 28.4246 14.1539 28.5195C12.5305 28.6143 10.9095 28.2963 9.44231 27.595C9.01451 27.3797 8.52393 27.3243 8.05888 27.4386L6.58282 27.8344C6.31777 27.9051 6.03878 27.9048 5.77385 27.8337C5.50892 27.7625 5.26738 27.6229 5.07346 27.4288C4.87955 27.2348 4.74008 26.9932 4.66907 26.7282C4.59806 26.4632 4.59799 26.1842 4.66888 25.9192L5.06346 24.4432C5.17789 23.9781 5.12243 23.4875 4.90707 23.0597C4.2851 21.7564 3.96442 20.3298 3.96879 18.8857C3.97317 17.4416 4.30249 16.017 4.93235 14.7174C5.5622 13.4179 6.47644 12.2768 7.60731 11.3786C8.73818 10.4805 10.0567 9.84837 11.4651 9.52912C12.8735 9.20987 14.3357 9.21168 15.7433 9.5344C17.1509 9.85713 18.4678 10.4925 19.5964 11.3934C20.7251 12.2944 21.6365 13.4377 22.2632 14.7388C22.8898 16.0399 23.2156 17.4653 23.2164 18.9095ZM9.38216 20.1124C9.70121 20.1124 10.0072 19.9857 10.2328 19.7601C10.4584 19.5345 10.5851 19.2285 10.5851 18.9095C10.5851 18.5904 10.4584 18.2844 10.2328 18.0588C10.0072 17.8332 9.70121 17.7065 9.38216 17.7065C9.06311 17.7065 8.75712 17.8332 8.53152 18.0588C8.30592 18.2844 8.17918 18.5904 8.17918 18.9095C8.17918 19.2285 8.30592 19.5345 8.53152 19.7601C8.75712 19.9857 9.06311 20.1124 9.38216 20.1124ZM13.5926 20.1124C13.9116 20.1124 14.2176 19.9857 14.4432 19.7601C14.6688 19.5345 14.7956 19.2285 14.7956 18.9095C14.7956 18.5904 14.6688 18.2844 14.4432 18.0588C14.2176 17.8332 13.9116 17.7065 13.5926 17.7065C13.2735 17.7065 12.9676 17.8332 12.7419 18.0588C12.5163 18.2844 12.3896 18.5904 12.3896 18.9095C12.3896 19.2285 12.5163 19.5345 12.7419 19.7601C12.9676 19.9857 13.2735 20.1124 13.5926 20.1124ZM17.803 20.1124C18.1221 20.1124 18.428 19.9857 18.6536 19.7601C18.8792 19.5345 19.006 19.2285 19.006 18.9095C19.006 18.5904 18.8792 18.2844 18.6536 18.0588C18.428 17.8332 18.1221 17.7065 17.803 17.7065C17.484 17.7065 17.178 17.8332 16.9524 18.0588C16.7268 18.2844 16.6 18.5904 16.6 18.9095C16.6 19.2285 16.7268 19.5345 16.9524 19.7601C17.178 19.9857 17.484 20.1124 17.803 20.1124Z" fill="#7D72CB"/>
+                                    <path opacity="0.6" d="M23.1981 19.5206C23.328 19.4672 23.4563 19.4102 23.5831 19.3498C23.9331 19.1814 24.3313 19.1224 24.7067 19.2235L25.9048 19.5447C26.1204 19.6026 26.3474 19.6028 26.563 19.5451C26.7786 19.4875 26.9752 19.374 27.133 19.2162C27.2908 19.0584 27.4043 18.8618 27.4619 18.6462C27.5196 18.4306 27.5194 18.2036 27.4615 17.988L27.1403 16.7899C27.047 16.4119 27.0918 16.013 27.2666 15.6651C27.7063 14.7239 27.9541 13.7046 27.9954 12.6666C28.0368 11.6286 27.8709 10.5928 27.5075 9.61964C27.1441 8.64648 26.5904 7.75549 25.8788 6.99871C25.1671 6.24193 24.3119 5.63453 23.3629 5.21199C22.4139 4.78944 21.3902 4.56023 20.3517 4.53772C19.3131 4.51522 18.2805 4.69988 17.3141 5.08093C16.3477 5.46197 15.4669 6.03176 14.7232 6.757C13.9794 7.48225 13.3877 8.34842 12.9824 9.30493C14.3466 9.21793 15.7137 9.42254 16.9926 9.90513C18.2715 10.3877 19.433 11.1372 20.3996 12.1038C21.3662 13.0703 22.1159 14.2317 22.5986 15.5105C23.0814 16.7894 23.2862 18.1564 23.1993 19.5206H23.1981Z" fill="#7D72CB"/>
+                                  </svg>
+                                </div>
+                                <div>
+                                  <p class="text-body-sm-medium !leading-none text-violet-300">
+                                    Negotiated
+                                  </p>
+                                  <span class="text-secondary text-body-xs-medium">
+                                    Dec 24, 2023
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="content-card__right flex flex-col gap-3 popup-no-click">
+                          <div class="content-card__right-top flex justify-end items-end gap-2 flex-col">
+                            <div class="offer-element flex items-center gap-1 px-2 py-1 rounded-lg background-secondary">
+                              <span class="text-body-md-medium text-secondary">
+                                Brand’s offer:
+                              </span>
+                              <p class="text-body-md-medium">
+                                $1,300
+                              </p>
+                            </div>
+                            <div class="price text-yellow-300 md:heading-2xl heading-xl">
+                              $1,280
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.projects-creators -->
+      </div>
+
+
+    </main>
+    @@include('html/_popup.htm',{})
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

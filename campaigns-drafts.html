@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header-brand.htm',{})
+    <main class="page">
+      <div class="page__container">
+        <div class="page__header flex items-center sm:!gap-8 gap-4 md:flex-nowrap flex-wrap">
+          <div class="page__header-top lg:flex-nowrap flex-wrap sm:!gap-8 !justify-start">
+            <h2 class="heading-3xl">
+              Campaigns
+            </h2>
+     
+          </div>
+          <div class="page__header-bottom flex items-center justify-beetwen gap-4 w-full sm:flex-nowrap flex-wrap">
+            <div class="campaigns-tabs tabs tabs-one tabs-md flex-auto">
+              <nav class="tabs__navigation">
+                <a href="campaigns-active.html" class="tabs__title">Active <span class="badge badge--numeric">
+                  4
+                </span></a>
+                <a href="campaigns-drafts.html" class="tabs__title _tab-active">
+                  Drafts
+                  <span class="badge badge--numeric">
+                    1
+                  </span>
+                </a>
+                <a href="campaigns-ended.html" class="tabs__title">
+                  Ended
+                  <span class="badge badge--numeric">
+                    4
+                  </span>
+                </a>
+              </nav>
+            </div>
+            <a href="#" class="button button-large button-new-campaign button-primary ml-auto flex-1" data-ripple>
+              <span class="button__text">
+                <div class="svg-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-m" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                    <g id="plus">
+                    <path id="Vector" d="M15.5003 10.8317H11.3337V14.9984C11.3337 15.2194 11.2459 15.4313 11.0896 15.5876C10.9333 15.7439 10.7213 15.8317 10.5003 15.8317C10.2793 15.8317 10.0674 15.7439 9.91107 15.5876C9.75479 15.4313 9.66699 15.2194 9.66699 14.9984V10.8317H5.50033C5.27931 10.8317 5.06735 10.7439 4.91107 10.5876C4.75479 10.4313 4.66699 10.2194 4.66699 9.99837C4.66699 9.77736 4.75479 9.5654 4.91107 9.40912C5.06735 9.25284 5.27931 9.16504 5.50033 9.16504H9.66699V4.99837C9.66699 4.77736 9.75479 4.5654 9.91107 4.40912C10.0674 4.25284 10.2793 4.16504 10.5003 4.16504C10.7213 4.16504 10.9333 4.25284 11.0896 4.40912C11.2459 4.5654 11.3337 4.77736 11.3337 4.99837V9.16504H15.5003C15.7213 9.16504 15.9333 9.25284 16.0896 9.40912C16.2459 9.5654 16.3337 9.77736 16.3337 9.99837C16.3337 10.2194 16.2459 10.4313 16.0896 10.5876C15.9333 10.7439 15.7213 10.8317 15.5003 10.8317Z" fill="white"/>
+                    </g>
+                    </svg>
+                </div>
+                New campaign
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="campaigns">
+          <div class="campaigns__list">
+            <div class="campaigns__card campagin-card" data-popup="#popupCampaign">
+              <div class="campaign-card__body">
+                <div class="campaign-card__image">
+                  <img src="@img/fileuploader/image.png" alt="image">
+                </div>
+                <div class="campaign-card__content content-card">
+                  <div class="content-card__left">
+                    <h5 class="heading-md mb-3">Promote our new movie</h5>
+                    <div class="content-card__brand-and-platform flex items-center flex-wrap gap-2">
+                 
+                      <div class="platform-block block-container-bg">
+                        <div class="flex items-center gap-2">
+                          <div class="platform platform--size-l">
+                            <img src="img/icons/formkit_youtube.svg" alt="image">
+                          </div>
+                          <div>
+                            <p class="text-body-sm-medium !leading-none">
+                              Youtube
+                            </p>
+                            <span class="text-secondary text-body-xs-medium">
+                              Platform
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-card__right">
+                    <div class="content-card__right-top">
+                      <div class="content-card__actions flex items-center gap-2">
+                        <a href="#" class="button button-small button-weight button-primary" data-ripple="">
+                          <span class="button__text">
+                            Publish
+                          </span>
+                        </a>
+                        <a href="#" class="button button-small button-weight button-secondary" data-ripple="">
+                          <span class="button__text">
+                            Edit
+                          </span>
+                        </a>
+                        <a href="#" class="button button-small button-weight button-disabled" data-ripple="">
+                          <span class="button__text">
+                            Delete
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- /.campaigns -->
+      </div>
+
+
+    </main>
+    @@include('html/_popup.htm',{})
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

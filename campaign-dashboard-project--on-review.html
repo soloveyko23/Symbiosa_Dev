@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header-brand.htm',{})
+    <main class="page">
+      <div class="page__container">
+   
+        <div class="campaigns-dashboard">
+          <div class="widget campaigns-dashboard__info info-dashboard !p-0">
+						<div class="widget__header w-full p-6">
+              <div class="info-dashboard__body">
+								<div class="info-dashboard__image">
+									<img src="img/fileuploader/image.png" alt="image">
+								</div>
+								<div class="info-dashboard__content content-card">
+									<div class="content-card__left">
+										<h5 class="md:heading-xl heading-lg md:mb-4 mb-2">Promote our new movie</h5>
+										<div class="content-card__brand-and-platform flex items-center flex-wrap gap-2">
+
+											<div class="platform-block block-container-bg">
+												<div class="flex items-center gap-2">
+													<div class="platform platform--size-l">
+														<img src="img/icons/formkit_youtube.svg" alt="image">
+													</div>
+													<div>
+														<p class="text-body-sm-medium !leading-none">
+															Youtube
+														</p>
+														<span class="text-secondary text-body-xs-medium">
+															Platform
+														</span>
+													</div>
+												</div>
+											</div>
+                      <div class="status-block block-container-bg">
+												<div class="flex items-center gap-2">
+													<div class="svg-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-l" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                              <path opacity="0.5" d="M16 28.4997C22.6276 28.4997 28 23.1273 28 16.4997C28 9.87215 22.6276 4.49976 16 4.49976C9.37239 4.49976 4 9.87215 4 16.4997C4 23.1273 9.37239 28.4997 16 28.4997Z" fill="#03E39E"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9996 10.7998C16.2383 10.7998 16.4672 10.8946 16.636 11.0634C16.8048 11.2322 16.8996 11.4611 16.8996 11.6998V16.1278L19.6356 18.8638C19.724 18.9462 19.7949 19.0455 19.8441 19.1559C19.8933 19.2663 19.9198 19.3855 19.9219 19.5064C19.924 19.6272 19.9018 19.7472 19.8565 19.8593C19.8113 19.9714 19.7439 20.0732 19.6584 20.1586C19.573 20.2441 19.4712 20.3115 19.3591 20.3567C19.2471 20.402 19.127 20.4242 19.0062 20.4221C18.8853 20.42 18.7662 20.3935 18.6558 20.3443C18.5454 20.2951 18.446 20.2242 18.3636 20.1358L15.3636 17.1358C15.1948 16.9672 15.0998 16.7384 15.0996 16.4998V11.6998C15.0996 11.4611 15.1944 11.2322 15.3632 11.0634C15.532 10.8946 15.7609 10.7998 15.9996 10.7998Z" fill="#03E39E"/>
+                            </svg>
+                          </div>
+													<div>
+														<p class="text-body-sm-medium text-accent-300 !leading-none">
+                              Active
+														</p>
+														<span class="text-secondary text-body-xs-medium">
+                              Published on Oct 24, 2023
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="content-card__right">
+                    <div class="content-card__actions flex items-center gap-2">
+                      <a href="#" class="button button-medium button-weight button-primary min-w-160" data-ripple="">
+                        <span class="button__text">
+                          Edit
+                        </span>
+                      </a>
+                   
+                    </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="widget__body campaigns-dashboard__body body-dashboard p-6">
+              <div class="tabs tabs-one tabs-md">
+                <nav class="tabs__navigation mb-4">
+                  <a href="campaign-dashboard.html" class="tabs__title">Overview</a>
+                  <a href="campaign-dashboard-project.html" class="tabs__title _tab-active">Projects <span class="badge badge--numeric">4</span></a>
+                  <a href="campaign-dashboard-offers.html" class="tabs__title">Offers <span class="badge badge--numeric">2</span></a>
+                </nav>
+                <div class="tabs__content">
+                  <div class="tabs__body p-6 rounded-3xl background-tertirary">
+                    <div class="tabs tabs-one tabs-md">
+                      <nav  class="tabs__navigation mb-5">
+                        <a href="campaign-dashboard-project.html" class="tabs__title">Active <span class="badge badge--numeric">2</span></a>
+                        <a href="campaign-dashboard-project--on-review.html" class="tabs__title _tab-active">On review <span class="badge badge--numeric">4</span></a>
+                        <a href="campaign-dashboard-project--completed.html" class="tabs__title">Completed <span class="badge badge--numeric">2</span></a>
+                        <a href="campaign-dashboard-project--cancelled.html" class="tabs__title">Cancelled <span class="badge badge--numeric">2</span></a>
+                      </nav>
+                      <div class="tabs__content">
+                        <div class="tabs__body">
+                          <div class="campaigns-dashboard__projects">
+                            <div class="project-card">
+                              <div class="project-card__body">
+                                <div class="project-card__left sm:flex-row flex-col">
+                                  <div class="profile profile-size--m project-card__profile">
+                                    <div class="profile__body">
+                                      <div class="profile__icon">
+                                        <img src="img/profile-avatars/image.png" alt="image">
+                                      </div>
+                                      <div class="profile__info">
+                                        <div class="profile__name">
+                                          Jacob Maddison
+                                          <div class="level-badge">
+                                            <div class="svg-icon">
+                                              <img class="icon icon--size-m" src="img/levels-badge/Level=1-1x.png" srcset="img/levels-badge/Level=1-2x.png 2x" alt="Level">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                    
+                                  </div>
+                                  <div class="project-card__info flex items-center flex-wrap gap-2">
+                                    <div class="block-container-bg">
+                                      <div class="flex items-center gap-2">
+                                        <div class="svg-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-l" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                            <path opacity="0.3" d="M4 16C4 17.9475 4.51 18.6018 5.53 19.914C7.5664 22.5312 10.9816 25.5 16 25.5C21.0184 25.5 24.4336 22.5312 26.47 19.914C27.49 18.603 28 17.9463 28 16C28 14.0525 27.49 13.3982 26.47 12.086C24.4336 9.46875 21.0184 6.5 16 6.5C10.9816 6.5 7.5664 9.46875 5.53 12.086C4.51 13.3994 4 14.0537 4 16Z" fill="#FCB750"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16C12 14.9391 12.4214 13.9217 13.1716 13.1716C13.9217 12.4214 14.9391 12 16 12C17.0609 12 18.0783 12.4214 18.8284 13.1716C19.5786 13.9217 20 14.9391 20 16C20 17.0609 19.5786 18.0783 18.8284 18.8284C18.0783 19.5786 17.0609 20 16 20C14.9391 20 13.9217 19.5786 13.1716 18.8284C12.4214 18.0783 12 17.0609 12 16Z" fill="#FCB750"/>
+                                          </svg>
+                                        </div>
+                                        <div>
+                                          <p class="text-body-sm-medium text-yellow-300 !leading-none">
+                                            3 days left
+                                          </p>
+                                          <span class="text-secondary text-body-xs-medium">
+                                            On review since Dec 24, 2023
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="project-card__right">
+                                  <div class="price text-yellow-300 md:heading-2xl heading-xl">
+                                    $1,280
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+
+						</div>
+					</div>
+        </div>
+        <!-- /.campaigns-dashboard -->
+      </div>
+
+
+    </main>
+    @@include('html/_popup.htm',{})
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

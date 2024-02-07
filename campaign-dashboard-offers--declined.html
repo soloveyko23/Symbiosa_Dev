@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header-brand.htm',{})
+    <main class="page">
+      <div class="page__container">
+   
+        <div class="campaigns-dashboard">
+          <div class="widget campaigns-dashboard__info info-dashboard !p-0">
+						<div class="widget__header w-full p-6">
+              <div class="info-dashboard__body">
+								<div class="info-dashboard__image">
+									<img src="img/fileuploader/image.png" alt="image">
+								</div>
+								<div class="info-dashboard__content content-card">
+									<div class="content-card__left">
+										<h5 class="md:heading-xl heading-lg md:mb-4 mb-2">Promote our new movie</h5>
+										<div class="content-card__brand-and-platform flex items-center flex-wrap gap-2">
+
+											<div class="platform-block block-container-bg">
+												<div class="flex items-center gap-2">
+													<div class="platform platform--size-l">
+														<img src="img/icons/formkit_youtube.svg" alt="image">
+													</div>
+													<div>
+														<p class="text-body-sm-medium !leading-none">
+															Youtube
+														</p>
+														<span class="text-secondary text-body-xs-medium">
+															Platform
+														</span>
+													</div>
+												</div>
+											</div>
+                      <div class="status-block block-container-bg">
+												<div class="flex items-center gap-2">
+													<div class="svg-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-l" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                              <path opacity="0.5" d="M16 28.4997C22.6276 28.4997 28 23.1273 28 16.4997C28 9.87215 22.6276 4.49976 16 4.49976C9.37239 4.49976 4 9.87215 4 16.4997C4 23.1273 9.37239 28.4997 16 28.4997Z" fill="#03E39E"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9996 10.7998C16.2383 10.7998 16.4672 10.8946 16.636 11.0634C16.8048 11.2322 16.8996 11.4611 16.8996 11.6998V16.1278L19.6356 18.8638C19.724 18.9462 19.7949 19.0455 19.8441 19.1559C19.8933 19.2663 19.9198 19.3855 19.9219 19.5064C19.924 19.6272 19.9018 19.7472 19.8565 19.8593C19.8113 19.9714 19.7439 20.0732 19.6584 20.1586C19.573 20.2441 19.4712 20.3115 19.3591 20.3567C19.2471 20.402 19.127 20.4242 19.0062 20.4221C18.8853 20.42 18.7662 20.3935 18.6558 20.3443C18.5454 20.2951 18.446 20.2242 18.3636 20.1358L15.3636 17.1358C15.1948 16.9672 15.0998 16.7384 15.0996 16.4998V11.6998C15.0996 11.4611 15.1944 11.2322 15.3632 11.0634C15.532 10.8946 15.7609 10.7998 15.9996 10.7998Z" fill="#03E39E"/>
+                            </svg>
+                          </div>
+													<div>
+														<p class="text-body-sm-medium text-accent-300 !leading-none">
+                              Active
+														</p>
+														<span class="text-secondary text-body-xs-medium">
+                              Published on Oct 24, 2023
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="content-card__right">
+                    <div class="content-card__actions flex items-center gap-2">
+                      <a href="#" class="button button-medium button-weight button-primary min-w-160" data-ripple="">
+                        <span class="button__text">
+                          Edit
+                        </span>
+                      </a>
+                   
+                    </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="widget__body campaigns-dashboard__body body-dashboard p-6">
+              <div class="tabs tabs-one tabs-md">
+                <nav class="tabs__navigation mb-4">
+                  <a href="campaign-dashboard.html" class="tabs__title">Overview</a>
+                  <a href="campaign-dashboard-project.html" class="tabs__title">Projects <span class="badge badge--numeric">4</span></a>
+                  <a href="campaign-dashboard-offers.html" class="tabs__title _tab-active">Offers <span class="badge badge--numeric">2</span></a>
+                </nav>
+                <div class="tabs__content">
+                  <div class="tabs__body p-6 rounded-3xl background-tertirary">
+                    <div class="tabs tabs-one tabs-md">
+                      <nav  class="tabs__navigation mb-5">
+                        <a href="campaign-dashboard-offers.html" class="tabs__title">Pending <span class="badge badge--numeric">2</span></a>
+                        <a href="campaign-dashboard-offers--negotiated.html" class="tabs__title">Negotiated <span class="badge badge--numeric">4</span></a>
+                        <a href="campaign-dashboard-offers--counteroffers.html" class="tabs__title">Counteroffers <span class="badge badge--numeric">2</span></a>
+                        <a href="campaign-dashboard-offers--declined.html" class="tabs__title _tab-active">Declined  <span class="badge badge--numeric">2</span></a>
+                      </nav>
+                      <div class="tabs__content">
+                        <div class="tabs__body">
+                          <div class="campaigns-dashboard__offers">
+                            <div class="offer-card">
+                              <div class="offer-card__body ">
+                                <div class="offer-card__left">
+                                  <div class="profile profile-size--m offer-card__profile">
+                                    <div class="profile__body">
+                                      <div class="profile__icon">
+                                        <img src="img/profile-avatars/image.png" alt="image">
+                                      </div>
+                                      <div class="profile__info">
+                                        <div class="profile__name">
+                                          <p>Thetremba</p>
+                                          <div class="level-badge">
+                                            <div class="svg-icon">
+                                              <img class="icon icon--size-m" src="img/levels-badge/Level=1-1x.png" srcset="img/levels-badge/Level=1-2x.png 2x" alt="Level">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="profile__info-creator creator-info">
+                                          <div class="creator-info__col text-yellow-300">
+                                            <div class="svg-icon">
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M6.10208 3.6055C6.94674 2.09083 7.36874 1.3335 8.00008 1.3335C8.63141 1.3335 9.05341 2.09083 9.89808 3.6055L10.1167 3.9975C10.3567 4.42816 10.4767 4.6435 10.6634 4.7855C10.8501 4.9275 11.0834 4.98016 11.5501 5.0855L11.9741 5.1815C13.6141 5.55283 14.4334 5.73816 14.6287 6.3655C14.8234 6.99216 14.2647 7.64616 13.1467 8.9535L12.8574 9.2915C12.5401 9.66283 12.3807 9.84883 12.3094 10.0782C12.2381 10.3082 12.2621 10.5562 12.3101 11.0515L12.3541 11.5028C12.5227 13.2475 12.6074 14.1195 12.0967 14.5068C11.5861 14.8948 10.8181 14.5408 9.28341 13.8342L8.88541 13.6515C8.44941 13.4502 8.23141 13.3502 8.00008 13.3502C7.76874 13.3502 7.55074 13.4502 7.11407 13.6515L6.71741 13.8342C5.18208 14.5408 4.41408 14.8942 3.90408 14.5075C3.39274 14.1195 3.47741 13.2475 3.64608 11.5028L3.69008 11.0522C3.73808 10.5562 3.76208 10.3082 3.69008 10.0788C3.61941 9.84883 3.46008 9.66283 3.14274 9.29216L2.85341 8.9535C1.73541 7.64683 1.17674 6.99283 1.37141 6.3655C1.56674 5.73816 2.38674 5.55216 4.02674 5.1815L4.45074 5.0855C4.91674 4.98016 5.14941 4.9275 5.33674 4.7855C5.52341 4.6435 5.64341 4.42816 5.88341 3.9975L6.10208 3.6055Z" fill="#FCB750"></path>
+                                              </svg>
+                                            </div>
+                                            <span>
+                                              4,8
+                                            </span>
+                                          </div>
+                                          <div class="creator-info__col text-accent-300">
+                                            <div class="svg-icon">
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path opacity="0.4" d="M7.99992 14.6668C4.85725 14.6668 3.28592 14.6668 2.30925 13.6902C1.33325 12.7148 1.33325 11.1428 1.33325 8.00016C1.33325 4.8575 1.33325 3.28616 2.30925 2.3095C3.28659 1.3335 4.85725 1.3335 7.99992 1.3335C11.1426 1.3335 12.7139 1.3335 13.6899 2.3095C14.6666 3.28683 14.6666 4.8575 14.6666 8.00016C14.6666 11.1428 14.6666 12.7142 13.6899 13.6902C12.7146 14.6668 11.1426 14.6668 7.99992 14.6668Z" fill="#03E39E"></path>
+                                                <path d="M11.794 5.20251C11.9259 5.33234 12 5.50834 12 5.69184C12 5.87534 11.9259 6.05133 11.794 6.18117L7.09809 10.7975C6.96602 10.9272 6.78698 11 6.60032 11C6.41366 11 6.23463 10.9272 6.10256 10.7975L4.22419 8.95096C4.15498 8.88757 4.09948 8.81112 4.06098 8.72618C4.02248 8.64124 4.00178 8.54955 4.00011 8.45657C3.99844 8.3636 4.01584 8.27125 4.05127 8.18502C4.08669 8.0988 4.13942 8.02048 4.20631 7.95473C4.2732 7.88897 4.35287 7.83713 4.44058 7.80231C4.52829 7.76748 4.62223 7.75038 4.71681 7.75202C4.81139 7.75366 4.90466 7.77401 4.99107 7.81186C5.07747 7.8497 5.15524 7.90427 5.21972 7.9723L6.60032 9.3295L10.7985 5.20251C10.9305 5.07284 11.1096 5 11.2962 5C11.4829 5 11.6619 5.07284 11.794 5.20251Z" fill="#03E39E"></path>
+                                              </svg>
+                                            </div>
+                                            <span>
+                                              99%
+                                            </span>
+                                          </div>
+                                          <div class="creator-info__col text-violet-300">
+                                            <div class="svg-icon">
+                                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M14.6666 8.00016C14.6666 11.6822 11.6819 14.6668 7.99992 14.6668C4.31792 14.6668 1.33325 11.6822 1.33325 8.00016C1.33325 4.31816 4.31792 1.3335 7.99992 1.3335C11.6819 1.3335 14.6666 4.31816 14.6666 8.00016Z" fill="#7D72CB"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 3.5C8.13261 3.5 8.25978 3.55268 8.35355 3.64645C8.44732 3.74021 8.5 3.86739 8.5 4V4.21133C9.58667 4.406 10.5 5.22267 10.5 6.33333C10.5 6.46594 10.4473 6.59312 10.3536 6.68689C10.2598 6.78065 10.1326 6.83333 10 6.83333C9.86739 6.83333 9.74022 6.78065 9.64645 6.68689C9.55268 6.59312 9.5 6.46594 9.5 6.33333C9.5 5.88133 9.124 5.402 8.5 5.23133V7.54467C9.58667 7.73933 10.5 8.556 10.5 9.66667C10.5 10.7773 9.58667 11.594 8.5 11.7887V12C8.5 12.1326 8.44732 12.2598 8.35355 12.3536C8.25978 12.4473 8.13261 12.5 8 12.5C7.86739 12.5 7.74022 12.4473 7.64645 12.3536C7.55268 12.2598 7.5 12.1326 7.5 12V11.7887C6.41333 11.594 5.5 10.7773 5.5 9.66667C5.5 9.53406 5.55268 9.40688 5.64645 9.31311C5.74022 9.21935 5.86739 9.16667 6 9.16667C6.13261 9.16667 6.25978 9.21935 6.35355 9.31311C6.44732 9.40688 6.5 9.53406 6.5 9.66667C6.5 10.1187 6.876 10.598 7.5 10.768V8.45533C6.41333 8.26067 5.5 7.444 5.5 6.33333C5.5 5.22267 6.41333 4.406 7.5 4.21133V4C7.5 3.86739 7.55268 3.74021 7.64645 3.64645C7.74022 3.55268 7.86739 3.5 8 3.5ZM7.5 5.23133C6.876 5.402 6.5 5.88133 6.5 6.33333C6.5 6.78533 6.876 7.26467 7.5 7.43467V5.23133ZM9.5 9.66667C9.5 9.21467 9.124 8.73533 8.5 8.56533V10.768C9.124 10.598 9.5 10.1187 9.5 9.66667Z" fill="#7D72CB"></path>
+                                              </svg>
+                                            </div>
+                                            <span>
+                                              2.8
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                
+                                  </div>
+                                  <div class="platform-info">
+                                    <div class="platform-info__col block-container-bg">
+                                      <div class="platform platform--size-m">
+                                        <img src="img/icons/formkit_youtube.svg" alt="image">
+                                      </div>
+                                      <p class="md:heading-lg heading-md !leading-none">1.5М</p>
+                                    </div>
+                                    <div class="platform-info__col block-container-bg">
+                                      <div class="platform platform--size-m">
+                                        <img src="img/icons/solar_chart-bold-duotone.svg" alt="image">
+                                      </div>
+                                      <p class="md:heading-lg heading-md !leading-none">1.4%</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="offer-card__right card-right sm:justify-end justify-center items-center sm:items-end">
+                                  <div class="card-right__top flex justify-end items-center gap-2">
+                                    <div class="price text-red-300 md:heading-2xl ml-3 heading-xl">
+                                      $1,280
+                                    </div>
+                                  </div>
+                                 
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+
+						</div>
+					</div>
+        </div>
+        <!-- /.campaigns-dashboard -->
+      </div>
+
+
+    </main>
+    @@include('html/_popup.htm',{})
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

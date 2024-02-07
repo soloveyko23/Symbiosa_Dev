@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header-brand.htm',{})
+    <main class="page">
+      <div class="page__container">
+   
+        <div class="campaigns-dashboard">
+          <div class="widget campaigns-dashboard__info info-dashboard !p-0">
+						<div class="widget__header w-full p-6">
+              <div class="info-dashboard__body">
+								<div class="info-dashboard__image">
+									<img src="img/fileuploader/image.png" alt="image">
+								</div>
+								<div class="info-dashboard__content content-card">
+									<div class="content-card__left">
+										<h5 class="md:heading-xl heading-lg md:mb-4 mb-2">Promote our new movie</h5>
+										<div class="content-card__brand-and-platform flex items-center flex-wrap gap-2">
+
+											<div class="platform-block block-container-bg">
+												<div class="flex items-center gap-2">
+													<div class="platform platform--size-l">
+														<img src="img/icons/formkit_youtube.svg" alt="image">
+													</div>
+													<div>
+														<p class="text-body-sm-medium !leading-none">
+															Youtube
+														</p>
+														<span class="text-secondary text-body-xs-medium">
+															Platform
+														</span>
+													</div>
+												</div>
+											</div>
+                      <div class="status-block block-container-bg">
+												<div class="flex items-center gap-2">
+													<div class="svg-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-l" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                              <path opacity="0.5" d="M16 28.4997C22.6276 28.4997 28 23.1273 28 16.4997C28 9.87215 22.6276 4.49976 16 4.49976C9.37239 4.49976 4 9.87215 4 16.4997C4 23.1273 9.37239 28.4997 16 28.4997Z" fill="#03E39E"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9996 10.7998C16.2383 10.7998 16.4672 10.8946 16.636 11.0634C16.8048 11.2322 16.8996 11.4611 16.8996 11.6998V16.1278L19.6356 18.8638C19.724 18.9462 19.7949 19.0455 19.8441 19.1559C19.8933 19.2663 19.9198 19.3855 19.9219 19.5064C19.924 19.6272 19.9018 19.7472 19.8565 19.8593C19.8113 19.9714 19.7439 20.0732 19.6584 20.1586C19.573 20.2441 19.4712 20.3115 19.3591 20.3567C19.2471 20.402 19.127 20.4242 19.0062 20.4221C18.8853 20.42 18.7662 20.3935 18.6558 20.3443C18.5454 20.2951 18.446 20.2242 18.3636 20.1358L15.3636 17.1358C15.1948 16.9672 15.0998 16.7384 15.0996 16.4998V11.6998C15.0996 11.4611 15.1944 11.2322 15.3632 11.0634C15.532 10.8946 15.7609 10.7998 15.9996 10.7998Z" fill="#03E39E"/>
+                            </svg>
+                          </div>
+													<div>
+														<p class="text-body-sm-medium text-accent-300 !leading-none">
+                              Active
+														</p>
+														<span class="text-secondary text-body-xs-medium">
+                              Published on Oct 24, 2023
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="content-card__right">
+                    <div class="content-card__actions flex items-center gap-2">
+                      <a href="#" class="button button-medium button-weight button-primary min-w-160" data-ripple="">
+                        <span class="button__text">
+                          Edit
+                        </span>
+                      </a>
+                   
+                    </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="widget__body campaigns-dashboard__body body-dashboard p-6">
+              <div class="tabs tabs-one tabs-md">
+                <nav class="tabs__navigation mb-4">
+                  <a href="campaign-dashboard.html" class="tabs__title">Overview</a>
+                  <a href="campaign-dashboard-project.html" class="tabs__title _tab-active">Projects <span class="badge badge--numeric">4</span></a>
+                  <a href="campaign-dashboard-offers.html" class="tabs__title">Offers <span class="badge badge--numeric">2</span></a>
+                </nav>
+                <div class="tabs__content">
+                  <div class="tabs__body p-6 rounded-3xl background-tertirary">
+                    <div class="tabs tabs-one tabs-md">
+                      <nav  class="tabs__navigation mb-5">
+                        <a href="campaign-dashboard-project.html" class="tabs__title">Active <span class="badge badge--numeric">2</span></a>
+                        <a href="campaign-dashboard-project--on-review.html" class="tabs__title">On review <span class="badge badge--numeric">4</span></a>
+                        <a href="campaign-dashboard-project--completed.html" class="tabs__title">Completed <span class="badge badge--numeric">2</span></a>
+                        <a href="campaign-dashboard-project--cancelled.html" class="tabs__title">Cancelled <span class="badge badge--numeric">2</span></a>
+                        <a href="campaign-dashboard-project--disputed.html" class="tabs__title _tab-active">Disputed <span class="badge badge--numeric">2</span></a>
+                      </nav>
+                      <div class="tabs__content">
+                        <div class="tabs__body">
+                          <div class="campaigns-dashboard__projects">
+                            <div class="project-card">
+                              <div class="project-card__body">
+                                <div class="project-card__left sm:flex-row flex-col">
+                                  <div class="profile profile-size--m project-card__profile">
+                                    <div class="profile__body">
+                                      <div class="profile__icon">
+                                        <img src="img/profile-avatars/image.png" alt="image">
+                                      </div>
+                                      <div class="profile__info">
+                                        <div class="profile__name">
+                                          Jacob Maddison
+                                          <div class="level-badge">
+                                            <div class="svg-icon">
+                                              <img class="icon icon--size-m" src="img/levels-badge/Level=1-1x.png" srcset="img/levels-badge/Level=1-2x.png 2x" alt="Level">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                    
+                                  </div>
+                                  <div class="project-card__info flex items-center flex-wrap gap-2">
+                                    <div class="deadine-block block-container-bg">
+                                      <div class="flex items-center gap-2">
+                                        <div class="svg-icon">
+                                          <svg class="icon icon--size-l" xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                                            <path opacity="0.3" d="M21.0808 6.48028L21.9192 6.9765C24.3991 8.44561 25.6384 9.18017 26.3192 10.3889C27 11.5989 27 13.0656 27 16.0038V16.9963C27 19.9333 27 21.4024 26.3192 22.6112C25.6384 23.8212 24.3991 24.5545 21.9192 26.0224L21.0808 26.5198C18.6009 27.9877 17.3616 28.7223 16 28.7223C14.6384 28.7223 13.3991 27.9889 10.9192 26.5198L10.0808 26.0224C7.60089 24.5557 6.36156 23.8199 5.68078 22.6112C5 21.4012 5 19.9345 5 16.9963V16.0038C5 13.0656 5 11.5977 5.68078 10.3889C6.36156 9.17894 7.60089 8.44561 10.0808 6.9765L10.9192 6.48028C13.3991 5.01239 14.6384 4.27783 16 4.27783C17.3616 4.27783 18.6009 5.01117 21.0808 6.48028Z" fill="#FFB33A"></path>
+                                            <path d="M15.9996 9.16675C14.8327 9.16675 13.7135 9.61464 12.8883 10.4119C12.0632 11.2092 11.5996 12.2905 11.5996 13.418C11.5996 13.6435 11.6923 13.8597 11.8574 14.0192C12.0224 14.1786 12.2462 14.2682 12.4796 14.2682C12.713 14.2682 12.9368 14.1786 13.1019 14.0192C13.2669 13.8597 13.3596 13.6435 13.3596 13.418C13.3596 12.0083 14.5406 10.8672 15.9996 10.8672C17.4586 10.8672 18.6396 12.0083 18.6396 13.418C18.6396 14.1118 18.4645 14.5182 18.2542 14.803C18.0236 15.1133 17.7042 15.3455 17.2615 15.6405L17.1594 15.7068C16.7661 15.967 16.2592 16.3011 15.8667 16.7671C15.403 17.318 15.1196 18.0144 15.1196 18.9445V19.3696C15.1196 19.5951 15.2123 19.8114 15.3774 19.9709C15.5424 20.1303 15.7662 20.2199 15.9996 20.2199C16.233 20.2199 16.4568 20.1303 16.6219 19.9709C16.7869 19.8114 16.8796 19.5951 16.8796 19.3696V18.9445C16.8796 18.3868 17.0362 18.0739 17.2316 17.8401C17.4578 17.5731 17.7622 17.3707 18.2119 17.0723L18.2586 17.0408C18.695 16.7518 19.2556 16.3725 19.6842 15.7927C20.1356 15.1873 20.3996 14.4238 20.3996 13.418C20.3996 12.2905 19.936 11.2092 19.1109 10.4119C18.2857 9.61464 17.1666 9.16675 15.9996 9.16675ZM15.9996 23.8334C16.2913 23.8334 16.5711 23.7214 16.7774 23.5221C16.9837 23.3228 17.0996 23.0525 17.0996 22.7706C17.0996 22.4887 16.9837 22.2184 16.7774 22.0191C16.5711 21.8198 16.2913 21.7078 15.9996 21.7078C15.7079 21.7078 15.4281 21.8198 15.2218 22.0191C15.0155 22.2184 14.8996 22.4887 14.8996 22.7706C14.8996 23.0525 15.0155 23.3228 15.2218 23.5221C15.4281 23.7214 15.7079 23.8334 15.9996 23.8334Z" fill="#FFB33A"></path>
+                                          </svg>
+                                        </div>
+                                        <div>
+                                          <p class="text-body-sm-medium !leading-none text-yellow-300">
+                                            Dispute
+                                          </p>
+                                          <span class="text-secondary text-body-xs-medium">
+                                            Dec 24, 2023
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="project-card__right">
+                                  <div class="price text-yellow-300 md:heading-2xl heading-xl">
+                                    $1,280
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+
+						</div>
+					</div>
+        </div>
+        <!-- /.campaigns-dashboard -->
+      </div>
+
+
+    </main>
+    @@include('html/_popup.htm',{})
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

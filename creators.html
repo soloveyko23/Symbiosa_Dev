@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header-brand.htm',{})
+    <main class="page">
+      <div class="page__container">
+        <div class="page__header filters-block">
+          <div class="page__header-top lg:flex-nowrap flex-wrap">
+            <h2 class="basis-3/6 heading-3xl">
+              Creators 
+            </h2>
+            <button class="filters__button button button-gray button-filter" data-ripple>
+              <div class="button__text">
+                <div class="svg-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16"
+                    viewBox="0 0 16 16" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M3.3335 2H12.6668L5.8775 8.78933C5.76786 8.50843 5.58953 8.25951 5.35883 8.06533C5.20683 7.93333 4.99416 7.814 4.57016 7.57467L2.62816 6.48133C1.9955 6.126 1.6795 5.948 1.50683 5.66133C1.3335 5.374 1.3335 5.02733 1.3335 4.33533V3.87533C1.3335 2.99133 1.3335 2.54867 1.62683 2.274C1.91883 2 2.39016 2 3.3335 2Z"
+                      fill="white" />
+                    <path opacity="0.5"
+                      d="M14.667 4.336V3.876C14.667 2.992 14.667 2.54933 14.3736 2.27467C14.0816 2 13.6103 2 12.667 2L5.87695 8.78933C5.91029 8.87533 5.93695 8.96467 5.95762 9.058C6.00029 9.248 6.00029 9.47067 6.00029 9.91533V11.6953C6.00029 12.3013 6.00029 12.6047 6.16829 12.8407C6.33629 13.0773 6.63495 13.194 7.23095 13.4273C8.48362 13.9167 9.10962 14.1613 9.55495 13.8827C10.0003 13.6047 10.0003 12.968 10.0003 11.6947V9.91467C10.0003 9.47067 10.0003 9.248 10.0423 9.058C10.1262 8.66935 10.3373 8.31979 10.6423 8.06467C10.7936 7.93333 11.0056 7.814 11.4303 7.57467L13.3723 6.48133C14.0043 6.126 14.321 5.948 14.4936 5.66133C14.667 5.37467 14.667 5.028 14.667 4.336Z"
+                      fill="white" />
+                  </svg>
+                </div>
+                Filter
+                <div class="badge badge--numeric">
+                  4
+                </div>
+              </div>
+
+            </button>
+            <div class="page__controls">
+              <div class="filters">
+                <div class="filters__row grid sm:grid-cols-2 gap-4" data-da=".filters__more, 1024, first">
+               
+                  <div class="filter__col sm:order-first order-2">
+                    <div class="select-md w-full">
+                      <select name="form[]" data-pseudo-label="Sort by:" data-class-modif="combobox">
+                        <option value="1" selected>Highest subscribers</option>
+                        <option value="2">Пункт №2 Пункт №2 Пункт №2 Пункт №2</option>
+                        <option value="3">Пункт №3</option>
+                        <option value="4">Пункт №4</option>
+                      </select>
+                    </div>
+
+                  </div>
+                  <div class="filter__col sm:order-2 order-1">
+                    <div class="filter__search-block search-block">
+                      <div class="search-block__input">
+                        <input autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Search"
+                          class="input input-md">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page__header-bottom">
+            <div class="filters__more mt-4" hidden>
+              <div class="filters__row grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4">
+                <div class="filter__col">
+                  <div class="select-md select-md-width">
+                    <select name="form[]" data-pseudo-label="Platform:" multiple data-tags data-class-modif="combobox">
+                      <option selected value="1" data-class="platform platform--size-sm" data-asset="@img/icons/formkit_youtube.svg">Youtube 1 </option>
+                      <option value="2" data-class="platform platform--size-sm" data-asset="@img/icons/formkit_youtube.svg">Youtube 2</option>
+                      <option value="3" data-class="platform platform--size-sm" data-asset="@img/icons/formkit_youtube.svg">Youtube 3</option>
+                    </select>
+                  </div>
+
+                </div>
+                <div class="filter__col">
+                  <div class="select-md select-md-width">
+                    <select name="form[]" data-pseudo-label="Engagement:" data-class-modif="combobox">
+                      <option value="1" selected>2-6%</option>
+                      <option value="2">Пункт №2 Пункт №2 Пункт №2 Пункт №2</option>
+                      <option value="3">Пункт №3</option>
+                      <option value="4">Пункт №4</option>
+                    </select>
+                  </div>
+
+                </div>
+                <div class="filter__col">
+                  <div class="select-md select-md-width">
+                    <select name="form[]" data-pseudo-label="Average views:" data-class-modif="combobox">
+                      <option value="1" selected>50K+</option>
+                      <option value="2">Пункт №2 Пункт №2 Пункт №2 Пункт №2</option>
+                      <option value="3">Пункт №3</option>
+                      <option value="4">Пункт №4</option>
+                    </select>
+                  </div>
+
+                </div>
+                <div class="filter__col">
+                  <div class="select-md select-md-width">
+                    <select name="form[]" data-pseudo-label="Last posted:" data-class-modif="combobox">
+                      <option value="1" selected>1 week</option>
+                      <option value="2">Пункт №2 Пункт №2 Пункт №2 Пункт №2</option>
+                      <option value="3">Пункт №3</option>
+                      <option value="4">Пункт №4</option>
+                    </select>
+                  </div>
+
+                </div>
+                <div class="filter__col">
+                  <div class="select-md select-md-width">
+                    <div class="custom-select custom-select--checkbox select_combobox">
+                      <div class="select__body">
+                        <button type="button" class="select__title">
+                          <span data-pseudo-label="Countries:" class="select__value _select-pseudo-label">
+                            <span class="select__content"><span class="badge badge--numeric"></span></span>
+                          </span>
+                        </button>
+                        <div class="select__options">
+                          <div class="select__scroll">
+                            <button class="select__option" data-value="1" type="button">
+                              <div class="checkbox-button">
+                                <input id="cc_1" data-error="Помилка" checked class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                <label for="cc_1" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+                              </div>
+                            </button>
+                            <button class="select__option" data-value="2" type="button">
+                              <div class="checkbox-button">
+                                <input id="cc_3" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                <label for="cc_3" class="checkbox__label"><span class="checkbox__text">Текст ТекстТекст Текст Текст Текст Текст</span></label>
+                              </div>
+                            </button>
+                            <button class="select__option" data-value="2" type="button">
+                              <div class="checkbox-button">
+                                <input id="cc_2" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                <label for="cc_2" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+                              </div>
+                            </button>
+                          </div>
+                          <div class="select__options-footer">
+                            <a href="#" class="button button-small select__options-footer-apply button-primary fw">Apply</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="filter__col">
+                  <div class="select-md select-md-width">
+                    <div class="custom-select custom-select--checkbox select_combobox">
+                      <div class="select__body">
+                        <button type="button" class="select__title">
+                          <span data-pseudo-label="Gender:" class="select__value _select-pseudo-label">
+                            <span class="select__content"><span class="badge badge--numeric"></span></span>
+                          </span>
+                        </button>
+                        <div class="select__options">
+                          <div class="select__scroll">
+                            <button class="select__option" data-value="1" type="button">
+                              <div class="checkbox-button">
+                                <input id="cc_1" data-error="Помилка" checked class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                <label for="cc_1" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+                              </div>
+                            </button>
+                            <button class="select__option" data-value="2" type="button">
+                              <div class="checkbox-button">
+                                <input id="cc_3" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                <label for="cc_3" class="checkbox__label"><span class="checkbox__text">Текст ТекстТекст Текст Текст Текст Текст</span></label>
+                              </div>
+                            </button>
+                            <button class="select__option" data-value="2" type="button">
+                              <div class="checkbox-button">
+                                <input id="cc_2" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                <label for="cc_2" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+                              </div>
+                            </button>
+                          </div>
+                          <div class="select__options-footer">
+                            <a href="#" class="button button-small select__options-footer-apply button-primary fw">Apply</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="filter__col">
+                  <div class="select-md select-md-width">
+                    <div class="custom-select custom-select--checkbox select_combobox">
+                      <div class="select__body">
+                        <button type="button" class="select__title">
+                          <span data-pseudo-label="Age:" class="select__value _select-pseudo-label">
+                            <span class="select__content"><span class="badge badge--numeric"></span></span>
+                          </span>
+                        </button>
+                        <div class="select__options">
+                          <div class="select__scroll">
+                            <button class="select__option" data-value="1" type="button">
+                              <div class="checkbox-button">
+                                <input id="cc_1" data-error="Помилка" checked class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                <label for="cc_1" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+                              </div>
+                            </button>
+                            <button class="select__option" data-value="2" type="button">
+                              <div class="checkbox-button">
+                                <input id="cc_3" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                <label for="cc_3" class="checkbox__label"><span class="checkbox__text">Текст ТекстТекст Текст Текст Текст Текст</span></label>
+                              </div>
+                            </button>
+                            <button class="select__option" data-value="2" type="button">
+                              <div class="checkbox-button">
+                                <input id="cc_2" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                <label for="cc_2" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+                              </div>
+                            </button>
+                          </div>
+                          <div class="select__options-footer">
+                            <a href="#" class="button button-small select__options-footer-apply button-primary fw">Apply</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="filter__col">
+                  <div class="select-md select-md-width">
+                    <div class="custom-select custom-select--checkbox select_combobox">
+                      <div class="select__body">
+                        <button type="button" class="select__title">
+                          <span data-pseudo-label="Language:" class="select__value _select-pseudo-label">
+                            <span class="select__content"><span class="badge badge--numeric"></span></span>
+                          </span>
+                        </button>
+                        <div class="select__options">
+                          <div class="select__scroll">
+                            <button class="select__option" data-value="1" type="button">
+                              <div class="checkbox-button">
+                                <input id="cc_1" data-error="Помилка" checked class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                <label for="cc_1" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+                              </div>
+                            </button>
+                            <button class="select__option" data-value="2" type="button">
+                              <div class="checkbox-button">
+                                <input id="cc_3" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                <label for="cc_3" class="checkbox__label"><span class="checkbox__text">Текст ТекстТекст Текст Текст Текст Текст</span></label>
+                              </div>
+                            </button>
+                            <button class="select__option" data-value="2" type="button">
+                              <div class="checkbox-button">
+                                <input id="cc_2" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                <label for="cc_2" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+                              </div>
+                            </button>
+                          </div>
+                          <div class="select__options-footer">
+                            <a href="#" class="button button-small select__options-footer-apply button-primary fw">Apply</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="filter__col">
+                  <div class="select-md select-md-width">
+                    <div class="custom-select custom-select--checkbox select_combobox">
+                      <div class="select__body">
+                        <button type="button" class="select__title">
+                          <span data-pseudo-label="Tags:" class="select__value _select-pseudo-label">
+                            <span class="select__content"><span class="badge badge--numeric"></span></span>
+                          </span>
+                        </button>
+                        <div class="select__options">
+                          <div class="select__scroll">
+                            <button class="select__option" data-value="1" type="button">
+                              <div class="checkbox-button">
+                                <input id="cc_1" data-error="Помилка" checked class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                <label for="cc_1" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+                              </div>
+                            </button>
+                            <button class="select__option" data-value="2" type="button">
+                              <div class="checkbox-button">
+                                <input id="cc_3" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                <label for="cc_3" class="checkbox__label"><span class="checkbox__text">Текст ТекстТекст Текст Текст Текст Текст</span></label>
+                              </div>
+                            </button>
+                            <button class="select__option" data-value="2" type="button">
+                              <div class="checkbox-button">
+                                <input id="cc_2" data-error="Помилка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                <label for="cc_2" class="checkbox__label"><span class="checkbox__text">Текст</span></label>
+                              </div>
+                            </button>
+                          </div>
+                          <div class="select__options-footer">
+                            <a href="#" class="button button-small select__options-footer-apply button-primary fw">Apply</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="filter__col">
+                  <a href="#" class="link link--large filter__reset link--red">Reset all</a>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="creators mb-8">
+          <div class="creators__list grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4">
+            <div class="creator-card" data-popup="#popupCreatorsProfile">
+              <div class="creator-card__body">
+                <div class="creator-card__header">
+                  <div class="profile profile-size--m creator-card__profile">
+                    <div class="profile__body">
+                      <div class="profile__icon">
+                        <img src="img/profile-avatars/image.png" alt="image">
+                      </div>
+                      <div class="profile__info">
+                        <div class="profile__name">
+                          Thetremba
+                          <div class="level-badge">
+                            <div class="svg-icon">
+                              <img class="icon icon--size-m" src="@img/levels-badge/Level=1-1x.png" srcset="img/levels-badge/Level=1-2x.png 2x" alt="Level">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="profile__info-creator creator-info">
+                          <div class="creator-info__col text-yellow-300">
+                            <div class="svg-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6.10208 3.6055C6.94674 2.09083 7.36874 1.3335 8.00008 1.3335C8.63141 1.3335 9.05341 2.09083 9.89808 3.6055L10.1167 3.9975C10.3567 4.42816 10.4767 4.6435 10.6634 4.7855C10.8501 4.9275 11.0834 4.98016 11.5501 5.0855L11.9741 5.1815C13.6141 5.55283 14.4334 5.73816 14.6287 6.3655C14.8234 6.99216 14.2647 7.64616 13.1467 8.9535L12.8574 9.2915C12.5401 9.66283 12.3807 9.84883 12.3094 10.0782C12.2381 10.3082 12.2621 10.5562 12.3101 11.0515L12.3541 11.5028C12.5227 13.2475 12.6074 14.1195 12.0967 14.5068C11.5861 14.8948 10.8181 14.5408 9.28341 13.8342L8.88541 13.6515C8.44941 13.4502 8.23141 13.3502 8.00008 13.3502C7.76874 13.3502 7.55074 13.4502 7.11407 13.6515L6.71741 13.8342C5.18208 14.5408 4.41408 14.8942 3.90408 14.5075C3.39274 14.1195 3.47741 13.2475 3.64608 11.5028L3.69008 11.0522C3.73808 10.5562 3.76208 10.3082 3.69008 10.0788C3.61941 9.84883 3.46008 9.66283 3.14274 9.29216L2.85341 8.9535C1.73541 7.64683 1.17674 6.99283 1.37141 6.3655C1.56674 5.73816 2.38674 5.55216 4.02674 5.1815L4.45074 5.0855C4.91674 4.98016 5.14941 4.9275 5.33674 4.7855C5.52341 4.6435 5.64341 4.42816 5.88341 3.9975L6.10208 3.6055Z" fill="#FCB750"/>
+                              </svg>
+                            </div>
+                            <span>
+                              4,8
+                            </span>
+                          </div>
+                          <div class="creator-info__col text-accent-300">
+                            <div class="svg-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg"class="icon icon--size-s"  width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path opacity="0.4" d="M7.99992 14.6668C4.85725 14.6668 3.28592 14.6668 2.30925 13.6902C1.33325 12.7148 1.33325 11.1428 1.33325 8.00016C1.33325 4.8575 1.33325 3.28616 2.30925 2.3095C3.28659 1.3335 4.85725 1.3335 7.99992 1.3335C11.1426 1.3335 12.7139 1.3335 13.6899 2.3095C14.6666 3.28683 14.6666 4.8575 14.6666 8.00016C14.6666 11.1428 14.6666 12.7142 13.6899 13.6902C12.7146 14.6668 11.1426 14.6668 7.99992 14.6668Z" fill="#03E39E"/>
+                                <path d="M11.794 5.20251C11.9259 5.33234 12 5.50834 12 5.69184C12 5.87534 11.9259 6.05133 11.794 6.18117L7.09809 10.7975C6.96602 10.9272 6.78698 11 6.60032 11C6.41366 11 6.23463 10.9272 6.10256 10.7975L4.22419 8.95096C4.15498 8.88757 4.09948 8.81112 4.06098 8.72618C4.02248 8.64124 4.00178 8.54955 4.00011 8.45657C3.99844 8.3636 4.01584 8.27125 4.05127 8.18502C4.08669 8.0988 4.13942 8.02048 4.20631 7.95473C4.2732 7.88897 4.35287 7.83713 4.44058 7.80231C4.52829 7.76748 4.62223 7.75038 4.71681 7.75202C4.81139 7.75366 4.90466 7.77401 4.99107 7.81186C5.07747 7.8497 5.15524 7.90427 5.21972 7.9723L6.60032 9.3295L10.7985 5.20251C10.9305 5.07284 11.1096 5 11.2962 5C11.4829 5 11.6619 5.07284 11.794 5.20251Z" fill="#03E39E"/>
+                              </svg>
+                            </div>
+                            <span>
+                              99%
+                            </span>
+                          </div>
+                          <div class="creator-info__col text-violet-300">
+                            <div class="svg-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M14.6666 8.00016C14.6666 11.6822 11.6819 14.6668 7.99992 14.6668C4.31792 14.6668 1.33325 11.6822 1.33325 8.00016C1.33325 4.31816 4.31792 1.3335 7.99992 1.3335C11.6819 1.3335 14.6666 4.31816 14.6666 8.00016Z" fill="#7D72CB"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 3.5C8.13261 3.5 8.25978 3.55268 8.35355 3.64645C8.44732 3.74021 8.5 3.86739 8.5 4V4.21133C9.58667 4.406 10.5 5.22267 10.5 6.33333C10.5 6.46594 10.4473 6.59312 10.3536 6.68689C10.2598 6.78065 10.1326 6.83333 10 6.83333C9.86739 6.83333 9.74022 6.78065 9.64645 6.68689C9.55268 6.59312 9.5 6.46594 9.5 6.33333C9.5 5.88133 9.124 5.402 8.5 5.23133V7.54467C9.58667 7.73933 10.5 8.556 10.5 9.66667C10.5 10.7773 9.58667 11.594 8.5 11.7887V12C8.5 12.1326 8.44732 12.2598 8.35355 12.3536C8.25978 12.4473 8.13261 12.5 8 12.5C7.86739 12.5 7.74022 12.4473 7.64645 12.3536C7.55268 12.2598 7.5 12.1326 7.5 12V11.7887C6.41333 11.594 5.5 10.7773 5.5 9.66667C5.5 9.53406 5.55268 9.40688 5.64645 9.31311C5.74022 9.21935 5.86739 9.16667 6 9.16667C6.13261 9.16667 6.25978 9.21935 6.35355 9.31311C6.44732 9.40688 6.5 9.53406 6.5 9.66667C6.5 10.1187 6.876 10.598 7.5 10.768V8.45533C6.41333 8.26067 5.5 7.444 5.5 6.33333C5.5 5.22267 6.41333 4.406 7.5 4.21133V4C7.5 3.86739 7.55268 3.74021 7.64645 3.64645C7.74022 3.55268 7.86739 3.5 8 3.5ZM7.5 5.23133C6.876 5.402 6.5 5.88133 6.5 6.33333C6.5 6.78533 6.876 7.26467 7.5 7.43467V5.23133ZM9.5 9.66667C9.5 9.21467 9.124 8.73533 8.5 8.56533V10.768C9.124 10.598 9.5 10.1187 9.5 9.66667Z" fill="#7D72CB"/>
+                              </svg>
+                            </div>
+                            <span>
+                              2.8
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    
+                  </div>
+                </div>
+                <div class="creator-card__content">
+                  <div class="creator-card__platform platform-card">
+                    <div class="platform-card__row">
+                      <div class="platform-card__line">
+                        <div class="platform-card__info">
+                          <div class="flex items-center gap-2">
+                            <div class="platform platform--size-l">
+                              <img src="@img/icons/formkit_youtube.svg" alt="image">
+                            </div>
+                            <div>
+                              <p class="text-body-md-medium !leading-none">
+                                Youtube
+                              </p>
+                              <span class="text-secondary text-body-xs-medium">
+                                Platform
+                              </span>
+                            </div>
+                          </div>
+                          <div class="flex items-center gap-2">
+                         
+                            <div>
+                              <p class="text-body-md-medium !leading-none">
+                                4,9M
+                              </p>
+                              <span class="text-secondary text-body-xs-medium">
+                                Subscribers
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="platform-card__row grid grid-cols-2 gap-2">
+                      <div class="platform-card__line">
+                        <div class="platform-card__info">
+                          <div class="flex items-center gap-2">
+                        
+                            <div>
+                              <p class="md:heading-lg heading-md">
+                                1.4%
+                              </p>
+                              <span class="text-violet-300 text-body-xs-medium">
+                                Engagement
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="platform-card__line">
+                        <div class="platform-card__info">
+                          <div class="flex items-center gap-2">
+                        
+                            <div>
+                              <p class="md:heading-lg heading-md">
+                                1.5M
+                              </p>
+                              <span class="text-violet-300 text-body-xs-medium">
+                                Avg. Views 
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="creator-card">
+              <div class="creator-card__body">
+                <div class="creator-card__header">
+                  <div class="profile profile-size--m creator-card__profile">
+                    <div class="profile__body">
+                      <div class="profile__icon">
+                        <img src="img/profile-avatars/image.png" alt="image">
+                      </div>
+                      <div class="profile__info">
+                        <div class="profile__name">
+                          soloveykoooo94
+                          <div class="level-badge">
+                            <div class="svg-icon">
+                              <img class="icon icon--size-m" src="@img/levels-badge/Level=1-1x.png" srcset="img/levels-badge/Level=1-2x.png 2x" alt="Level">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="profile__info-creator creator-info">
+                          <div class="creator-info__col text-yellow-300">
+                            <div class="svg-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6.10208 3.6055C6.94674 2.09083 7.36874 1.3335 8.00008 1.3335C8.63141 1.3335 9.05341 2.09083 9.89808 3.6055L10.1167 3.9975C10.3567 4.42816 10.4767 4.6435 10.6634 4.7855C10.8501 4.9275 11.0834 4.98016 11.5501 5.0855L11.9741 5.1815C13.6141 5.55283 14.4334 5.73816 14.6287 6.3655C14.8234 6.99216 14.2647 7.64616 13.1467 8.9535L12.8574 9.2915C12.5401 9.66283 12.3807 9.84883 12.3094 10.0782C12.2381 10.3082 12.2621 10.5562 12.3101 11.0515L12.3541 11.5028C12.5227 13.2475 12.6074 14.1195 12.0967 14.5068C11.5861 14.8948 10.8181 14.5408 9.28341 13.8342L8.88541 13.6515C8.44941 13.4502 8.23141 13.3502 8.00008 13.3502C7.76874 13.3502 7.55074 13.4502 7.11407 13.6515L6.71741 13.8342C5.18208 14.5408 4.41408 14.8942 3.90408 14.5075C3.39274 14.1195 3.47741 13.2475 3.64608 11.5028L3.69008 11.0522C3.73808 10.5562 3.76208 10.3082 3.69008 10.0788C3.61941 9.84883 3.46008 9.66283 3.14274 9.29216L2.85341 8.9535C1.73541 7.64683 1.17674 6.99283 1.37141 6.3655C1.56674 5.73816 2.38674 5.55216 4.02674 5.1815L4.45074 5.0855C4.91674 4.98016 5.14941 4.9275 5.33674 4.7855C5.52341 4.6435 5.64341 4.42816 5.88341 3.9975L6.10208 3.6055Z" fill="#FCB750"/>
+                              </svg>
+                            </div>
+                            <span>
+                              4,8
+                            </span>
+                          </div>
+                          <div class="creator-info__col text-accent-300">
+                            <div class="svg-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg"class="icon icon--size-s"  width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path opacity="0.4" d="M7.99992 14.6668C4.85725 14.6668 3.28592 14.6668 2.30925 13.6902C1.33325 12.7148 1.33325 11.1428 1.33325 8.00016C1.33325 4.8575 1.33325 3.28616 2.30925 2.3095C3.28659 1.3335 4.85725 1.3335 7.99992 1.3335C11.1426 1.3335 12.7139 1.3335 13.6899 2.3095C14.6666 3.28683 14.6666 4.8575 14.6666 8.00016C14.6666 11.1428 14.6666 12.7142 13.6899 13.6902C12.7146 14.6668 11.1426 14.6668 7.99992 14.6668Z" fill="#03E39E"/>
+                                <path d="M11.794 5.20251C11.9259 5.33234 12 5.50834 12 5.69184C12 5.87534 11.9259 6.05133 11.794 6.18117L7.09809 10.7975C6.96602 10.9272 6.78698 11 6.60032 11C6.41366 11 6.23463 10.9272 6.10256 10.7975L4.22419 8.95096C4.15498 8.88757 4.09948 8.81112 4.06098 8.72618C4.02248 8.64124 4.00178 8.54955 4.00011 8.45657C3.99844 8.3636 4.01584 8.27125 4.05127 8.18502C4.08669 8.0988 4.13942 8.02048 4.20631 7.95473C4.2732 7.88897 4.35287 7.83713 4.44058 7.80231C4.52829 7.76748 4.62223 7.75038 4.71681 7.75202C4.81139 7.75366 4.90466 7.77401 4.99107 7.81186C5.07747 7.8497 5.15524 7.90427 5.21972 7.9723L6.60032 9.3295L10.7985 5.20251C10.9305 5.07284 11.1096 5 11.2962 5C11.4829 5 11.6619 5.07284 11.794 5.20251Z" fill="#03E39E"/>
+                              </svg>
+                            </div>
+                            <span>
+                              99%
+                            </span>
+                          </div>
+                          <div class="creator-info__col text-violet-300">
+                            <div class="svg-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M14.6666 8.00016C14.6666 11.6822 11.6819 14.6668 7.99992 14.6668C4.31792 14.6668 1.33325 11.6822 1.33325 8.00016C1.33325 4.31816 4.31792 1.3335 7.99992 1.3335C11.6819 1.3335 14.6666 4.31816 14.6666 8.00016Z" fill="#7D72CB"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 3.5C8.13261 3.5 8.25978 3.55268 8.35355 3.64645C8.44732 3.74021 8.5 3.86739 8.5 4V4.21133C9.58667 4.406 10.5 5.22267 10.5 6.33333C10.5 6.46594 10.4473 6.59312 10.3536 6.68689C10.2598 6.78065 10.1326 6.83333 10 6.83333C9.86739 6.83333 9.74022 6.78065 9.64645 6.68689C9.55268 6.59312 9.5 6.46594 9.5 6.33333C9.5 5.88133 9.124 5.402 8.5 5.23133V7.54467C9.58667 7.73933 10.5 8.556 10.5 9.66667C10.5 10.7773 9.58667 11.594 8.5 11.7887V12C8.5 12.1326 8.44732 12.2598 8.35355 12.3536C8.25978 12.4473 8.13261 12.5 8 12.5C7.86739 12.5 7.74022 12.4473 7.64645 12.3536C7.55268 12.2598 7.5 12.1326 7.5 12V11.7887C6.41333 11.594 5.5 10.7773 5.5 9.66667C5.5 9.53406 5.55268 9.40688 5.64645 9.31311C5.74022 9.21935 5.86739 9.16667 6 9.16667C6.13261 9.16667 6.25978 9.21935 6.35355 9.31311C6.44732 9.40688 6.5 9.53406 6.5 9.66667C6.5 10.1187 6.876 10.598 7.5 10.768V8.45533C6.41333 8.26067 5.5 7.444 5.5 6.33333C5.5 5.22267 6.41333 4.406 7.5 4.21133V4C7.5 3.86739 7.55268 3.74021 7.64645 3.64645C7.74022 3.55268 7.86739 3.5 8 3.5ZM7.5 5.23133C6.876 5.402 6.5 5.88133 6.5 6.33333C6.5 6.78533 6.876 7.26467 7.5 7.43467V5.23133ZM9.5 9.66667C9.5 9.21467 9.124 8.73533 8.5 8.56533V10.768C9.124 10.598 9.5 10.1187 9.5 9.66667Z" fill="#7D72CB"/>
+                              </svg>
+                            </div>
+                            <span>
+                              2.8
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    
+                  </div>
+                </div>
+                <div class="creator-card__content">
+                  <div class="creator-card__platform platform-card">
+                    <div class="platform-card__row">
+                      <div class="platform-card__line">
+                        <div class="platform-card__info">
+                          <div class="flex items-center gap-2">
+                            <div class="platform platform--size-l">
+                              <img src="@img/icons/formkit_youtube.svg" alt="image">
+                            </div>
+                            <div>
+                              <p class="text-body-md-medium !leading-none">
+                                Youtube
+                              </p>
+                              <span class="text-secondary text-body-xs-medium">
+                                Platform
+                              </span>
+                            </div>
+                          </div>
+                          <div class="flex items-center gap-2">
+                         
+                            <div>
+                              <p class="text-body-md-medium !leading-none">
+                                4,9M
+                              </p>
+                              <span class="text-secondary text-body-xs-medium">
+                                Subscribers
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="platform-card__row grid grid-cols-2 gap-2">
+                      <div class="platform-card__line">
+                        <div class="platform-card__info">
+                          <div class="flex items-center gap-2">
+                        
+                            <div>
+                              <p class="md:heading-lg heading-md">
+                                1.4%
+                              </p>
+                              <span class="text-violet-300 text-body-xs-medium">
+                                Engagement
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="platform-card__line">
+                        <div class="platform-card__info">
+                          <div class="flex items-center gap-2">
+                        
+                            <div>
+                              <p class="md:heading-lg heading-md">
+                                1.5M
+                              </p>
+                              <span class="text-violet-300 text-body-xs-medium">
+                                Avg. Views 
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="creator-card">
+              <div class="creator-card__body">
+                <div class="creator-card__header">
+                  <div class="profile profile-size--m creator-card__profile">
+                    <div class="profile__body">
+                      <div class="profile__icon">
+                        <img src="img/profile-avatars/image.png" alt="image">
+                      </div>
+                      <div class="profile__info">
+                        <div class="profile__name">
+                          soloveykooo o94 534534
+                          <div class="level-badge">
+                            <div class="svg-icon">
+                              <img class="icon icon--size-m" src="@img/levels-badge/Level=5-1x.png" srcset="img/levels-badge/Level=5-2x.png 2x" alt="Level">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="profile__info-creator creator-info">
+                          <div class="creator-info__col text-yellow-300">
+                            <div class="svg-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6.10208 3.6055C6.94674 2.09083 7.36874 1.3335 8.00008 1.3335C8.63141 1.3335 9.05341 2.09083 9.89808 3.6055L10.1167 3.9975C10.3567 4.42816 10.4767 4.6435 10.6634 4.7855C10.8501 4.9275 11.0834 4.98016 11.5501 5.0855L11.9741 5.1815C13.6141 5.55283 14.4334 5.73816 14.6287 6.3655C14.8234 6.99216 14.2647 7.64616 13.1467 8.9535L12.8574 9.2915C12.5401 9.66283 12.3807 9.84883 12.3094 10.0782C12.2381 10.3082 12.2621 10.5562 12.3101 11.0515L12.3541 11.5028C12.5227 13.2475 12.6074 14.1195 12.0967 14.5068C11.5861 14.8948 10.8181 14.5408 9.28341 13.8342L8.88541 13.6515C8.44941 13.4502 8.23141 13.3502 8.00008 13.3502C7.76874 13.3502 7.55074 13.4502 7.11407 13.6515L6.71741 13.8342C5.18208 14.5408 4.41408 14.8942 3.90408 14.5075C3.39274 14.1195 3.47741 13.2475 3.64608 11.5028L3.69008 11.0522C3.73808 10.5562 3.76208 10.3082 3.69008 10.0788C3.61941 9.84883 3.46008 9.66283 3.14274 9.29216L2.85341 8.9535C1.73541 7.64683 1.17674 6.99283 1.37141 6.3655C1.56674 5.73816 2.38674 5.55216 4.02674 5.1815L4.45074 5.0855C4.91674 4.98016 5.14941 4.9275 5.33674 4.7855C5.52341 4.6435 5.64341 4.42816 5.88341 3.9975L6.10208 3.6055Z" fill="#FCB750"/>
+                              </svg>
+                            </div>
+                            <span>
+                              4,8
+                            </span>
+                          </div>
+                          <div class="creator-info__col text-accent-300">
+                            <div class="svg-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg"class="icon icon--size-s"  width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path opacity="0.4" d="M7.99992 14.6668C4.85725 14.6668 3.28592 14.6668 2.30925 13.6902C1.33325 12.7148 1.33325 11.1428 1.33325 8.00016C1.33325 4.8575 1.33325 3.28616 2.30925 2.3095C3.28659 1.3335 4.85725 1.3335 7.99992 1.3335C11.1426 1.3335 12.7139 1.3335 13.6899 2.3095C14.6666 3.28683 14.6666 4.8575 14.6666 8.00016C14.6666 11.1428 14.6666 12.7142 13.6899 13.6902C12.7146 14.6668 11.1426 14.6668 7.99992 14.6668Z" fill="#03E39E"/>
+                                <path d="M11.794 5.20251C11.9259 5.33234 12 5.50834 12 5.69184C12 5.87534 11.9259 6.05133 11.794 6.18117L7.09809 10.7975C6.96602 10.9272 6.78698 11 6.60032 11C6.41366 11 6.23463 10.9272 6.10256 10.7975L4.22419 8.95096C4.15498 8.88757 4.09948 8.81112 4.06098 8.72618C4.02248 8.64124 4.00178 8.54955 4.00011 8.45657C3.99844 8.3636 4.01584 8.27125 4.05127 8.18502C4.08669 8.0988 4.13942 8.02048 4.20631 7.95473C4.2732 7.88897 4.35287 7.83713 4.44058 7.80231C4.52829 7.76748 4.62223 7.75038 4.71681 7.75202C4.81139 7.75366 4.90466 7.77401 4.99107 7.81186C5.07747 7.8497 5.15524 7.90427 5.21972 7.9723L6.60032 9.3295L10.7985 5.20251C10.9305 5.07284 11.1096 5 11.2962 5C11.4829 5 11.6619 5.07284 11.794 5.20251Z" fill="#03E39E"/>
+                              </svg>
+                            </div>
+                            <span>
+                              99%
+                            </span>
+                          </div>
+                          <div class="creator-info__col text-violet-300">
+                            <div class="svg-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M14.6666 8.00016C14.6666 11.6822 11.6819 14.6668 7.99992 14.6668C4.31792 14.6668 1.33325 11.6822 1.33325 8.00016C1.33325 4.31816 4.31792 1.3335 7.99992 1.3335C11.6819 1.3335 14.6666 4.31816 14.6666 8.00016Z" fill="#7D72CB"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 3.5C8.13261 3.5 8.25978 3.55268 8.35355 3.64645C8.44732 3.74021 8.5 3.86739 8.5 4V4.21133C9.58667 4.406 10.5 5.22267 10.5 6.33333C10.5 6.46594 10.4473 6.59312 10.3536 6.68689C10.2598 6.78065 10.1326 6.83333 10 6.83333C9.86739 6.83333 9.74022 6.78065 9.64645 6.68689C9.55268 6.59312 9.5 6.46594 9.5 6.33333C9.5 5.88133 9.124 5.402 8.5 5.23133V7.54467C9.58667 7.73933 10.5 8.556 10.5 9.66667C10.5 10.7773 9.58667 11.594 8.5 11.7887V12C8.5 12.1326 8.44732 12.2598 8.35355 12.3536C8.25978 12.4473 8.13261 12.5 8 12.5C7.86739 12.5 7.74022 12.4473 7.64645 12.3536C7.55268 12.2598 7.5 12.1326 7.5 12V11.7887C6.41333 11.594 5.5 10.7773 5.5 9.66667C5.5 9.53406 5.55268 9.40688 5.64645 9.31311C5.74022 9.21935 5.86739 9.16667 6 9.16667C6.13261 9.16667 6.25978 9.21935 6.35355 9.31311C6.44732 9.40688 6.5 9.53406 6.5 9.66667C6.5 10.1187 6.876 10.598 7.5 10.768V8.45533C6.41333 8.26067 5.5 7.444 5.5 6.33333C5.5 5.22267 6.41333 4.406 7.5 4.21133V4C7.5 3.86739 7.55268 3.74021 7.64645 3.64645C7.74022 3.55268 7.86739 3.5 8 3.5ZM7.5 5.23133C6.876 5.402 6.5 5.88133 6.5 6.33333C6.5 6.78533 6.876 7.26467 7.5 7.43467V5.23133ZM9.5 9.66667C9.5 9.21467 9.124 8.73533 8.5 8.56533V10.768C9.124 10.598 9.5 10.1187 9.5 9.66667Z" fill="#7D72CB"/>
+                              </svg>
+                            </div>
+                            <span>
+                              2.8
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    
+                  </div>
+                </div>
+                <div class="creator-card__content">
+                  <div class="creator-card__platform platform-card">
+                    <div class="platform-card__row">
+                      <div class="platform-card__line">
+                        <div class="platform-card__info">
+                          <div class="flex items-center gap-2">
+                            <div class="platform platform--size-l">
+                              <img src="@img/icons/formkit_youtube.svg" alt="image">
+                            </div>
+                            <div>
+                              <p class="text-body-md-medium !leading-none">
+                                Youtube
+                              </p>
+                              <span class="text-secondary text-body-xs-medium">
+                                Platform
+                              </span>
+                            </div>
+                          </div>
+                          <div class="flex items-center gap-2">
+                         
+                            <div>
+                              <p class="text-body-md-medium !leading-none">
+                                4,9M
+                              </p>
+                              <span class="text-secondary text-body-xs-medium">
+                                Subscribers
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="platform-card__row grid grid-cols-2 gap-2">
+                      <div class="platform-card__line">
+                        <div class="platform-card__info">
+                          <div class="flex items-center gap-2">
+                        
+                            <div>
+                              <p class="md:heading-lg heading-md">
+                                1.4%
+                              </p>
+                              <span class="text-violet-300 text-body-xs-medium">
+                                Engagement
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="platform-card__line">
+                        <div class="platform-card__info">
+                          <div class="flex items-center gap-2">
+                        
+                            <div>
+                              <p class="md:heading-lg heading-md">
+                                1.5M
+                              </p>
+                              <span class="text-violet-300 text-body-xs-medium">
+                                Avg. Views 
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="creator-card">
+              <div class="creator-card__body">
+                <div class="creator-card__header">
+                  <div class="profile profile-size--m creator-card__profile">
+                    <div class="profile__body">
+                      <div class="profile__icon">
+                        <img src="img/profile-avatars/image.png" alt="image">
+                      </div>
+                      <div class="profile__info">
+                        <div class="profile__name">
+                          soloveykooo o94 534534
+                          <div class="level-badge">
+                            <div class="svg-icon">
+                              <img class="icon icon--size-m" src="@img/levels-badge/Level=1-1x.png" srcset="img/levels-badge/Level=1-2x.png 2x" alt="Level">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="profile__info-creator creator-info">
+                          <div class="creator-info__col text-yellow-300">
+                            <div class="svg-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M6.10208 3.6055C6.94674 2.09083 7.36874 1.3335 8.00008 1.3335C8.63141 1.3335 9.05341 2.09083 9.89808 3.6055L10.1167 3.9975C10.3567 4.42816 10.4767 4.6435 10.6634 4.7855C10.8501 4.9275 11.0834 4.98016 11.5501 5.0855L11.9741 5.1815C13.6141 5.55283 14.4334 5.73816 14.6287 6.3655C14.8234 6.99216 14.2647 7.64616 13.1467 8.9535L12.8574 9.2915C12.5401 9.66283 12.3807 9.84883 12.3094 10.0782C12.2381 10.3082 12.2621 10.5562 12.3101 11.0515L12.3541 11.5028C12.5227 13.2475 12.6074 14.1195 12.0967 14.5068C11.5861 14.8948 10.8181 14.5408 9.28341 13.8342L8.88541 13.6515C8.44941 13.4502 8.23141 13.3502 8.00008 13.3502C7.76874 13.3502 7.55074 13.4502 7.11407 13.6515L6.71741 13.8342C5.18208 14.5408 4.41408 14.8942 3.90408 14.5075C3.39274 14.1195 3.47741 13.2475 3.64608 11.5028L3.69008 11.0522C3.73808 10.5562 3.76208 10.3082 3.69008 10.0788C3.61941 9.84883 3.46008 9.66283 3.14274 9.29216L2.85341 8.9535C1.73541 7.64683 1.17674 6.99283 1.37141 6.3655C1.56674 5.73816 2.38674 5.55216 4.02674 5.1815L4.45074 5.0855C4.91674 4.98016 5.14941 4.9275 5.33674 4.7855C5.52341 4.6435 5.64341 4.42816 5.88341 3.9975L6.10208 3.6055Z" fill="#FCB750"/>
+                              </svg>
+                            </div>
+                            <span>
+                              4,8
+                            </span>
+                          </div>
+                          <div class="creator-info__col text-accent-300">
+                            <div class="svg-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg"class="icon icon--size-s"  width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path opacity="0.4" d="M7.99992 14.6668C4.85725 14.6668 3.28592 14.6668 2.30925 13.6902C1.33325 12.7148 1.33325 11.1428 1.33325 8.00016C1.33325 4.8575 1.33325 3.28616 2.30925 2.3095C3.28659 1.3335 4.85725 1.3335 7.99992 1.3335C11.1426 1.3335 12.7139 1.3335 13.6899 2.3095C14.6666 3.28683 14.6666 4.8575 14.6666 8.00016C14.6666 11.1428 14.6666 12.7142 13.6899 13.6902C12.7146 14.6668 11.1426 14.6668 7.99992 14.6668Z" fill="#03E39E"/>
+                                <path d="M11.794 5.20251C11.9259 5.33234 12 5.50834 12 5.69184C12 5.87534 11.9259 6.05133 11.794 6.18117L7.09809 10.7975C6.96602 10.9272 6.78698 11 6.60032 11C6.41366 11 6.23463 10.9272 6.10256 10.7975L4.22419 8.95096C4.15498 8.88757 4.09948 8.81112 4.06098 8.72618C4.02248 8.64124 4.00178 8.54955 4.00011 8.45657C3.99844 8.3636 4.01584 8.27125 4.05127 8.18502C4.08669 8.0988 4.13942 8.02048 4.20631 7.95473C4.2732 7.88897 4.35287 7.83713 4.44058 7.80231C4.52829 7.76748 4.62223 7.75038 4.71681 7.75202C4.81139 7.75366 4.90466 7.77401 4.99107 7.81186C5.07747 7.8497 5.15524 7.90427 5.21972 7.9723L6.60032 9.3295L10.7985 5.20251C10.9305 5.07284 11.1096 5 11.2962 5C11.4829 5 11.6619 5.07284 11.794 5.20251Z" fill="#03E39E"/>
+                              </svg>
+                            </div>
+                            <span>
+                              99%
+                            </span>
+                          </div>
+                          <div class="creator-info__col text-violet-300">
+                            <div class="svg-icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M14.6666 8.00016C14.6666 11.6822 11.6819 14.6668 7.99992 14.6668C4.31792 14.6668 1.33325 11.6822 1.33325 8.00016C1.33325 4.31816 4.31792 1.3335 7.99992 1.3335C11.6819 1.3335 14.6666 4.31816 14.6666 8.00016Z" fill="#7D72CB"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 3.5C8.13261 3.5 8.25978 3.55268 8.35355 3.64645C8.44732 3.74021 8.5 3.86739 8.5 4V4.21133C9.58667 4.406 10.5 5.22267 10.5 6.33333C10.5 6.46594 10.4473 6.59312 10.3536 6.68689C10.2598 6.78065 10.1326 6.83333 10 6.83333C9.86739 6.83333 9.74022 6.78065 9.64645 6.68689C9.55268 6.59312 9.5 6.46594 9.5 6.33333C9.5 5.88133 9.124 5.402 8.5 5.23133V7.54467C9.58667 7.73933 10.5 8.556 10.5 9.66667C10.5 10.7773 9.58667 11.594 8.5 11.7887V12C8.5 12.1326 8.44732 12.2598 8.35355 12.3536C8.25978 12.4473 8.13261 12.5 8 12.5C7.86739 12.5 7.74022 12.4473 7.64645 12.3536C7.55268 12.2598 7.5 12.1326 7.5 12V11.7887C6.41333 11.594 5.5 10.7773 5.5 9.66667C5.5 9.53406 5.55268 9.40688 5.64645 9.31311C5.74022 9.21935 5.86739 9.16667 6 9.16667C6.13261 9.16667 6.25978 9.21935 6.35355 9.31311C6.44732 9.40688 6.5 9.53406 6.5 9.66667C6.5 10.1187 6.876 10.598 7.5 10.768V8.45533C6.41333 8.26067 5.5 7.444 5.5 6.33333C5.5 5.22267 6.41333 4.406 7.5 4.21133V4C7.5 3.86739 7.55268 3.74021 7.64645 3.64645C7.74022 3.55268 7.86739 3.5 8 3.5ZM7.5 5.23133C6.876 5.402 6.5 5.88133 6.5 6.33333C6.5 6.78533 6.876 7.26467 7.5 7.43467V5.23133ZM9.5 9.66667C9.5 9.21467 9.124 8.73533 8.5 8.56533V10.768C9.124 10.598 9.5 10.1187 9.5 9.66667Z" fill="#7D72CB"/>
+                              </svg>
+                            </div>
+                            <span>
+                              2.8
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    
+                  </div>
+                </div>
+                <div class="creator-card__content">
+                  <div class="creator-card__platform platform-card">
+                    <div class="platform-card__row">
+                      <div class="platform-card__line">
+                        <div class="platform-card__info">
+                          <div class="flex items-center gap-2">
+                            <div class="platform platform--size-l">
+                              <img src="@img/icons/formkit_youtube.svg" alt="image">
+                            </div>
+                            <div>
+                              <p class="text-body-md-medium !leading-none">
+                                Youtube
+                              </p>
+                              <span class="text-secondary text-body-xs-medium">
+                                Platform
+                              </span>
+                            </div>
+                          </div>
+                          <div class="flex items-center gap-2">
+                         
+                            <div>
+                              <p class="text-body-md-medium !leading-none">
+                                4,9M
+                              </p>
+                              <span class="text-secondary text-body-xs-medium">
+                                Subscribers
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="platform-card__row grid grid-cols-2 gap-2">
+                      <div class="platform-card__line">
+                        <div class="platform-card__info">
+                          <div class="flex items-center gap-2">
+                        
+                            <div>
+                              <p class="md:heading-lg heading-md">
+                                1.4%
+                              </p>
+                              <span class="text-violet-300 text-body-xs-medium">
+                                Engagement
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="platform-card__line">
+                        <div class="platform-card__info">
+                          <div class="flex items-center gap-2">
+                        
+                            <div>
+                              <p class="md:heading-lg heading-md">
+                                1.5M
+                              </p>
+                              <span class="text-violet-300 text-body-xs-medium">
+                                Avg. Views 
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="creators__pagination pagination">
+            <div class="pagging">
+              <a href="" class="pagging__arrow disabled" disabled>
+                <div class="svg-icon">
+                  <svg class="icon icon--size-m" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none">
+                    <path id="Vector" d="M14 7L9 12L14 17" stroke="white" stroke-width="1.33333" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </div>
+              </a>
+              <ul class="pagging__list">
+                <li>
+                  <a href="" class="pagging__item _active">1</a>
+                </li>
+                <li>
+                  <a href="" class="pagging__item">2</a>
+                </li>
+                <li>
+                  <a href="" class="pagging__item">3</a>
+                </li>
+                <li>
+                  <a href="" class="pagging__item">4</a>
+                </li>
+                <li>
+                  <a href="" class="pagging__item">5</a>
+                </li>
+              </ul>
+              <a href="" class="pagging__arrow">
+                <div class="svg-icon">
+                  <svg class="icon icon--size-m" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none">
+
+                    <path id="Vector" d="M10 7L15 12L10 17" stroke="white" stroke-width="1.33333" stroke-linecap="round"
+                      stroke-linejoin="round" />
+
+                  </svg>
+                </div>
+
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+    @@include('html/_popup.htm',{})
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

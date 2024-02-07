@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"HomePage"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header-brand.htm',{})
+			<main class="page">
+        <div class="page__container">
+          <div class="complete-profile-alert profile-alert">
+            <div class="profile-alert__body">
+              <div class="profile-alert__left">
+                <h6 class="md:heading-lg heading-md flex items-center gap-2 mb-2">
+                  <div class="svg-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-m" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path opacity="0.5" d="M16.157 3.802L16.843 4.208C18.872 5.41 19.886 6.011 20.443 7C21 7.99 21 9.19 21 11.594V12.406C21 14.809 21 16.011 20.443 17C19.886 17.99 18.872 18.59 16.843 19.791L16.157 20.198C14.128 21.399 13.114 22 12 22C10.886 22 9.872 21.4 7.843 20.198L7.157 19.791C5.128 18.591 4.114 17.989 3.557 17C3 16.01 3 14.81 3 12.406V11.594C3 9.19 3 7.989 3.557 7C4.114 6.01 5.128 5.41 7.157 4.208L7.843 3.802C9.872 2.601 10.886 2 12 2C13.114 2 14.128 2.6 16.157 3.802Z" fill="#7D72CB"/>
+                      <path d="M12 6.25C12.1989 6.25 12.3897 6.32902 12.5303 6.46967C12.671 6.61032 12.75 6.80109 12.75 7V13C12.75 13.1989 12.671 13.3897 12.5303 13.5303C12.3897 13.671 12.1989 13.75 12 13.75C11.8011 13.75 11.6103 13.671 11.4697 13.5303C11.329 13.3897 11.25 13.1989 11.25 13V7C11.25 6.80109 11.329 6.61032 11.4697 6.46967C11.6103 6.32902 11.8011 6.25 12 6.25ZM12 17C12.2652 17 12.5196 16.8946 12.7071 16.7071C12.8946 16.5196 13 16.2652 13 16C13 15.7348 12.8946 15.4804 12.7071 15.2929C12.5196 15.1054 12.2652 15 12 15C11.7348 15 11.4804 15.1054 11.2929 15.2929C11.1054 15.4804 11 15.7348 11 16C11 16.2652 11.1054 16.5196 11.2929 16.7071C11.4804 16.8946 11.7348 17 12 17Z" fill="#7D72CB"/>
+                    </svg>
+                  </div>
+                  Complete your profie
+                </h6>
+                <p class="sm:text-body-lg-regular text-body-md-regular text-secondary">
+                  To apply for campaigns you need to complete your profile
+                </p>
+              </div>
+              <div class="profile-alert__right">
+                <a href="#" class="button button-large button-primary" data-ripple="">
+                  <span class="button__text">
+                    Go to my profile
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="widgets">
+            <div class="widget brand__info">
+              <div class="widget__header brand__info-header header-brand">
+                <div class="profile profile-level-3 profile-size--m header-brand__profile">
+                  <div class="profile__body">
+                    <div class="profile__icon">
+                      <img src="@img/profile-avatars/image.png" alt="image">
+                    </div>
+                    <div class="profile__info">
+                      <div class="profile__name">
+                        Jacob Maddison
+                        <div class="level-badge">
+                          <div class="svg-icon">
+                            <img class="icon icon--size-m" src="@img/levels-badge/Level=5-1x.png" srcset="img/levels-badge/Level=1-2x.png 2x" alt="Level">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="profile__level">
+                        Level 3
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="levelbar-block flex-1">
+                  <div class="md:heading-lg heading-md mb-4 inline-flex items-center gap-2">Level 1<div class="svg-icon">
+                    <img class="icon icon--size-l -mt-1" src="img/levels-badge/Level=1-1x.png" srcset="img/levels-badge/Level=1-2x.png 2x" alt="Level">
+                  </div></div>
+                  <div class="level-bar ">
+                  
+                    <div class="progress-container" >
+                      <div class="progress" id="progress" style="width: 0%;"></div>
+                      <div class="progress-step actived" data-template="levelOne">
+                          <div class="circle" >1</div>
+                          <div class="!hidden">
+                            <div id="levelOne" class="progress-step__tooltip tooltip" >
+                              <div class="tooltip-header">
+                                <div class="tooltip-level text-black md:heading-sm heading-xs">
+                                  Level 1
+                                  <div class="svg-icon">
+                                    <img class="icon icon--size-m" src="img/levels-badge/Level=1-1x.png" srcset="img/levels-badge/Level=1-2x.png 2x" alt="Level">
+                                  </div>
+                                </div>
+                                <div class="tooltip-done">
+                                  <div class="svg-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                      <path d="M8.00065 14.6667C4.85798 14.6667 3.28665 14.6667 2.30998 13.69C1.33398 12.7147 1.33398 11.1427 1.33398 8.00001C1.33398 4.85734 1.33398 3.28601 2.30998 2.30934C3.28732 1.33334 4.85798 1.33334 8.00065 1.33334C11.1433 1.33334 12.7147 1.33334 13.6906 2.30934C14.6673 3.28668 14.6673 4.85734 14.6673 8.00001C14.6673 11.1427 14.6673 12.714 13.6906 13.69C12.7153 14.6667 11.1433 14.6667 8.00065 14.6667Z" fill="#03986A"/>
+                                      <path d="M11.794 5.20251C11.9259 5.33234 12 5.50834 12 5.69184C12 5.87534 11.9259 6.05133 11.794 6.18117L7.09809 10.7975C6.96602 10.9272 6.78698 11 6.60032 11C6.41366 11 6.23463 10.9272 6.10256 10.7975L4.22419 8.95096C4.15498 8.88757 4.09948 8.81112 4.06098 8.72618C4.02248 8.64124 4.00178 8.54955 4.00011 8.45657C3.99844 8.3636 4.01584 8.27125 4.05127 8.18502C4.08669 8.0988 4.13942 8.02048 4.20631 7.95473C4.2732 7.88897 4.35287 7.83713 4.44058 7.80231C4.52829 7.76748 4.62223 7.75038 4.71681 7.75202C4.81139 7.75366 4.90466 7.77401 4.99107 7.81186C5.07747 7.8497 5.15524 7.90427 5.21972 7.9723L6.60032 9.3295L10.7985 5.20251C10.9305 5.07284 11.1096 5 11.2962 5C11.4829 5 11.6619 5.07284 11.794 5.20251Z" fill="white"/>
+                                    </svg>
+                                  </div>
+                                </div>
+                              </div>
+                            
+                              <div class="tooltip-body">
+                                <p>
+                                  15% Fee
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                      
+                      </div>
+                      <div class="progress-step" data-template="levelTwo">
+                          <div class="circle">2</div>
+                          <div class="!hidden">
+                            <div id="levelTwo" class="progress-step__tooltip tooltip" >
+                              <div class="tooltip-header">
+                                <div class="tooltip-level text-black md:heading-sm heading-xs">
+                                  Level 2
+                                  <div class="svg-icon">
+                                    <img class="icon icon--size-m" src="img/levels-badge/Level=2-1x.png" srcset="img/levels-badge/Level=2-2x.png 2x" alt="Level">
+                                  </div>
+                                </div>
+                                <div class="tooltip-done">
+                                  <div class="svg-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                      <path d="M8.00065 14.6667C4.85798 14.6667 3.28665 14.6667 2.30998 13.69C1.33398 12.7147 1.33398 11.1427 1.33398 8.00001C1.33398 4.85734 1.33398 3.28601 2.30998 2.30934C3.28732 1.33334 4.85798 1.33334 8.00065 1.33334C11.1433 1.33334 12.7147 1.33334 13.6906 2.30934C14.6673 3.28668 14.6673 4.85734 14.6673 8.00001C14.6673 11.1427 14.6673 12.714 13.6906 13.69C12.7153 14.6667 11.1433 14.6667 8.00065 14.6667Z" fill="#03986A"/>
+                                      <path d="M11.794 5.20251C11.9259 5.33234 12 5.50834 12 5.69184C12 5.87534 11.9259 6.05133 11.794 6.18117L7.09809 10.7975C6.96602 10.9272 6.78698 11 6.60032 11C6.41366 11 6.23463 10.9272 6.10256 10.7975L4.22419 8.95096C4.15498 8.88757 4.09948 8.81112 4.06098 8.72618C4.02248 8.64124 4.00178 8.54955 4.00011 8.45657C3.99844 8.3636 4.01584 8.27125 4.05127 8.18502C4.08669 8.0988 4.13942 8.02048 4.20631 7.95473C4.2732 7.88897 4.35287 7.83713 4.44058 7.80231C4.52829 7.76748 4.62223 7.75038 4.71681 7.75202C4.81139 7.75366 4.90466 7.77401 4.99107 7.81186C5.07747 7.8497 5.15524 7.90427 5.21972 7.9723L6.60032 9.3295L10.7985 5.20251C10.9305 5.07284 11.1096 5 11.2962 5C11.4829 5 11.6619 5.07284 11.794 5.20251Z" fill="white"/>
+                                    </svg>
+                                  </div>
+                                </div>
+                              </div>
+                            
+                              <div class="tooltip-body">
+                                <p>
+                                  $10,000 Spent
+                                </p>
+                                <p>
+                                  Reward: 14.5% Fee
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="progress-step" data-template="levelThree">
+                        <div class="circle">3</div>
+                        <div class="!hidden">
+                          <div id="levelThree" class="progress-step__tooltip tooltip" >
+                            <div class="tooltip-header">
+                              <div class="tooltip-level text-black md:heading-sm heading-xs">
+                                Level 3
+                                <div class="svg-icon">
+                                  <img class="icon icon--size-m" src="img/levels-badge/Level=3-1x.png" srcset="img/levels-badge/Level=3-2x.png 2x" alt="Level">
+                                </div>
+                              </div>
+                              <div class="tooltip-done">
+                                <div class="svg-icon">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8.00065 14.6667C4.85798 14.6667 3.28665 14.6667 2.30998 13.69C1.33398 12.7147 1.33398 11.1427 1.33398 8.00001C1.33398 4.85734 1.33398 3.28601 2.30998 2.30934C3.28732 1.33334 4.85798 1.33334 8.00065 1.33334C11.1433 1.33334 12.7147 1.33334 13.6906 2.30934C14.6673 3.28668 14.6673 4.85734 14.6673 8.00001C14.6673 11.1427 14.6673 12.714 13.6906 13.69C12.7153 14.6667 11.1433 14.6667 8.00065 14.6667Z" fill="#03986A"/>
+                                    <path d="M11.794 5.20251C11.9259 5.33234 12 5.50834 12 5.69184C12 5.87534 11.9259 6.05133 11.794 6.18117L7.09809 10.7975C6.96602 10.9272 6.78698 11 6.60032 11C6.41366 11 6.23463 10.9272 6.10256 10.7975L4.22419 8.95096C4.15498 8.88757 4.09948 8.81112 4.06098 8.72618C4.02248 8.64124 4.00178 8.54955 4.00011 8.45657C3.99844 8.3636 4.01584 8.27125 4.05127 8.18502C4.08669 8.0988 4.13942 8.02048 4.20631 7.95473C4.2732 7.88897 4.35287 7.83713 4.44058 7.80231C4.52829 7.76748 4.62223 7.75038 4.71681 7.75202C4.81139 7.75366 4.90466 7.77401 4.99107 7.81186C5.07747 7.8497 5.15524 7.90427 5.21972 7.9723L6.60032 9.3295L10.7985 5.20251C10.9305 5.07284 11.1096 5 11.2962 5C11.4829 5 11.6619 5.07284 11.794 5.20251Z" fill="white"/>
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                          
+                            <div class="tooltip-body">
+                              <p>
+                                $25,000 Spent
+                              </p>
+                              <p>
+                                Reward: 14% Fee
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                      <div class="progress-step" data-template="levelFour">
+                        <div class="circle">4</div>
+                        <div class="!hidden">
+                          <div id="levelFour" class="progress-step__tooltip tooltip" >
+                            <div class="tooltip-header">
+                              <div class="tooltip-level text-black md:heading-sm heading-xs">
+                                Level 4
+                                <div class="svg-icon">
+                                  <img class="icon icon--size-m" src="img/levels-badge/Level=4-1x.png" srcset="img/levels-badge/Level=4-2x.png 2x" alt="Level">
+                                </div>
+                              </div>
+                            </div>
+                          
+                            <div class="tooltip-body">
+                              <p>
+                                $25,000 Spent
+                              </p>
+                              <p>
+                                Reward: 14% Fee
+                              </p>
+                              <span>
+                                $10,000 left
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="progress-step" data-template="levelFive">
+                        <div class="circle">5</div>
+                        <div class="!hidden">
+                          <div id="levelFive" class="progress-step__tooltip tooltip" >
+                            <div class="tooltip-header">
+                              <div class="tooltip-level text-black md:heading-sm heading-xs">
+                                Level 5
+                                <div class="svg-icon">
+                                  <img class="icon icon--size-m" src="img/levels-badge/Level=5-1x.png" srcset="img/levels-badge/Level=5-2x.png 2x" alt="Level">
+                                </div>
+                              </div>
+                            </div>
+                          
+                            <div class="tooltip-body">
+                              <p>
+                                $25,000 Spent
+                              </p>
+                              <p>
+                                Reward: 14% Fee
+                              </p>
+                              <span>
+                                $10,000 left
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="progress-step" data-template="levelSix">
+                        <div class="circle">6</div>
+                        <div class="!hidden">
+                          <div id="levelSix" class="progress-step__tooltip tooltip" >
+                            <div class="tooltip-header">
+                              <div class="tooltip-level text-black md:heading-sm heading-xs">
+                                Level 6
+                                <div class="svg-icon">
+                                  <img class="icon icon--size-m" src="img/levels-badge/Level=6-1x.png" srcset="img/levels-badge/Level=6-2x.png 2x" alt="Level">
+                                </div>
+                              </div>
+                            </div>
+                          
+                            <div class="tooltip-body">
+                              <p>
+                                $25,000 Spent
+                              </p>
+                              <p>
+                                Reward: 14% Fee
+                              </p>
+                              <span>
+                                $10,000 left
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="progress-step" data-template="levelSeven">
+                        <div class="circle">7</div>
+                        <div class="!hidden">
+                          <div id="levelSeven" class="progress-step__tooltip tooltip" >
+                            <div class="tooltip-header">
+                              <div class="tooltip-level text-black md:heading-sm heading-xs">
+                                Level 7
+                                <div class="svg-icon">
+                                  <img class="icon icon--size-m" src="img/levels-badge/Level=7-1x.png" srcset="img/levels-badge/Level=7-2x.png 2x" alt="Level">
+                                </div>
+                              </div>
+                            </div>
+                          
+                            <div class="tooltip-body">
+                              <p>
+                                $25,000 Spent
+                              </p>
+                              <p>
+                                Reward: 14% Fee
+                              </p>
+                              <span>
+                                $10,000 left
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="progress-step" data-template="levelEight">
+                        <div class="circle">8</div>
+                        <div class="!hidden">
+                          <div id="levelEight" class="progress-step__tooltip tooltip" >
+                            <div class="tooltip-header">
+                              <div class="tooltip-level text-black md:heading-sm heading-xs">
+                                Level 8
+                                <div class="svg-icon">
+                                  <img class="icon icon--size-m" src="img/levels-badge/Level=8-1x.png" srcset="img/levels-badge/Level=8-2x.png 2x" alt="Level">
+                                </div>
+                              </div>
+                            </div>
+                          
+                            <div class="tooltip-body">
+                              <p>
+                                $25,000 Spent
+                              </p>
+                              <p>
+                                Reward: 14% Fee
+                              </p>
+                              <span>
+                                $10,000 left
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="progress-step" data-template="levelNine">
+                        <div class="circle">9</div>
+                        <div class="!hidden">
+                          <div id="levelNine" class="progress-step__tooltip tooltip" >
+                            <div class="tooltip-header">
+                              <div class="tooltip-level text-black md:heading-sm heading-xs">
+                                Level 9
+                                <div class="svg-icon">
+                                  <img class="icon icon--size-m" src="img/levels-badge/Level=9-1x.png" srcset="img/levels-badge/Level=9-2x.png 2x" alt="Level">
+                                </div>
+                              </div>
+                            </div>
+                          
+                            <div class="tooltip-body">
+                              <p>
+                                $25,000 Spent
+                              </p>
+                              <p>
+                                Reward: 14% Fee
+                              </p>
+                              <span>
+                                $10,000 left
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="progress-step" data-template="levelTen">
+                        <div class="circle">10</div>
+                        <div class="!hidden">
+                          <div id="levelTen" class="progress-step__tooltip tooltip" >
+                            <div class="tooltip-header">
+                              <div class="tooltip-level text-black md:heading-sm heading-xs">
+                                Level 10
+                                <div class="svg-icon">
+                                  <img class="icon icon--size-m" src="img/levels-badge/Level=10-1x.png" srcset="img/levels-badge/Level=10-2x.png 2x" alt="Level">
+                                </div>
+                              </div>
+                            </div>
+                          
+                            <div class="tooltip-body">
+                              <p>
+                                Goal: $2,500,000 Spent
+                              </p>
+                              <p>
+                                Reward: 10% Fee
+                              </p>
+                              <span>
+                                $2,460,000 left
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="widget__body brand__info-body">
+                <div class="brand__info-body__row grid lg:grid-cols-2 gap-4">
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div class="brand__info-block info-block brand__info-campaigns">
+                        <div class="info-block__header">
+                          <h5 class="md:heading-lg heading-md">
+                            Campaigns
+                          </h5>
+                        </div>
+                        <div class="info-block__body">
+                          <div class="info-block__line text-color-yellow">
+                            <div class="info-block__text">
+                              <div class="svg-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                  <path d="M8.798 12.3814L12.7333 8.44674C13.0213 8.17201 13.4053 8.02082 13.8033 8.0255C14.2012 8.03017 14.5816 8.19034 14.863 8.47176C15.1444 8.75318 15.3046 9.13353 15.3092 9.53149C15.3139 9.92945 15.1627 10.3135 14.888 10.6014L10.9533 14.5361C10.7239 14.7657 10.4363 14.9287 10.1213 15.0074L8.90133 15.3121C8.77991 15.3425 8.65266 15.341 8.53199 15.3077C8.41133 15.2743 8.30136 15.2103 8.2128 15.1218C8.12425 15.0333 8.06013 14.9234 8.02669 14.8027C7.99325 14.6821 7.99163 14.5549 8.022 14.4334L8.32733 13.2127C8.40604 12.8981 8.56872 12.6108 8.798 12.3814Z" fill="#FCB750"/>
+                                  <g opacity="0.5">
+                                    <path d="M2.6346 13.3654C2.22827 12.9591 2 12.408 2 11.8333V7.33333H5.16667C5.4512 7.33333 5.73294 7.27729 5.99581 7.16841C6.25869 7.05952 6.49754 6.89992 6.69873 6.69873C6.89992 6.49754 7.05952 6.25869 7.16841 5.99581C7.27729 5.73294 7.33333 5.4512 7.33333 5.16667V2H11.8333C12.408 2 12.9591 2.22827 13.3654 2.6346C13.7717 3.04093 14 3.59203 14 4.16667V7.34133C13.6816 7.31343 13.361 7.35568 13.0607 7.4651C12.7604 7.57453 12.4878 7.74847 12.262 7.97467L8.32733 11.91C8.012 12.2247 7.78867 12.6193 7.68067 13.0513L7.44333 14H4.16667C3.59203 14 3.04093 13.7717 2.6346 13.3654Z" fill="#FCB750"/>
+                                    <path d="M2.29333 6.33333L6.33333 2.29333V5.16667C6.33333 5.47609 6.21042 5.77283 5.99162 5.99162C5.77283 6.21042 5.47609 6.33333 5.16667 6.33333H2.29333Z" fill="#FCB750"/>
+                                  </g>
+                                </svg>
+                              </div>
+                              <p>
+                                Editing
+                              </p>
+                            </div>
+                            <div class="info-block__score">
+                              -
+                            </div>
+                          </div>                   
+                          <div class="info-block__line text-color-green">
+                            <div class="info-block__text">
+                              <div class="svg-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s"  width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                  <path opacity="0.5" d="M8 14.6668C11.682 14.6668 14.6667 11.6822 14.6667 8.00016C14.6667 4.31816 11.682 1.3335 8 1.3335C4.318 1.3335 1.33333 4.31816 1.33333 8.00016C1.33333 11.6822 4.318 14.6668 8 14.6668Z" fill="#03E39E"/>
+                                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 4.8335C8.1326 4.8335 8.25978 4.88617 8.35355 4.97994C8.44731 5.07371 8.49999 5.20089 8.49999 5.3335V7.7935L10.02 9.3135C10.0691 9.35927 10.1085 9.41447 10.1358 9.4758C10.1632 9.53714 10.1779 9.60335 10.1791 9.67048C10.1802 9.73762 10.1679 9.8043 10.1427 9.86656C10.1176 9.92882 10.0802 9.98538 10.0327 10.0329C9.98521 10.0803 9.92865 10.1178 9.86639 10.1429C9.80413 10.1681 9.73745 10.1804 9.67031 10.1792C9.60318 10.178 9.53697 10.1633 9.47563 10.136C9.4143 10.1087 9.3591 10.0693 9.31333 10.0202L7.64666 8.3535C7.55286 8.25982 7.50011 8.13273 7.49999 8.00016V5.3335C7.49999 5.20089 7.55267 5.07371 7.64644 4.97994C7.74021 4.88617 7.86738 4.8335 7.99999 4.8335Z" fill="#03E39E"/>
+                                </svg>
+                              </div>
+                              <p>
+                                Active
+                              </p>
+                            </div>
+                            <div class="info-block__score">
+                              -
+                            </div>
+                          </div>
+                          <div class="info-block__line text-color-purple">
+                            <div class="info-block__text">
+                              <div class="svg-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                  <path opacity="0.4" d="M8 14.6668C4.85733 14.6668 3.286 14.6668 2.30933 13.6902C1.33333 12.7148 1.33333 11.1428 1.33333 8.00016C1.33333 4.8575 1.33333 3.28616 2.30933 2.3095C3.28666 1.3335 4.85733 1.3335 8 1.3335C11.1427 1.3335 12.714 1.3335 13.69 2.3095C14.6667 3.28683 14.6667 4.8575 14.6667 8.00016C14.6667 11.1428 14.6667 12.7142 13.69 13.6902C12.7147 14.6668 11.1427 14.6668 8 14.6668Z" fill="#7D72CB"/>
+                                  <path d="M11.794 5.20251C11.9259 5.33234 12 5.50834 12 5.69184C12 5.87534 11.9259 6.05133 11.794 6.18117L7.09809 10.7975C6.96602 10.9272 6.78698 11 6.60032 11C6.41366 11 6.23463 10.9272 6.10256 10.7975L4.22419 8.95096C4.15498 8.88757 4.09948 8.81112 4.06098 8.72618C4.02248 8.64124 4.00178 8.54955 4.00011 8.45657C3.99844 8.3636 4.01584 8.27125 4.05127 8.18502C4.08669 8.0988 4.13942 8.02048 4.20631 7.95473C4.2732 7.88897 4.35287 7.83713 4.44058 7.80231C4.52829 7.76748 4.62223 7.75038 4.71681 7.75202C4.81139 7.75366 4.90466 7.77401 4.99107 7.81186C5.07747 7.8497 5.15524 7.90427 5.21972 7.9723L6.60032 9.3295L10.7985 5.20251C10.9305 5.07284 11.1096 5 11.2962 5C11.4829 5 11.6619 5.07284 11.794 5.20251Z" fill="#7D72CB"/>
+                                </svg>
+                              </div>
+                              <p>
+                                Ended
+                              </p>
+                            </div>
+                            <div class="info-block__score">
+                              -
+                            </div>
+                          </div>
+                        </div>
+                      
+                        </div>
+                        <div class="brand__info-block info-block brand__info-offers">
+                          <div class="info-block__header">
+                            <h5 class="md:heading-lg heading-md">
+                              Offers
+                            </h5>
+                          </div>
+                          <div class="info-block__body">
+                            <div class="info-block__line text-color-yellow">
+                              <div class="info-block__text">
+                                <div class="svg-icon">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path opacity="0.5" d="M10.7713 2.53459L11.2287 2.80525C12.5813 3.60659 13.2573 4.00725 13.6287 4.66658C14 5.32659 14 6.12659 14 7.72925V8.27059C14 9.87259 14 10.6739 13.6287 11.3333C13.2573 11.9933 12.5813 12.3933 11.2287 13.1939L10.7713 13.4653C9.41867 14.2659 8.74267 14.6666 8 14.6666C7.25733 14.6666 6.58133 14.2666 5.22867 13.4653L4.77133 13.1939C3.41867 12.3939 2.74267 11.9926 2.37133 11.3333C2 10.6733 2 9.87325 2 8.27059V7.72925C2 6.12659 2 5.32592 2.37133 4.66658C2.74267 4.00659 3.41867 3.60659 4.77133 2.80525L5.22867 2.53459C6.58133 1.73392 7.25733 1.33325 8 1.33325C8.74267 1.33325 9.41867 1.73325 10.7713 2.53459Z" fill="#FCB750"/>
+                                    <path d="M8 4C7.36348 4 6.75303 4.24431 6.30294 4.67917C5.85285 5.11404 5.6 5.70385 5.6 6.31884C5.6 6.44184 5.65057 6.5598 5.74059 6.64677C5.8306 6.73375 5.95269 6.78261 6.08 6.78261C6.2073 6.78261 6.32939 6.73375 6.41941 6.64677C6.50943 6.5598 6.56 6.44184 6.56 6.31884C6.56 5.54991 7.20416 4.92754 8 4.92754C8.79584 4.92754 9.44 5.54991 9.44 6.31884C9.44 6.69728 9.34448 6.91896 9.22976 7.07432C9.104 7.24359 8.92976 7.3702 8.68832 7.53113L8.63264 7.5673C8.41808 7.70922 8.1416 7.89148 7.92752 8.14562C7.67456 8.44615 7.52 8.82597 7.52 9.33333V9.56522C7.52 9.68822 7.57057 9.80618 7.66059 9.89315C7.7506 9.98012 7.87269 10.029 8 10.029C8.1273 10.029 8.24939 9.98012 8.33941 9.89315C8.42943 9.80618 8.48 9.68822 8.48 9.56522V9.33333C8.48 9.0291 8.56544 8.85844 8.672 8.7309C8.79536 8.58528 8.96144 8.4749 9.20672 8.31212L9.23216 8.29496C9.47024 8.13728 9.776 7.93043 10.0098 7.61415C10.256 7.28394 10.4 6.86748 10.4 6.31884C10.4 5.70385 10.1471 5.11404 9.69705 4.67917C9.24697 4.24431 8.63652 4 8 4ZM8 12C8.15913 12 8.31174 11.9389 8.42426 11.8302C8.53678 11.7215 8.6 11.574 8.6 11.4203C8.6 11.2665 8.53678 11.1191 8.42426 11.0104C8.31174 10.9017 8.15913 10.8406 8 10.8406C7.84087 10.8406 7.68826 10.9017 7.57573 11.0104C7.46321 11.1191 7.4 11.2665 7.4 11.4203C7.4 11.574 7.46321 11.7215 7.57573 11.8302C7.68826 11.9389 7.84087 12 8 12Z" fill="#FCB750"/>
+                                  </svg>
+                                </div>
+                                <p>
+                                  Pending
+                                </p>
+                              </div>
+                              <div class="info-block__score">
+                                -
+                              </div>
+                            </div>
+                            <div class="info-block__line text-color-green">
+                              <div class="info-block__text">
+                                <div class="svg-icon">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path opacity="0.4" d="M8 14.6668C4.85734 14.6668 3.286 14.6668 2.30934 13.6902C1.33334 12.7148 1.33334 11.1428 1.33334 8.00016C1.33334 4.8575 1.33334 3.28616 2.30934 2.3095C3.28667 1.3335 4.85734 1.3335 8 1.3335C11.1427 1.3335 12.714 1.3335 13.69 2.3095C14.6667 3.28683 14.6667 4.8575 14.6667 8.00016C14.6667 11.1428 14.6667 12.7142 13.69 13.6902C12.7147 14.6668 11.1427 14.6668 8 14.6668Z" fill="#03E39E"/>
+                                    <path d="M11.794 5.20251C11.9259 5.33234 12 5.50834 12 5.69184C12 5.87534 11.9259 6.05133 11.794 6.18117L7.09809 10.7975C6.96602 10.9272 6.78698 11 6.60032 11C6.41366 11 6.23463 10.9272 6.10256 10.7975L4.22419 8.95096C4.15498 8.88757 4.09948 8.81112 4.06098 8.72618C4.02248 8.64124 4.00178 8.54955 4.00011 8.45657C3.99844 8.3636 4.01584 8.27125 4.05127 8.18502C4.08669 8.0988 4.13942 8.02048 4.20631 7.95473C4.2732 7.88897 4.35287 7.83713 4.44058 7.80231C4.52829 7.76748 4.62223 7.75038 4.71681 7.75202C4.81139 7.75366 4.90466 7.77401 4.99107 7.81186C5.07747 7.8497 5.15524 7.90427 5.21972 7.9723L6.60032 9.3295L10.7985 5.20251C10.9305 5.07284 11.1096 5 11.2962 5C11.4829 5 11.6619 5.07284 11.794 5.20251Z" fill="#03E39E"/>
+                                  </svg>
+                                </div>
+                                <p>
+                                  Accepted
+                                </p>
+                              </div>
+                              <div class="info-block__score">
+                                -
+                              </div>
+                            </div>
+                            <div class="info-block__line text-color-purple">
+                              <div class="info-block__text">
+                                <div class="svg-icon">
+                                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 9.33327C12.0002 10.2345 11.7721 11.121 11.3369 11.9102C10.9017 12.6993 10.2737 13.3654 9.51137 13.846C8.74907 14.3267 7.8774 14.6064 6.97773 14.659C6.07807 14.7115 5.17976 14.5352 4.36667 14.1466C4.1296 14.0273 3.85772 13.9966 3.6 14.0599L2.782 14.2793C2.63512 14.3185 2.4805 14.3183 2.33369 14.2789C2.18687 14.2394 2.05301 14.1621 1.94554 14.0545C1.83808 13.947 1.76079 13.8131 1.72144 13.6663C1.68208 13.5194 1.68205 13.3648 1.72134 13.2179L1.94 12.3999C2.00342 12.1422 1.97268 11.8703 1.85334 11.6333C1.50865 10.911 1.33094 10.1204 1.33336 9.32011C1.33578 8.5198 1.51829 7.73031 1.86734 7.01013C2.21639 6.28996 2.72305 5.65757 3.34975 5.15984C3.97646 4.66211 4.70714 4.31181 5.48764 4.13488C6.26815 3.95796 7.07847 3.95896 7.85853 4.13781C8.6386 4.31666 9.36841 4.66877 9.99389 5.16804C10.6194 5.66732 11.1245 6.30095 11.4717 7.02199C11.819 7.74302 11.9996 8.53297 12 9.33327ZM4.33333 9.99994C4.51015 9.99994 4.67972 9.9297 4.80474 9.80468C4.92976 9.67965 5 9.51009 5 9.33327C5 9.15646 4.92976 8.98689 4.80474 8.86187C4.67972 8.73685 4.51015 8.66661 4.33333 8.66661C4.15652 8.66661 3.98695 8.73685 3.86193 8.86187C3.73691 8.98689 3.66667 9.15646 3.66667 9.33327C3.66667 9.51009 3.73691 9.67965 3.86193 9.80468C3.98695 9.9297 4.15652 9.99994 4.33333 9.99994ZM6.66667 9.99994C6.84348 9.99994 7.01305 9.9297 7.13807 9.80468C7.2631 9.67965 7.33334 9.51009 7.33334 9.33327C7.33334 9.15646 7.2631 8.98689 7.13807 8.86187C7.01305 8.73685 6.84348 8.66661 6.66667 8.66661C6.48986 8.66661 6.32029 8.73685 6.19526 8.86187C6.07024 8.98689 6 9.15646 6 9.33327C6 9.51009 6.07024 9.67965 6.19526 9.80468C6.32029 9.9297 6.48986 9.99994 6.66667 9.99994ZM9 9.99994C9.17681 9.99994 9.34638 9.9297 9.47141 9.80468C9.59643 9.67965 9.66667 9.51009 9.66667 9.33327C9.66667 9.15646 9.59643 8.98689 9.47141 8.86187C9.34638 8.73685 9.17681 8.66661 9 8.66661C8.82319 8.66661 8.65362 8.73685 8.5286 8.86187C8.40357 8.98689 8.33334 9.15646 8.33334 9.33327C8.33334 9.51009 8.40357 9.67965 8.5286 9.80468C8.65362 9.9297 8.82319 9.99994 9 9.99994Z" fill="#7D72CB"/>
+                                    <path opacity="0.6" d="M11.9893 9.67191C12.0613 9.6423 12.1324 9.61073 12.2027 9.57725C12.3967 9.48391 12.6173 9.45125 12.8253 9.50725L13.4893 9.68525C13.6088 9.71737 13.7346 9.71745 13.8541 9.68549C13.9735 9.65353 14.0825 9.59066 14.17 9.5032C14.2574 9.41574 14.3203 9.30679 14.3522 9.1873C14.3842 9.06782 14.3841 8.94202 14.352 8.82258L14.174 8.15858C14.1223 7.9491 14.1471 7.72804 14.244 7.53525C14.4877 7.01368 14.625 6.44878 14.6479 5.87355C14.6708 5.29832 14.5789 4.72429 14.3775 4.18499C14.1761 3.64568 13.8693 3.15192 13.4749 2.73252C13.0805 2.31313 12.6066 1.97652 12.0806 1.74236C11.5547 1.50819 10.9874 1.38116 10.4119 1.36869C9.83634 1.35622 9.26407 1.45856 8.72851 1.66973C8.19296 1.88089 7.70484 2.19665 7.29268 2.59857C6.88052 3.00049 6.55258 3.4805 6.328 4.01058C7.084 3.96237 7.8416 4.07576 8.55036 4.3432C9.25912 4.61065 9.90277 5.02601 10.4385 5.56164C10.9741 6.09727 11.3896 6.74087 11.6571 7.4496C11.9246 8.15832 12.0381 8.91591 11.99 9.67191H11.9893Z" fill="#7D72CB"/>
+                                  </svg>
+                                </div>
+                                <p>
+                                  Negotiated
+                                </p>
+                              </div>
+                              <div class="info-block__score">
+                                -
+                              </div>
+                            </div>
+                          </div>
+                        
+                        </div>
+                    </div>
+                    <div class="brand__info-block basis-full info-block info-block-socials brand__info-socials">
+                      <div class="info-block__header">
+                        <h5 class="md:heading-lg heading-md">
+                          Social
+                        </h5>
+                      </div>
+                      <div class="info-block__body">
+                        <button class="info-block-socials__counter counter counter-connect" data-ripple>
+                          <div class="counter__body">
+                            <div class="counter__icon">
+                              <div class="svg-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-m" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                  <g id="twitch">
+                                  <path id="Vector" d="M11.64 5.93H13.07V10.21H11.64M15.57 5.93H17V10.21H15.57M6.99999 2L3.42999 5.57V18.43H7.70999V22L11.29 18.43H14.14L20.57 12V2M19.14 11.29L16.29 14.14H13.43L10.93 16.64V14.14H7.70999V3.43H19.14V11.29Z" fill="white"/>
+                                  </g>
+                                  </svg>
+                              </div>
+                            </div>
+                            <div class="counter__info">
+                              <div class="text-button-sm text-white text-center">
+                                <div class="svg-icon">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
+                                    <path d="M9.49998 5.66665H6.16665V8.99998C6.16665 9.36665 5.86665 9.66665 5.49998 9.66665C5.13331 9.66665 4.83331 9.36665 4.83331 8.99998V5.66665H1.49998C1.13331 5.66665 0.833313 5.36665 0.833313 4.99998C0.833313 4.63331 1.13331 4.33331 1.49998 4.33331H4.83331V0.99998C4.83331 0.633313 5.13331 0.333313 5.49998 0.333313C5.86665 0.333313 6.16665 0.633313 6.16665 0.99998V4.33331H9.49998C9.86665 4.33331 10.1666 4.63331 10.1666 4.99998C10.1666 5.36665 9.86665 5.66665 9.49998 5.66665Z" fill="white"/>
+                                  </svg>
+                                </div>
+                                <p>
+                                  Connect
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </button>
+                        <button class="info-block-socials__counter counter counter-connect" data-ripple>
+                          <div class="counter__body">
+                            <div class="counter__icon">
+                              <div class="svg-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-m" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                  <g id="youtube">
+                                  <path id="Vector" d="M12 4C2.17143 4 2 4.90182 2 12C2 19.0982 2.17143 20 12 20C21.8286 20 22 19.0982 22 12C22 4.90182 21.8286 4 12 4ZM15.2 12.3491L10.7143 14.5309C10.3143 14.72 10 14.5018 10 14.0509V9.94909C10 9.49818 10.3286 9.28 10.7143 9.46909L15.2 11.6509C15.6 11.84 15.6 12.16 15.2 12.3491Z" fill="white"/>
+                                  </g>
+                                  </svg>
+                              </div>
+                            </div>
+                            <div class="counter__info">
+                              <div class="text-button-sm text-white text-center">
+                                <div class="svg-icon">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
+                                    <path d="M9.49998 5.66665H6.16665V8.99998C6.16665 9.36665 5.86665 9.66665 5.49998 9.66665C5.13331 9.66665 4.83331 9.36665 4.83331 8.99998V5.66665H1.49998C1.13331 5.66665 0.833313 5.36665 0.833313 4.99998C0.833313 4.63331 1.13331 4.33331 1.49998 4.33331H4.83331V0.99998C4.83331 0.633313 5.13331 0.333313 5.49998 0.333313C5.86665 0.333313 6.16665 0.633313 6.16665 0.99998V4.33331H9.49998C9.86665 4.33331 10.1666 4.63331 10.1666 4.99998C10.1666 5.36665 9.86665 5.66665 9.49998 5.66665Z" fill="white"/>
+                                  </svg>
+                                </div>
+                                <p>
+                                  Connect
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </button>
+                        <button class="info-block-socials__counter counter counter-connect" data-ripple>
+                          <div class="counter__body">
+                            <div class="counter__icon">
+                              <div class="svg-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-m" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                  <g id="tiktok">
+                                  <path id="Vector" d="M16.6 5.82C15.9164 5.03962 15.5397 4.03743 15.54 3H12.45V15.4C12.4261 16.071 12.1428 16.7066 11.6597 17.1729C11.1766 17.6393 10.5314 17.8999 9.85997 17.9C8.43997 17.9 7.25997 16.74 7.25997 15.3C7.25997 13.58 8.91997 12.29 10.63 12.82V9.66C7.17997 9.2 4.15997 11.88 4.15997 15.3C4.15997 18.63 6.91997 21 9.84997 21C12.99 21 15.54 18.45 15.54 15.3V9.01C16.793 9.90985 18.2973 10.3926 19.84 10.39V7.3C19.84 7.3 17.96 7.39 16.6 5.82Z" fill="white"/>
+                                  </g>
+                                  </svg>
+                              </div>
+                            </div>
+                            <div class="counter__info">
+                              <div class="text-button-sm text-white text-center">
+                                <div class="svg-icon">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
+                                    <path d="M9.49998 5.66665H6.16665V8.99998C6.16665 9.36665 5.86665 9.66665 5.49998 9.66665C5.13331 9.66665 4.83331 9.36665 4.83331 8.99998V5.66665H1.49998C1.13331 5.66665 0.833313 5.36665 0.833313 4.99998C0.833313 4.63331 1.13331 4.33331 1.49998 4.33331H4.83331V0.99998C4.83331 0.633313 5.13331 0.333313 5.49998 0.333313C5.86665 0.333313 6.16665 0.633313 6.16665 0.99998V4.33331H9.49998C9.86665 4.33331 10.1666 4.63331 10.1666 4.99998C10.1666 5.36665 9.86665 5.66665 9.49998 5.66665Z" fill="white"/>
+                                  </svg>
+                                </div>
+                                <p>
+                                  Connect
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </button>
+                        <button class="info-block-socials__counter counter counter-connect" data-ripple>
+                          <div class="counter__body">
+                            <div class="counter__icon">
+                              <div class="svg-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-m" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                  <g id="instagram">
+                                  <path id="Vector" d="M12 8.87579C10.2797 8.87579 8.87577 10.2797 8.87577 12C8.87577 13.7203 10.2797 15.1242 12 15.1242C13.7203 15.1242 15.1242 13.7203 15.1242 12C15.1242 10.2797 13.7203 8.87579 12 8.87579ZM21.3703 12C21.3703 10.7063 21.382 9.42423 21.3094 8.13283C21.2367 6.63283 20.8945 5.30158 19.7976 4.2047C18.6984 3.10548 17.3695 2.76564 15.8695 2.69298C14.5758 2.62033 13.2937 2.63204 12.0023 2.63204C10.7086 2.63204 9.42655 2.62033 8.13515 2.69298C6.63515 2.76564 5.3039 3.10783 4.20702 4.2047C3.1078 5.30392 2.76796 6.63283 2.6953 8.13283C2.62265 9.42658 2.63436 10.7086 2.63436 12C2.63436 13.2914 2.62265 14.5758 2.6953 15.8672C2.76796 17.3672 3.11015 18.6985 4.20702 19.7953C5.30624 20.8945 6.63515 21.2344 8.13515 21.307C9.4289 21.3797 10.7109 21.368 12.0023 21.368C13.2961 21.368 14.5781 21.3797 15.8695 21.307C17.3695 21.2344 18.7008 20.8922 19.7976 19.7953C20.8969 18.6961 21.2367 17.3672 21.3094 15.8672C21.3844 14.5758 21.3703 13.2938 21.3703 12ZM12 16.807C9.33983 16.807 7.19296 14.6602 7.19296 12C7.19296 9.33986 9.33983 7.19298 12 7.19298C14.6601 7.19298 16.807 9.33986 16.807 12C16.807 14.6602 14.6601 16.807 12 16.807ZM17.0039 8.11876C16.3828 8.11876 15.8812 7.6172 15.8812 6.99611C15.8812 6.37501 16.3828 5.87345 17.0039 5.87345C17.625 5.87345 18.1266 6.37501 18.1266 6.99611C18.1267 7.14359 18.0978 7.28966 18.0415 7.42595C17.9851 7.56224 17.9024 7.68607 17.7981 7.79036C17.6939 7.89464 17.57 7.97733 17.4337 8.03368C17.2974 8.09004 17.1514 8.11895 17.0039 8.11876Z" fill="white"/>
+                                  </g>
+                                  </svg>
+                              </div>
+                            </div>
+                            <div class="counter__info">
+                              <div class="text-button-sm text-white text-center">
+                                <div class="svg-icon">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
+                                    <path d="M9.49998 5.66665H6.16665V8.99998C6.16665 9.36665 5.86665 9.66665 5.49998 9.66665C5.13331 9.66665 4.83331 9.36665 4.83331 8.99998V5.66665H1.49998C1.13331 5.66665 0.833313 5.36665 0.833313 4.99998C0.833313 4.63331 1.13331 4.33331 1.49998 4.33331H4.83331V0.99998C4.83331 0.633313 5.13331 0.333313 5.49998 0.333313C5.86665 0.333313 6.16665 0.633313 6.16665 0.99998V4.33331H9.49998C9.86665 4.33331 10.1666 4.63331 10.1666 4.99998C10.1666 5.36665 9.86665 5.66665 9.49998 5.66665Z" fill="white"/>
+                                  </svg>
+                                </div>
+                                <p>
+                                  Connect
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </button>
+                      </div>
+                    
+                    </div>
+                  </div>
+                
+             
+                </div>
+           
+              </div>
+            </div>
+            <div class="widgets-cols">
+              <div class="widgets-cols__left">
+                <div class="widget brand__projects">
+                  <div class="widget__header brand__projects-header header-brand mb-5">
+                    <h5 class="md:heading-lg heading-md">
+                      Projects
+                    </h5>
+                  </div>
+                  <div class="widget__body brand__projects-body">
+                    <div class="widget-info">
+                      <p>
+                        Nothing here yet. Let's get started!
+                      </p>
+                    </div>
+               
+                  </div>
+                </div>
+              </div>
+              <div class="widgets-cols__right">
+                <div class="widget widget-stats" data-watch data-watch-once>
+                  <div class="widget__header mb-5">
+                    <h5 class="md:heading-lg heading-md">
+                      Views
+                    </h5>
+                  </div>
+                  <div class="widget__body">
+                    <div class="widget-stats__list">
+                      <div class="widget-stats__col empty">
+                        <span>
+                          This week
+                        </span>
+                        <p class="text-color-green">
+                          $<span data-digits-counter>0</span>
+                        </p>
+                      </div>
+                      <div class="widget-stats__col empty">
+                        <span>
+                          This month
+                        </span>
+                        <p class="text-color-green">
+                          $<span data-digits-counter>0</span>
+                        </p>
+                      </div>
+                      <div class="widget-stats__col empty">
+                        <span>
+                          Lifetime
+                        </span>
+                        <p class="text-color-green">
+                          $<span data-digits-counter>0</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="widget widget-stats referrals" data-watch data-watch-once>
+                  <div class="widget__header mb-5">
+                    <h5 class="md:heading-lg heading-md">
+                      Referrals
+                    </h5>
+                  </div>
+                  <div class="widget__body">
+                    <div class="widget-stats__list">
+                      <div class="widget-stats__col empty">
+                        <span>
+                          This week
+                        </span>
+                        <p class="text-color-green">
+                          $<span data-digits-counter>0</span>
+                        </p>
+                      </div>
+                      <div class="widget-stats__col empty">
+                        <span>
+                          This month
+                        </span>
+                        <p class="text-color-green">
+                          $<span data-digits-counter>0</span>
+                        </p>
+                      </div>
+                      <div class="widget-stats__col empty">
+                        <span>
+                          Lifetime
+                        </span>
+                        <p class="text-color-green">
+                          $<span data-digits-counter>0</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+     
+     
+        
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

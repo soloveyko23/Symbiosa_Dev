@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header-brand.htm',{})
+    <main class="page">
+      <div class="page__container">
+        <div class="page__header filters-block">
+          <div class="page__header-top lg:flex-nowrap flex-wrap sm:!gap-8 !justify-start">
+            <h2 class="heading-3xl">
+              Projects 
+            </h2>
+            <div class="projects-tabs w-full tabs tabs-one tabs-md">
+              <nav class="tabs__navigation">
+                <a href="projects-active.html" class="tabs__title">Active <span class="badge badge--numeric">
+                  4
+                </span></a>
+                <a href="#" class="tabs__title">
+                  Pending
+                  <span class="badge badge--numeric">
+                    4
+                  </span>
+                </a>
+                <a href="projects-negatieved.html" class="tabs__title">
+                  Negotiated
+                  <span class="badge badge--numeric">
+                    4
+                  </span>
+                </a>
+                <a href="project-on-review.html" class="tabs__title  _tab-active">
+                  On&nbsp;review
+                  <span class="badge badge--numeric">
+                    4
+                  </span>
+                </a>
+                <a href="project-completed.html" class="tabs__title">
+                  Completed
+                  <span class="badge badge--numeric">
+                   14
+                  </span>
+                </a>
+                <a href="project-cancelled.html" class="tabs__title">
+                  Cancelled
+                  <span class="badge badge--numeric">
+                    1
+                  </span>
+                </a>
+                <a href="project-disputed.html" class="tabs__title">
+                  Disputed
+                  <span class="badge badge--numeric">
+                    1
+                  </span>
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="projects-creators">
+          <div class="projects-creators__list">
+            <div class="projects-creators__card project-card" data-popup="#popupProject">
+              <div class="project-card__body">
+                <div class="project-card__image">
+                  <img src="@img/fileuploader/image.png" alt="image">
+                </div>
+                <div class="project-card__content content-card">
+                  <div class="content-card__left">
+                    <h5 class="heading-md mb-3">Promote our new movie Promote our new movie Promote our new movie Promote our new movie Promote our new movie</h5>
+                    <div class="content-card__brand-and-platform flex items-center flex-wrap gap-2">
+                      <div class="brand-block block-container-bg popup-no-click">
+                        <div class="flex items-center gap-2">
+                          <div class="platform platform--size-l">
+                            <img src="img/brands/netflix.png" alt="image">
+                          </div>
+                          <div>
+                            <p class="text-body-sm-medium !leading-none">
+                              Netflix
+                            </p>
+                            <span class="text-secondary text-body-xs-medium">
+                              Brand
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="platform-block block-container-bg">
+                        <div class="flex items-center gap-2">
+                          <div class="platform platform--size-l">
+                            <img src="img/icons/formkit_youtube.svg" alt="image">
+                          </div>
+                          <div>
+                            <p class="text-body-sm-medium !leading-none">
+                              Youtube
+                            </p>
+                            <span class="text-secondary text-body-xs-medium">
+                              Platform
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="block-container-bg">
+                        <div class="flex items-center gap-2">
+                          <div class="svg-icon">
+                            <svg class="icon icon--size-l" xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                              <path opacity="0.3" d="M4 16.5C4 18.4475 4.51 19.1018 5.53 20.414C7.5664 23.0312 10.9816 26 16 26C21.0184 26 24.4336 23.0312 26.47 20.414C27.49 19.103 28 18.4463 28 16.5C28 14.5525 27.49 13.8982 26.47 12.586C24.4336 9.96875 21.0184 7 16 7C10.9816 7 7.5664 9.96875 5.53 12.586C4.51 13.8994 4 14.5537 4 16.5Z" fill="#FCB750"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16.5C12 15.4391 12.4214 14.4217 13.1716 13.6716C13.9217 12.9214 14.9391 12.5 16 12.5C17.0609 12.5 18.0783 12.9214 18.8284 13.6716C19.5786 14.4217 20 15.4391 20 16.5C20 17.5609 19.5786 18.5783 18.8284 19.3284C18.0783 20.0786 17.0609 20.5 16 20.5C14.9391 20.5 13.9217 20.0786 13.1716 19.3284C12.4214 18.5783 12 17.5609 12 16.5Z" fill="#FCB750"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <p class="text-body-sm-medium !leading-none text-yellow-300">
+                              3 days left
+                            </p>
+                            <span class="text-secondary text-body-xs-medium">
+                              On review since Dec 24, 2023
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-card__right flex flex-col gap-3 popup-no-click">
+                    <div class="content-card__right-top flex justify-end items-center gap-2">
+                   
+                      <div class="price text-yellow-300 md:heading-2xl heading-xl">
+                        $100,280
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="projects-creators__card project-card" data-popup="#popupProject">
+              <div class="project-card__body">
+                <div class="project-card__image">
+                  <img src="@img/fileuploader/image.png" alt="image">
+                </div>
+                <div class="project-card__content content-card">
+                  <div class="content-card__left">
+                    <h5 class="heading-md mb-3">Promote our new movie Promote our new movie Promote our new movie Promote our new movie Promote our new movie</h5>
+                    <div class="content-card__brand-and-platform flex items-center flex-wrap gap-2">
+                      <div class="brand-block block-container-bg popup-no-click">
+                        <div class="flex items-center gap-2">
+                          <div class="platform platform--size-l">
+                            <img src="img/brands/netflix.png" alt="image">
+                          </div>
+                          <div>
+                            <p class="text-body-sm-medium !leading-none">
+                              Netflix
+                            </p>
+                            <span class="text-secondary text-body-xs-medium">
+                              Brand
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="platform-block block-container-bg">
+                        <div class="flex items-center gap-2">
+                          <div class="platform platform--size-l">
+                            <img src="img/icons/formkit_youtube.svg" alt="image">
+                          </div>
+                          <div>
+                            <p class="text-body-sm-medium !leading-none">
+                              Youtube
+                            </p>
+                            <span class="text-secondary text-body-xs-medium">
+                              Platform
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="block-container-bg">
+                        <div class="flex items-center gap-2">
+                          <div class="svg-icon">
+                            <svg class="icon icon--size-l" xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+                              <path opacity="0.3" d="M4 16.5C4 18.4475 4.51 19.1018 5.53 20.414C7.5664 23.0312 10.9816 26 16 26C21.0184 26 24.4336 23.0312 26.47 20.414C27.49 19.103 28 18.4463 28 16.5C28 14.5525 27.49 13.8982 26.47 12.586C24.4336 9.96875 21.0184 7 16 7C10.9816 7 7.5664 9.96875 5.53 12.586C4.51 13.8994 4 14.5537 4 16.5Z" fill="#FCB750"/>
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 16.5C12 15.4391 12.4214 14.4217 13.1716 13.6716C13.9217 12.9214 14.9391 12.5 16 12.5C17.0609 12.5 18.0783 12.9214 18.8284 13.6716C19.5786 14.4217 20 15.4391 20 16.5C20 17.5609 19.5786 18.5783 18.8284 19.3284C18.0783 20.0786 17.0609 20.5 16 20.5C14.9391 20.5 13.9217 20.0786 13.1716 19.3284C12.4214 18.5783 12 17.5609 12 16.5Z" fill="#FCB750"/>
+                            </svg>
+                          </div>
+                          <div>
+                            <p class="text-body-sm-medium !leading-none text-yellow-300">
+                              3 days left
+                            </p>
+                            <span class="text-secondary text-body-xs-medium">
+                              On review since Dec 24, 2023
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-card__right flex flex-col gap-3 popup-no-click">
+                    <div class="content-card__right-top flex justify-end items-center gap-2">
+                   
+                      <div class="price text-yellow-300 md:heading-2xl heading-xl">
+                        $100,280
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- /.projects-creators -->
+      </div>
+
+
+    </main>
+    @@include('html/_popup.htm',{})
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header-brand.htm',{})
+    <main class="page">
+      <div class="page__container">
+        <div class="account-page">
+          <div class="account-page__content">
+            <div class="widget">
+              <div class="widget__body">
+                <form action="#" class="account-page-form form" method="POST">
+                  <div class="account-page__col">
+                    <div class="account-page__row">
+                      <h5 class="md:heading-lg heading-md mb-5">Main info</h5>
+                      <div class="form__line">
+                        <label for="name" class="form__label">First name</label>
+                        <input autocomplete="off" type="text" name="name" id="name" placeholder="Enter your first name" class="input">
+                      </div>
+                      <div class="form__line">
+                        <label for="lname" class="form__label">Last name</label>
+                        <input autocomplete="off" type="text" name="lname" id="lname" placeholder="Enter your last name" class="input">
+                      </div>
+                      <div class="form__line">
+                        <label for="companyName" class="form__label">Company name</label>
+                        <input autocomplete="off" type="text" name="companyName" id="companyName" placeholder="Enter your company name" class="input">
+                      </div>
+                      <div class="form__line">
+                        <label for="email" class="form__label">Email</label>
+                        <input autocomplete="off" type="text" name="email" id="email" placeholder="Enter your email" class="input">
+                      </div>
+                      <div class="form__line">
+                        <label for="website" class="form__label">Website</label>
+                        <input autocomplete="off" type="text" name="website" id="website" placeholder="Enter your website" class="input">
+                      </div>
+                    </div>
+                    <div class="account-page__row">
+                      <h5 class="md:heading-lg heading-md mb-5">About us</h5>
+                      <div class="form__line">
+                        <label for="desc" class="form__label">Company description</label>
+                        <textarea autocomplete="off" name="desc" id="desc" placeholder="Enter your text" class="input"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="account-page__col">
+                    <div class="account-page__row">
+                      <h5 class="md:heading-lg heading-md mb-5">Company logo</h5>
+                      <div class="account-page__image-controls image-controls">
+                        <div class="image-controls__preview">
+                          <img src="@img/brands/netflix.png" alt="Netflix">
+                        </div>
+                        <div class="image-controls__actions">
+                          <div class="flex items-center gap-2 mb-2 sm:flex-nowrap flex-wrap">
+                            <a href="#" class="button button-secondary button-large flex-auto" data-ripple>
+                              <span class="button__text">
+                                Upload new image
+                              </span>
+                            </a>
+                            <a href="#" class="button button-disabled button-large flex-auto" data-ripple>
+                              <span class="button__text">
+                                Remove image
+                              </span>
+                            </a>
+                          </div>
+                          <p class="text-body-md-medium text-secondary">
+                            Minimum size: 128x128 px
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="account-page__row">
+                      <h5 class="md:heading-lg heading-md mb-5 inline-flex items-center gap-2">
+                        Level 3   <div class="svg-icon">
+                          <img class="icon icon--size-m" src="img/levels-badge/Level=3-1x.png" srcset="img/levels-badge/Level=3-2x.png 2x" alt="Level">
+                        </div>
+                      </h5>
+                      <div class="levelbar-block flex-1">
+
+                        <div class="level-bar ">
+        
+                          <div class="progress-container">
+                            <div class="progress" id="progress" style="width: 25%;"></div>
+                            <div class="progress-step actived" data-template="levelOne">
+                              <div class="circle">1</div>
+                              <div class="!hidden">
+                                <div id="levelOne" class="progress-step__tooltip tooltip">
+                                  <div class="tooltip-header">
+                                    <div class="tooltip-level text-black md:heading-sm heading-xs">
+                                      Level 1
+                                      <div class="svg-icon">
+                                        <img class="icon icon--size-m" src="img/levels-badge/Level=1-1x.png" srcset="img/levels-badge/Level=1-2x.png 2x" alt="Level">
+                                      </div>
+                                    </div>
+                                    <div class="tooltip-done">
+                                      <div class="svg-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                          <path d="M8.00065 14.6667C4.85798 14.6667 3.28665 14.6667 2.30998 13.69C1.33398 12.7147 1.33398 11.1427 1.33398 8.00001C1.33398 4.85734 1.33398 3.28601 2.30998 2.30934C3.28732 1.33334 4.85798 1.33334 8.00065 1.33334C11.1433 1.33334 12.7147 1.33334 13.6906 2.30934C14.6673 3.28668 14.6673 4.85734 14.6673 8.00001C14.6673 11.1427 14.6673 12.714 13.6906 13.69C12.7153 14.6667 11.1433 14.6667 8.00065 14.6667Z" fill="#03986A"></path>
+                                          <path d="M11.794 5.20251C11.9259 5.33234 12 5.50834 12 5.69184C12 5.87534 11.9259 6.05133 11.794 6.18117L7.09809 10.7975C6.96602 10.9272 6.78698 11 6.60032 11C6.41366 11 6.23463 10.9272 6.10256 10.7975L4.22419 8.95096C4.15498 8.88757 4.09948 8.81112 4.06098 8.72618C4.02248 8.64124 4.00178 8.54955 4.00011 8.45657C3.99844 8.3636 4.01584 8.27125 4.05127 8.18502C4.08669 8.0988 4.13942 8.02048 4.20631 7.95473C4.2732 7.88897 4.35287 7.83713 4.44058 7.80231C4.52829 7.76748 4.62223 7.75038 4.71681 7.75202C4.81139 7.75366 4.90466 7.77401 4.99107 7.81186C5.07747 7.8497 5.15524 7.90427 5.21972 7.9723L6.60032 9.3295L10.7985 5.20251C10.9305 5.07284 11.1096 5 11.2962 5C11.4829 5 11.6619 5.07284 11.794 5.20251Z" fill="white"></path>
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </div>
+        
+                                  <div class="tooltip-body">
+                                    <p>
+                                      15% Fee
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+        
+                            </div>
+                            <div class="progress-step actived" data-template="levelTwo">
+                              <div class="circle">2</div>
+                              <div class="!hidden">
+                                <div id="levelTwo" class="progress-step__tooltip tooltip">
+                                  <div class="tooltip-header">
+                                    <div class="tooltip-level text-black md:heading-sm heading-xs">
+                                      Level 2
+                                      <div class="svg-icon">
+                                        <img class="icon icon--size-m" src="img/levels-badge/Level=2-1x.png" srcset="img/levels-badge/Level=2-2x.png 2x" alt="Level">
+                                      </div>
+                                    </div>
+                                    <div class="tooltip-done">
+                                      <div class="svg-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                          <path d="M8.00065 14.6667C4.85798 14.6667 3.28665 14.6667 2.30998 13.69C1.33398 12.7147 1.33398 11.1427 1.33398 8.00001C1.33398 4.85734 1.33398 3.28601 2.30998 2.30934C3.28732 1.33334 4.85798 1.33334 8.00065 1.33334C11.1433 1.33334 12.7147 1.33334 13.6906 2.30934C14.6673 3.28668 14.6673 4.85734 14.6673 8.00001C14.6673 11.1427 14.6673 12.714 13.6906 13.69C12.7153 14.6667 11.1433 14.6667 8.00065 14.6667Z" fill="#03986A"></path>
+                                          <path d="M11.794 5.20251C11.9259 5.33234 12 5.50834 12 5.69184C12 5.87534 11.9259 6.05133 11.794 6.18117L7.09809 10.7975C6.96602 10.9272 6.78698 11 6.60032 11C6.41366 11 6.23463 10.9272 6.10256 10.7975L4.22419 8.95096C4.15498 8.88757 4.09948 8.81112 4.06098 8.72618C4.02248 8.64124 4.00178 8.54955 4.00011 8.45657C3.99844 8.3636 4.01584 8.27125 4.05127 8.18502C4.08669 8.0988 4.13942 8.02048 4.20631 7.95473C4.2732 7.88897 4.35287 7.83713 4.44058 7.80231C4.52829 7.76748 4.62223 7.75038 4.71681 7.75202C4.81139 7.75366 4.90466 7.77401 4.99107 7.81186C5.07747 7.8497 5.15524 7.90427 5.21972 7.9723L6.60032 9.3295L10.7985 5.20251C10.9305 5.07284 11.1096 5 11.2962 5C11.4829 5 11.6619 5.07284 11.794 5.20251Z" fill="white"></path>
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </div>
+        
+                                  <div class="tooltip-body">
+                                    <p>
+                                      $10,000 Spent
+                                    </p>
+                                    <p>
+                                      Reward: 14.5% Fee
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="progress-step actived current" data-template="levelThree">
+                              <div class="circle">3</div>
+                              <div class="!hidden">
+                                <div id="levelThree" class="progress-step__tooltip tooltip">
+                                  <div class="tooltip-header">
+                                    <div class="tooltip-level text-black md:heading-sm heading-xs">
+                                      Level 3
+                                      <div class="svg-icon">
+                                        <img class="icon icon--size-m" src="img/levels-badge/Level=3-1x.png" srcset="img/levels-badge/Level=3-2x.png 2x" alt="Level">
+                                      </div>
+                                    </div>
+                                    <div class="tooltip-done">
+                                      <div class="svg-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon--size-s" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                          <path d="M8.00065 14.6667C4.85798 14.6667 3.28665 14.6667 2.30998 13.69C1.33398 12.7147 1.33398 11.1427 1.33398 8.00001C1.33398 4.85734 1.33398 3.28601 2.30998 2.30934C3.28732 1.33334 4.85798 1.33334 8.00065 1.33334C11.1433 1.33334 12.7147 1.33334 13.6906 2.30934C14.6673 3.28668 14.6673 4.85734 14.6673 8.00001C14.6673 11.1427 14.6673 12.714 13.6906 13.69C12.7153 14.6667 11.1433 14.6667 8.00065 14.6667Z" fill="#03986A"></path>
+                                          <path d="M11.794 5.20251C11.9259 5.33234 12 5.50834 12 5.69184C12 5.87534 11.9259 6.05133 11.794 6.18117L7.09809 10.7975C6.96602 10.9272 6.78698 11 6.60032 11C6.41366 11 6.23463 10.9272 6.10256 10.7975L4.22419 8.95096C4.15498 8.88757 4.09948 8.81112 4.06098 8.72618C4.02248 8.64124 4.00178 8.54955 4.00011 8.45657C3.99844 8.3636 4.01584 8.27125 4.05127 8.18502C4.08669 8.0988 4.13942 8.02048 4.20631 7.95473C4.2732 7.88897 4.35287 7.83713 4.44058 7.80231C4.52829 7.76748 4.62223 7.75038 4.71681 7.75202C4.81139 7.75366 4.90466 7.77401 4.99107 7.81186C5.07747 7.8497 5.15524 7.90427 5.21972 7.9723L6.60032 9.3295L10.7985 5.20251C10.9305 5.07284 11.1096 5 11.2962 5C11.4829 5 11.6619 5.07284 11.794 5.20251Z" fill="white"></path>
+                                        </svg>
+                                      </div>
+                                    </div>
+                                  </div>
+        
+                                  <div class="tooltip-body">
+                                    <p>
+                                      $25,000 Spent
+                                    </p>
+                                    <p>
+                                      Reward: 14% Fee
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="progress-step" data-template="levelFour">
+                              <div class="circle">4</div>
+                              <div class="!hidden">
+                                <div id="levelFour" class="progress-step__tooltip tooltip">
+                                  <div class="tooltip-header">
+                                    <div class="tooltip-level text-black md:heading-sm heading-xs">
+                                      Level 4
+                                      <div class="svg-icon">
+                                        <img class="icon icon--size-m" src="img/levels-badge/Level=4-1x.png" srcset="img/levels-badge/Level=4-2x.png 2x" alt="Level">
+                                      </div>
+                                    </div>
+                                  </div>
+        
+                                  <div class="tooltip-body">
+                                    <p>
+                                      $25,000 Spent
+                                    </p>
+                                    <p>
+                                      Reward: 14% Fee
+                                    </p>
+                                    <span>
+                                      $10,000 left
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="progress-step" data-template="levelFive">
+                              <div class="circle">5</div>
+                              <div class="!hidden">
+                                <div id="levelFive" class="progress-step__tooltip tooltip">
+                                  <div class="tooltip-header">
+                                    <div class="tooltip-level text-black md:heading-sm heading-xs">
+                                      Level 5
+                                      <div class="svg-icon">
+                                        <img class="icon icon--size-m" src="img/levels-badge/Level=5-1x.png" srcset="img/levels-badge/Level=5-2x.png 2x" alt="Level">
+                                      </div>
+                                    </div>
+                                  </div>
+        
+                                  <div class="tooltip-body">
+                                    <p>
+                                      $25,000 Spent
+                                    </p>
+                                    <p>
+                                      Reward: 14% Fee
+                                    </p>
+                                    <span>
+                                      $10,000 left
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="progress-step" data-template="levelSix">
+                              <div class="circle">6</div>
+                              <div class="!hidden">
+                                <div id="levelSix" class="progress-step__tooltip tooltip">
+                                  <div class="tooltip-header">
+                                    <div class="tooltip-level text-black md:heading-sm heading-xs">
+                                      Level 6
+                                      <div class="svg-icon">
+                                        <img class="icon icon--size-m" src="img/levels-badge/Level=6-1x.png" srcset="img/levels-badge/Level=6-2x.png 2x" alt="Level">
+                                      </div>
+                                    </div>
+                                  </div>
+        
+                                  <div class="tooltip-body">
+                                    <p>
+                                      $25,000 Spent
+                                    </p>
+                                    <p>
+                                      Reward: 14% Fee
+                                    </p>
+                                    <span>
+                                      $10,000 left
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="progress-step" data-template="levelSeven">
+                              <div class="circle">7</div>
+                              <div class="!hidden">
+                                <div id="levelSeven" class="progress-step__tooltip tooltip">
+                                  <div class="tooltip-header">
+                                    <div class="tooltip-level text-black md:heading-sm heading-xs">
+                                      Level 7
+                                      <div class="svg-icon">
+                                        <img class="icon icon--size-m" src="img/levels-badge/Level=7-1x.png" srcset="img/levels-badge/Level=7-2x.png 2x" alt="Level">
+                                      </div>
+                                    </div>
+                                  </div>
+        
+                                  <div class="tooltip-body">
+                                    <p>
+                                      $25,000 Spent
+                                    </p>
+                                    <p>
+                                      Reward: 14% Fee
+                                    </p>
+                                    <span>
+                                      $10,000 left
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="progress-step" data-template="levelEight">
+                              <div class="circle">8</div>
+                              <div class="!hidden">
+                                <div id="levelEight" class="progress-step__tooltip tooltip">
+                                  <div class="tooltip-header">
+                                    <div class="tooltip-level text-black md:heading-sm heading-xs">
+                                      Level 8
+                                      <div class="svg-icon">
+                                        <img class="icon icon--size-m" src="img/levels-badge/Level=8-1x.png" srcset="img/levels-badge/Level=8-2x.png 2x" alt="Level">
+                                      </div>
+                                    </div>
+                                  </div>
+        
+                                  <div class="tooltip-body">
+                                    <p>
+                                      $25,000 Spent
+                                    </p>
+                                    <p>
+                                      Reward: 14% Fee
+                                    </p>
+                                    <span>
+                                      $10,000 left
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="progress-step" data-template="levelNine">
+                              <div class="circle">9</div>
+                              <div class="!hidden">
+                                <div id="levelNine" class="progress-step__tooltip tooltip">
+                                  <div class="tooltip-header">
+                                    <div class="tooltip-level text-black md:heading-sm heading-xs">
+                                      Level 9
+                                      <div class="svg-icon">
+                                        <img class="icon icon--size-m" src="img/levels-badge/Level=9-1x.png" srcset="img/levels-badge/Level=9-2x.png 2x" alt="Level">
+                                      </div>
+                                    </div>
+                                  </div>
+        
+                                  <div class="tooltip-body">
+                                    <p>
+                                      $25,000 Spent
+                                    </p>
+                                    <p>
+                                      Reward: 14% Fee
+                                    </p>
+                                    <span>
+                                      $10,000 left
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="progress-step" data-template="levelTen">
+                              <div class="circle">10</div>
+                              <div class="!hidden">
+                                <div id="levelTen" class="progress-step__tooltip tooltip">
+                                  <div class="tooltip-header">
+                                    <div class="tooltip-level text-black md:heading-sm heading-xs">
+                                      Level 10
+                                      <div class="svg-icon">
+                                        <img class="icon icon--size-m" src="img/levels-badge/Level=10-1x.png" srcset="img/levels-badge/Level=10-2x.png 2x" alt="Level">
+                                      </div>
+                                    </div>
+                                  </div>
+        
+                                  <div class="tooltip-body">
+                                    <p>
+                                      Goal: $2,500,000 Spent
+                                    </p>
+                                    <p>
+                                      Reward: 10% Fee
+                                    </p>
+                                    <span>
+                                      $2,460,000 left
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="account-page__row">
+                      <h5 class="md:heading-lg heading-md mb-5">Password</h5>
+                      <div class="form__line">
+                        <label for="password" class="form__label">New password</label>
+                        <input autocomplete="off" type="text" name="password" id="password" placeholder="Enter your new password" class="input">
+                      </div>
+                      <div class="form__line">
+                        <label for="confirmPass" class="form__label">Confirm password</label>
+                        <input autocomplete="off" type="text" name="confirmPass" id="confirmPass" placeholder="Confirm your password" class="input">
+                      </div>
+                    </div>
+                    <div class="account-page__confirm" data-da=".account-page-form, 992, 0">
+                      <button type="submit" class="button button-large button-primary" data-ripple>
+                        <span class="button__text">
+                          Save changes
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.account-page -->
+      </div>
+
+
+    </main>
+    @@include('html/_popup.htm',{})
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>
